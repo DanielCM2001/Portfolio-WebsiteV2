@@ -1,5 +1,7 @@
 <template>
-  <div class="bg-gray-800 text-3xl min-h-screen">Banner</div>
+  <div class="bg-gray-800 text-3xl min-h-screen flex">
+    <div class="bg-gray-900 flex justify-center items-center">hi</div>
+  </div>
 </template>
 
 <script>

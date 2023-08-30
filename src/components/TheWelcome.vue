@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-700 text-3xl min-h-screen">Navbar here</div>
+  <div class="bg-gray-700 text-3xl">&lt;Dev&gt;</div>
 </template>
 
 <script>
