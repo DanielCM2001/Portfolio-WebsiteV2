@@ -1,23 +1,21 @@
-<template>
-  <div class="min-h-screen flex justify-center items-center">
-    <div class="flex justify-center items-center w-full flex-col md:flex-row">
-      <div class="w-full flex justify-center items-center">
-        <!--  <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div> -->
-
-        <div
-          class="mx-4 my-4 flex flex-col space-y-20 lg:flex-row lg:space-x-20"
-        >
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-        </div>
+<!-- <template>
+  <div class="min-h-screen flex justify-center items-center flex-col">
+    <div class="flex justify-center items-center w-full flex-col bg-gray-800">
+      <h1 class="text-5xl">What I'm really good at</h1>
+      <div
+        class="w-full bg-black flex justify-center items-center flex-col space-y-20 lg:flex-row lg:space-x-20 lg:space-y-0"
+      >
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
       </div>
     </div>
   </div>
+</template> -->
+
+<template>
+  <div class="min-h-screen flex justify-center items-center flex-col"></div>
 </template>
 
 <script>
