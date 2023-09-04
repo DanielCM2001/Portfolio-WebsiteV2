@@ -1,8 +1,6 @@
 <template>
   <div class="min-h-screen flex justify-center items-center">
-    <div
-      class="flex justify-center items-center w-full flex-col md:flex-row space-y-20"
-    >
+    <div class="flex justify-center items-center w-full flex-col md:flex-row">
       <div
         class="w-full lg:w-1/2 bg-slate-600 flex justify-center items-center flex-col"
       >
