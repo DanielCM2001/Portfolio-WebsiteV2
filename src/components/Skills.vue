@@ -15,7 +15,12 @@
 </template> -->
 
 <template>
-  <div class="min-h-screen flex justify-center items-center flex-col"></div>
+  <div class="flex justify-center items-center flex-row bg-gray-700">
+    <div class="w-0 md:w-1/4 flex justify-center items-center">linha</div>
+    <div class="w-full md:w-3/4 bg-gray-900">
+      <h1 class="text-4xl">What I'm really good at</h1>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -28,8 +33,6 @@ export default {
 
 <style scoped>
 .box {
-  width: 253px;
-  height: 230px;
   border-radius: 40px;
   background: #313339;
   box-shadow: 0px 5px 5px 0px #8c5dc9 inset, 0px 4px 40px 0px #c940eb;
