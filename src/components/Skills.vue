@@ -20,20 +20,9 @@
     <div class="w-full md:w-3/4 bg-gray-900">
       <h1 class="text-4xl">What I'm really good at</h1>
 
-      <div class="flex flex-col justify-center items-center space-y-10 h-96">
-        <!--   <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/VueIcon.png" class="w-24" />
-            <h1 class="text-xl">Vue JS</h1>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/ReactIcon.png" class="w-24" />
-            <h1 class="text-xl">Vue JS</h1>
-          </div>
-        </div>
+      <div
+        class="flex flex-col justify-center items-center space-y-10 lg:justify-start lg:flex-row lg:space-y-0 lg:space-x-10"
+      >
         <div class="box">
           <div class="flex flex-col justify-center items-center py-8 px-8">
             <img src="../assets/img/VueIcon.png" class="w-24" />
@@ -46,18 +35,18 @@
             <img src="../assets/img/ReactIcon.png" class="w-24" />
             <h1 class="text-xl">Vue JS</h1>
           </div>
-        </div> -->
-
-        <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/VueIcon.png" class="w-28" />
-            <h1 class="text-xl">Vue JS</h1>
-          </div>
         </div>
         <div class="box">
           <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/VueIcon.png" class="w-44" />
-            <h1 class="text-xl">Vue JS</h1>
+            <img src="../assets/img/OtherIcon.png" class="w-24" />
+            <h1 class="text-xl">Other</h1>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="flex flex-col justify-center items-center py-8 px-8">
+            <img src="../assets/img/OtherIcon.png" class="w-24" />
+            <h1 class="text-xl">Other</h1>
           </div>
         </div>
       </div>
