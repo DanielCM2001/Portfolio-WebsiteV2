@@ -1,63 +1,77 @@
 <!-- <template>
-  <div class="min-h-screen flex justify-center items-center flex-col">
-    <div class="flex justify-center items-center w-full flex-col bg-gray-800">
-      <h1 class="text-5xl">What I'm really good at</h1>
+  <div class="flex flex-row items-center justify-center">
+    <div class="items-center justify-center hidden md:flex md:w-1/4">linha</div>
+    <div class="w-full md:w-3/4">
+      <h1 class="text-4xl">What I'm really good at</h1>
+
       <div
-        class="w-full bg-black flex justify-center items-center flex-col space-y-20 lg:flex-row lg:space-x-20 lg:space-y-0"
+        class="flex flex-col items-center justify-center py-10 space-y-10 lg:justify-start lg:flex-row lg:space-y-0 lg:space-x-20"
       >
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div
+          v-for="(item, index) in skillItems"
+          :key="index"
+          class="box w-[200px] h-[200px] lg:w-[140px] lg:h-[140px] xl:w-[160px] xl:h-[160px]"
+        >
+          <div class="flex flex-col items-center justify-center px-8 py-8">
+            <img :src="item.src" class="w-full" />
+            <h1 class="text-xl">{{ item.title }}</h1>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template> -->
 
 <template>
-  <div class="flex justify-center items-center flex-row bg-gray-700">
-    <div class="w-0 md:w-1/4 flex justify-center items-center">linha</div>
-    <div class="w-full md:w-3/4 bg-gray-900">
+  <div class="flex flex-row items-center justify-center">
+    <div class="items-center justify-center hidden md:flex md:w-1/4">linha</div>
+    <div class="w-full md:w-3/4">
       <h1 class="text-4xl">What I'm really good at</h1>
 
       <div
-        class="flex flex-col justify-center items-center space-y-10 lg:justify-start lg:flex-row lg:space-y-0 lg:space-x-10"
+        class="flex flex-col items-center justify-center py-10 space-y-10 lg:justify-start lg:flex-row lg:space-y-0 lg:space-x-20"
       >
-        <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/VueIcon.png" class="w-24" />
-            <h1 class="text-xl">Vue JS</h1>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/ReactIcon.png" class="w-24" />
-            <h1 class="text-xl">Vue JS</h1>
-          </div>
-        </div>
-        <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/OtherIcon.png" class="w-24" />
-            <h1 class="text-xl">Other</h1>
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="flex flex-col justify-center items-center py-8 px-8">
-            <img src="../assets/img/OtherIcon.png" class="w-24" />
-            <h1 class="text-xl">Other</h1>
+        <div
+          v-for="(item, index) in skillItems"
+          :key="index"
+          class="box w-[200px] h-[200px] lg:w-[140px] lg:h-[140px] xl:w-[160px] xl:h-[160px]"
+        >
+          <div class="flex flex-col items-center justify-center px-8 py-8">
+            <div
+              class="item-container w-[120px] h-[120px] lg:w-[50px] lg:h-[50px] xl:w-[80px] xl:h-[80px]"
+            >
+              <img :src="item.src" class="object-contain w-full h-full" />
+            </div>
+            <h1 class="text-xl">{{ item.title }}</h1>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
-  setup() {
-    return {};
+  data() {
+    return {
+      skillItems: [
+        {
+          src: new URL(`@/assets/img/VueIcon.png`, import.meta.url),
+          title: "Vue.JS",
+        },
+        {
+          src: new URL(`@/assets/img/ReactIcon.png`, import.meta.url),
+          title: "React",
+        },
+        {
+          src: new URL(`@/assets/img/ReactIcon.png`, import.meta.url),
+          title: "Design",
+        },
+        {
+          src: new URL(`@/assets/img/OtherIcon.png`, import.meta.url),
+          title: "Other",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -66,6 +80,8 @@ export default {
 .box {
   border-radius: 40px;
   background: #2d2d31;
-  box-shadow: 0px 3px 3px 0px #8c5dc9 inset, 0px 4px 40px 0px #c940eb;
+  box-shadow:
+    0px 3px 3px 0px #8c5dc9 inset,
+    0px 4px 40px 0px #c940eb;
 }
 </style>
