@@ -92,23 +92,28 @@ export default {
       <div
         class="flex flex-col w-full md:items-center md:justify-center lg:w-1/2"
       >
+        <!-- Changed Space-y-40 -->
         <div
-          class="w-full pl-5 pr-5 space-y-10 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5"
+          class="w-full pl-5 pr-5 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5"
         >
-          <h1 class="text-5xl">Hi there! I'm Daniel</h1>
-          <p class="text-2xl">
-            A front-end Web Developer passionate about creating interactive
-            applications and experiences on the web.
-          </p>
+          <!-- ADDED THE DIV BELOW -->
+          <!-- space-y-10 mt-20 md:mt-40 -->
+          <div class="space-y-10 mt-20 md:mt-40">
+            <h1 class="text-5xl">Hi there! I'm Daniel</h1>
+            <p class="text-2xl">
+              A front-end Web Developer passionate about creating interactive
+              applications and experiences on the web.
+            </p>
 
-          <div class="flex flex-row space-x-5 text-lg sm:space-x-10">
-            <button class="px-8 py-3 primaryButtons">LinkedIn</button>
-            <button class="px-5 py-3 primaryButtons">Icon</button>
-            <button class="px-5 py-3 primaryButtons">Icon</button>
+            <div class="flex flex-row space-x-5 text-lg sm:space-x-10">
+              <button class="px-8 py-3 primaryButtons">LinkedIn</button>
+              <button class="px-5 py-3 primaryButtons">Icon</button>
+              <button class="px-5 py-3 primaryButtons">Icon</button>
+            </div>
           </div>
 
           <div
-            class="flex flex-col px-10 py-6 mr-5 space-y-5 InfoBox xs:mr-10 sm:flex-row sm:space-y-0 sm:space-x-5 sm:mr-5 lg:-mr-10"
+            class="flex flex-col px-10 py-6 mr-5 space-y-5 InfoBox xs:mr-10 sm:flex-row sm:space-y-0 sm:space-x-5 sm:mr-5 lg:-mr-10 max-w-7xl"
           >
             <div
               class="flex flex-row w-full space-x-5 sm:flex-col sm:space-x-0"
