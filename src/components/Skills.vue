@@ -24,7 +24,11 @@
 
 <template>
   <div class="flex flex-row items-center justify-center">
-    <div class="items-center justify-center hidden md:flex md:w-1/4">linha</div>
+    <div
+      class="items-center justify-center hidden bg-gray-700 sm:flex sm:w-1/4"
+    >
+      <div class="w-5 h-[10px] separatorBar"></div>
+    </div>
     <div class="w-full md:w-3/4">
       <h1 class="text-4xl">What I'm really good at</h1>
 
@@ -83,5 +87,13 @@ export default {
   box-shadow:
     0px 3px 3px 0px #8c5dc9 inset,
     0px 4px 40px 0px #c940eb;
+}
+
+.separatorBar {
+  border-radius: 20px;
+  background: #c940eb;
+  box-shadow:
+    0px 5px 5px 0px #8c5dc9 inset,
+    0px 4px 50px 0px #c940eb;
 }
 </style>

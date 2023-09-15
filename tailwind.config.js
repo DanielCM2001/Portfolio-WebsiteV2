@@ -5,6 +5,7 @@ export default {
     extend: {},
     screens: {
       xs: "490px",
+      // => @media (min-width: 490px) { ... }
 
       sm: "640px",
       // => @media (min-width: 640px) { ... }
