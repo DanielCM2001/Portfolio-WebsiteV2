@@ -25,7 +25,7 @@
 <template>
   <div class="flex flex-row items-center justify-center">
     <div
-      class="items-center justify-center hidden bg-gray-700 sm:flex sm:w-1/4"
+      class="items-center justify-center hidden bg-gray-700 sm:flex sm:w-2/4"
     >
       <div class="w-5 h-[10px] separatorBar"></div>
     </div>

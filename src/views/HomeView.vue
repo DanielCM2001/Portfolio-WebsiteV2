@@ -1,12 +1,12 @@
 <script setup>
-import TheWelcome from "../components/TheWelcome.vue";
+import TheNavBar from "../components/TheNavBar.vue";
 import Banner from "../components/Banner.vue";
 import Skills from "../components/Skills.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <TheNavBar />
     <Banner />
     <Skills />
   </main>
