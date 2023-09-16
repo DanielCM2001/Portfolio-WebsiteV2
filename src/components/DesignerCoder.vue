@@ -1,15 +1,13 @@
 <template>
-  <div class="flex items-center justify-center w-full">
+  <div class="flex items-stretch justify-center w-full">
     <!-- ============================================= -->
-    <div
-      class="items-center justify-center hidden bg-gray-400 sm:flex sm:w-2/4 md:hidden"
-    >
-      <div class="w-5 h-[10px] separatorBar"></div>
+    <div class="items-center justify-center hidden sm:flex sm:w-2/4 md:hidden">
+      <div class="w-5 h-full separatorBar"></div>
     </div>
     <!-- ============================================= -->
 
     <div
-      class="flex flex-col items-center justify-center w-full max-w-screen-2xl bg-slate-500 md:flex-row"
+      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl bg-slate-500 md:flex-row"
     >
       <!-- Left Side -->
       <div
@@ -27,7 +25,7 @@
       <div
         class="items-center justify-center hidden bg-gray-400 md:flex md:w-1/5"
       >
-        <div class="w-5 h-[150px] separatorBar"></div>
+        <div class="w-5 h-full separatorBar"></div>
       </div>
       <!-- =========== -->
 
