@@ -55,7 +55,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-end w-full lg:w-1/2">
+      <div class="flex justify-end w-full mt-20 md:mt-0 lg:w-1/2">
         <img
           src="../assets/img/BannerRectangle.png"
           alt="Banner image"
