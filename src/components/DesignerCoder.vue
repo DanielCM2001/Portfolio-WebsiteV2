@@ -1,3 +1,17 @@
+<!--  <div class="w-full">
+    <div class="flex items-center justify-center">
+      <div class="w-full h-5 separatorBar"></div>
+    </div>
+  </div> -->
+
+<!-- <script>
+export default {
+  setup() {
+    return {};
+  },
+};
+</script> -->
+
 <template>
   <div class="flex items-stretch justify-center w-full">
     <!-- ============================================= -->
@@ -11,7 +25,7 @@
     >
       <!-- Left Side -->
       <div
-        class="flex flex-col items-center justify-center w-full bg-slate-600 md:w-2/5 md:ml-5"
+        class="flex flex-col items-center justify-center w-full bg-slate-600 md:w-2/5 md:ml-5 lg:ml-0 lg:w-1/5"
       >
         <p class="py-5 text-5xl DesignerText">Designer</p>
 
@@ -31,7 +45,7 @@
 
       <!-- Right Side -->
       <div
-        class="flex flex-col items-center justify-center w-full bg-slate-700 md:w-2/5 md:mr-5"
+        class="flex flex-col items-center justify-center w-full bg-slate-700 md:w-2/5 md:mr-5 lg:mr-0 lg:w-1/5"
       >
         <p class="py-5 text-5xl">Coder</p>
 
@@ -42,12 +56,33 @@
       </div>
     </div>
   </div>
+
+  <!--   <div class="w-full bg-white">
+    <div class="flex items-center justify-center w-2/4 bg-slate-600">
+      <div class="w-2/4 h-5 separatorBar"></div>
+    </div>
+  </div> -->
 </template>
 
 <script>
 export default {
-  setup() {
-    return {};
+  data() {
+    return {
+      barWidth: 0,
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.updateBarWidth);
+    this.updateBarWidth(); // Call the method once to set the initial width
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.updateBarWidth);
+  },
+  methods: {
+    updateBarWidth() {
+      // Set the separatorBar width based on the window's inner width
+      this.barWidth = window.innerWidth / 3;
+    },
   },
 };
 </script>

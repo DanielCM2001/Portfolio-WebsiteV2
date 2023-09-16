@@ -33,6 +33,10 @@
 <template>
   <div class="flex flex-row items-stretch justify-center">
     <!-- Use "items-stretch" to stretch both columns to the same height -->
+    <!--   <div class="items-center justify-center hidden sm:flex sm:w-2/5">
+      <div class="items-stretch w-5 h-full separatorBar"></div>
+    </div>
+    <div class="w-full md:w-3/5"> -->
     <div class="items-center justify-center hidden sm:flex sm:w-2/4">
       <div class="items-stretch w-5 h-full separatorBar"></div>
     </div>
