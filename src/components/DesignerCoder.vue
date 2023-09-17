@@ -21,11 +21,11 @@ export default {
     <!-- ============================================= -->
 
     <div
-      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl bg-slate-500 md:flex-row"
+      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl md:flex-row"
     >
       <!-- Left Side -->
       <div
-        class="flex flex-col items-center justify-center w-full bg-slate-600 md:w-2/5 md:ml-5 lg:ml-0 lg:w-1/5"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 md:ml-5 lg:ml-0 lg:w-1/5"
       >
         <p class="py-5 text-5xl DesignerText">Designer</p>
 
@@ -36,16 +36,14 @@ export default {
       </div>
 
       <!-- Midle bar -->
-      <div
-        class="items-center justify-center hidden bg-gray-400 md:flex md:w-1/5"
-      >
+      <div class="items-center justify-center hidden md:flex md:w-1/5">
         <div class="w-5 h-full separatorBar"></div>
       </div>
       <!-- =========== -->
 
       <!-- Right Side -->
       <div
-        class="flex flex-col items-center justify-center w-full bg-slate-700 md:w-2/5 md:mr-5 lg:mr-0 lg:w-1/5"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 md:mr-5 lg:mr-0 lg:w-1/5"
       >
         <p class="py-5 text-5xl">Coder</p>
 
