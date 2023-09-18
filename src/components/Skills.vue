@@ -1,46 +1,13 @@
-<!-- <template>
-  <div class="flex flex-row items-center justify-center">
-    <div
-      class="items-center justify-center hidden bg-gray-700 sm:flex sm:w-2/4"
-    >
-      <div class="w-5 separatorBar"></div>
-    </div>
-    <div class="w-full md:w-3/4">
-      <h1 class="text-4xl">What I'm really good at</h1>
-
-      <div
-        class="flex flex-col items-center justify-center py-10 space-y-10 lg:justify-start lg:flex-row lg:space-y-0 lg:space-x-20"
-      >
-        <div
-          v-for="(item, index) in skillItems"
-          :key="index"
-          class="box w-[200px] h-[200px] lg:w-[140px] lg:h-[140px] xl:w-[160px] xl:h-[160px]"
-        >
-          <div class="flex flex-col items-center justify-center px-8 py-8">
-            <div
-              class="item-container w-[120px] h-[120px] lg:w-[50px] lg:h-[50px] xl:w-[80px] xl:h-[80px]"
-            >
-              <img :src="item.src" class="object-contain w-full h-full" />
-            </div>
-            <h1 class="text-xl">{{ item.title }}</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template> -->
-
 <template>
-  <div class="flex flex-row items-stretch justify-center">
+  <div class="flex flex-row items-stretch w-full">
     <!-- Use "items-stretch" to stretch both columns to the same height -->
-    <!--   <div class="items-center justify-center hidden sm:flex sm:w-2/5">
+
+    <div
+      class="items-center justify-center hidden bg-gray-600 sm:flex sm:w-2/6 md:w-2/5"
+    >
       <div class="items-stretch w-5 h-full separatorBar"></div>
     </div>
-    <div class="w-full md:w-3/5"> -->
-    <div class="items-center justify-center hidden sm:flex sm:w-2/4">
-      <div class="items-stretch w-5 h-full separatorBar"></div>
-    </div>
-    <div class="w-full md:w-3/4">
+    <div class="w-full bg-gray-800 sm:w-4/6 md:w-3/5">
       <h1 class="text-4xl">What I'm really good at</h1>
 
       <div

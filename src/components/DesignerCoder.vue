@@ -55,11 +55,14 @@ export default {
     </div>
   </div>
 
-  <!--   <div class="w-full bg-white">
+  <!--  <div class="w-full bg-white">
     <div class="flex items-center justify-center w-2/4 bg-slate-600">
       <div class="w-2/4 h-5 separatorBar"></div>
     </div>
   </div> -->
+  <div class="flex items-center justify-center w-2/4 bg-slate-600">
+    <div class="w-full h-5 separatorBar"></div>
+  </div>
 </template>
 
 <script>
@@ -79,7 +82,8 @@ export default {
   methods: {
     updateBarWidth() {
       // Set the separatorBar width based on the window's inner width
-      this.barWidth = window.innerWidth / 3;
+      this.barWidth = window.innerWidth;
+      console.log(window.innerWidth);
     },
   },
 };
