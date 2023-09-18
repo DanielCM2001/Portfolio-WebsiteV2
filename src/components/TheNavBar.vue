@@ -1,9 +1,12 @@
 <template>
   <div class="px-4">
-    <nav class="nav" :class="{ active: isMobileMenuActive }">
+    <nav
+      class="nav h-[70px] m-auto flex justify-between items-center"
+      :class="{ active: isMobileMenuActive }"
+    >
       <a href="/" class="text-4xl">&lt;Dev&gt;</a>
       <button @click="toggleMobileMenu" class="hamburger"></button>
-      <ul class="nav-list">
+      <ul class="flex text-2xl list-none gap-11 nav-list">
         <li><a href="#">.daniel()</a></li>
         <li><a href="#">.about()</a></li>
         <li><a href="#">.email()</a></li>
@@ -28,28 +31,6 @@ export default {
 </script>
 
 <style scoped>
-.nav {
-  max-width: 1920px;
-  height: 70px;
-  margin-inline: auto;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-list {
-  display: flex;
-  gap: 32px;
-  list-style: none;
-}
-
-.nav-list a {
-  font-size: 18px;
-  color: #fff;
-  padding-block: 16px;
-}
-
 .hamburger {
   display: none;
   border: none;
@@ -95,7 +76,6 @@ export default {
   }
 
   .nav-list a {
-    font-size: 24px;
     opacity: 0;
   }
 
