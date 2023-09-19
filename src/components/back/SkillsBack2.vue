@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row items-stretch w-full pt-20">
     <div
-      class="justify-center hidden xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-5/12"
+      class="justify-center hidden xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 bg-slate-700"
     >
       <div class="items-stretch w-5 h-full separatorBar"></div>
       <div class="absolute w-12 h-12 separatorBox animate-glow cursor-pointer">
@@ -11,11 +11,11 @@
         />
       </div>
     </div>
-    <div class="w-full xs:w-9/12 md:w-full -ml-10">
+    <div class="w-full xs:w-9/12 md:w-full bg-slate-600 -ml-10">
       <h1 class="text-4xl">What I'm really good at</h1>
 
       <div
-        class="flex flex-col items-center justify-center py-10 space-y-10 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
+        class="flex flex-col items-center justify-center py-10 space-y-10 md:justify-start md:flex-row md:space-y-0 md:space-x-5"
       >
         <!-- Box -->
         <div
