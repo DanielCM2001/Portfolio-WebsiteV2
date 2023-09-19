@@ -11,15 +11,15 @@
         />
       </div>
     </div>
-    <div class="w-full xs:w-9/12 md:w-full -ml-10">
+    <div class="w-full xs:w-9/12 md:w-full 3xl:-ml-10">
       <h1 class="text-4xl">What I'm really good at</h1>
 
       <div
-        class="flex flex-col items-center justify-center py-10 space-y-10 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
+        class="flex flex-col items-center justify-center px-10 py-6 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
       >
         <!-- Box -->
         <div
-          class="box flex flex-col mx-5 md:mx-0 md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]"
+          class="box flex flex-col w-full md:mx-0 md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]"
           v-for="(item, index) in skillItems"
           :key="index"
         >
@@ -60,12 +60,12 @@ export default {
           title: "React",
         },
         {
-          src: new URL(`@/assets/img/ReactIcon.png`, import.meta.url),
-          title: "Design",
+          src: new URL(`@/assets/img/JavascriptIcon.png`, import.meta.url),
+          title: "Javascript",
         },
         {
-          src: new URL(`@/assets/img/OtherIcon.png`, import.meta.url),
-          title: "Other",
+          src: new URL(`@/assets/img/FigmaIcon.png`, import.meta.url),
+          title: "Figma",
         },
       ],
     };
