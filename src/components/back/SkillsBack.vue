@@ -1,17 +1,9 @@
 <template>
   <div class="flex flex-row items-stretch w-full pt-10">
-    <div
-      class="justify-center hidden xs:flex xs:w-3/12 md:w-1/4 lg:w-2/4 bg-gray-700"
-    >
+    <div class="items-center justify-center hidden xs:flex xs:w-3/12">
       <div class="items-stretch w-5 h-full separatorBar"></div>
-      <div class="absolute w-12 h-12 separatorBox animate-glow cursor-pointer">
-        <img
-          src="../assets/img/ReactIcon.png"
-          class="object-contain w-full h-full py-1 px-1"
-        />
-      </div>
     </div>
-    <div class="w-full xs:w-9/12 md:w-full bg-gray-900">
+    <div class="w-full xs:w-9/12">
       <h1 class="text-4xl">What I'm really good at</h1>
 
       <div
@@ -89,21 +81,50 @@ export default {
     0px 5px 5px 0px #8c5dc9 inset,
     0px 4px 50px 0px #c940eb;
 }
-.separatorBox {
-  border-radius: 15px;
-  background: #c940eb;
-  box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
-  animation: glow 1.5s infinite alternate; /* Glowing animation */
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px #c940eb; /* Initial glow effect */
-  }
-  100% {
-    box-shadow: 0 0 30px #c940eb; /* Stronger glow effect */
-  }
-}
 </style>
+
+<!--  <template>
+    <div class="flex flex-row items-stretch w-full">
+      <div
+        class="items-center justify-center hidden xs:flex xs:w-3/12 md:w-2/5 lg:w-4/11 bg-slate-700"
+      >
+        <div class="items-stretch w-5 h-full separatorBar"></div>
+      </div>
+      <div class="w-full xs:w-9/12 md:w-3/5 lg:w-8/11 bg-slate-800">
+        <h1 class="text-4xl">What I'm really good at</h1>
+  
+        <div
+          class="flex flex-col items-center justify-center py-10 space-y-10 lg:justify-start lg:flex-row lg:space-y-0 lg:space-x-10"
+        >
+          <div
+            v-for="(item, index) in skillItems"
+            :key="index"
+            class="box w-[200px] h-[200px] lg:w-[140px] lg:h-[140px] xl:w-[160px] xl:h-[160px]"
+          >
+            <div class="flex flex-col items-center justify-center px-8 py-8">
+              <div
+                class="item-container w-[120px] h-[120px] lg:w-[50px] lg:h-[50px] xl:w-[80px] xl:h-[80px]"
+              >
+                <img :src="item.src" class="object-contain w-full h-full" />
+              </div>
+              <h1 class="text-xl">{{ item.title }}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  
+  
+  Add when connecting the bars the following:
+    
+        box-shadow:
+      0px -5px 5px 0px #8c5dc9 inset,
+      0px 4px 50px 0px #c940eb;
+      
+      and -my margin on the div itself
+  
+  
+  
+  
+  -->

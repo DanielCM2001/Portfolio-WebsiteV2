@@ -15,17 +15,17 @@ export default {
 <template>
   <div class="flex items-stretch justify-center w-full">
     <!-- ============================================= -->
-    <div class="items-center justify-center hidden sm:flex sm:w-2/4 md:hidden">
+    <div class="items-center justify-center hidden xs:flex xs:w-3/12 md:hidden">
       <div class="w-5 h-full separatorBar"></div>
     </div>
     <!-- ============================================= -->
 
     <div
-      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl md:flex-row"
+      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl xs:w-9/12 md:flex-row"
     >
       <!-- Left Side -->
       <div
-        class="flex flex-col items-center justify-center w-full md:w-2/5 md:ml-5 lg:ml-0 lg:w-1/5"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 md:ml-5 lg:ml-0 lg:w-2/5 2xl:w-1/5"
       >
         <p class="py-5 text-5xl DesignerText">Designer</p>
 
@@ -43,7 +43,7 @@ export default {
 
       <!-- Right Side -->
       <div
-        class="flex flex-col items-center justify-center w-full md:w-2/5 md:mr-5 lg:mr-0 lg:w-1/5"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 md:mr-5 lg:mr-0 lg:w-2/5 2xl:w-1/5"
       >
         <p class="py-5 text-5xl">Coder</p>
 
@@ -60,9 +60,9 @@ export default {
       <div class="w-2/4 h-5 separatorBar"></div>
     </div>
   </div> -->
-  <div class="flex items-center justify-center w-2/4 bg-slate-600">
+  <!--  <div class="flex items-center justify-center w-2/4 bg-slate-600">
     <div class="w-full h-5 separatorBar"></div>
-  </div>
+  </div> -->
 </template>
 
 <script>
