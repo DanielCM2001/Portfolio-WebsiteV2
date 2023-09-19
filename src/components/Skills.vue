@@ -6,8 +6,8 @@
       <div class="items-stretch w-5 h-full separatorBar"></div>
       <div class="absolute w-12 h-12 separatorBox animate-glow cursor-pointer">
         <img
-          src="../assets/img/ReactIcon.png"
-          class="object-contain w-full h-full py-1 px-1"
+          src="../assets/img/SkillsIcon.png"
+          class="object-contain w-full h-full py-2 px-2"
         />
       </div>
     </div>
