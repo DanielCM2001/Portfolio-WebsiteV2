@@ -101,9 +101,13 @@ export default {
 @keyframes glow {
   0% {
     box-shadow: 0 0 5px #c940eb; /* Initial glow effect */
+    /*  width: 48px;
+    height: 48px; */
   }
   100% {
     box-shadow: 0 0 30px #c940eb; /* Stronger glow effect */
+    /*  width: 54px;
+    height: 54px; */
   }
 }
 </style>

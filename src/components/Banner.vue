@@ -4,14 +4,14 @@
       <div
         class="flex flex-col w-full md:items-center md:justify-center lg:w-1/2"
       >
-        <!-- Changed Space-y-40 -->
         <div
           class="w-full pl-5 pr-5 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5"
         >
-          <!-- ADDED THE DIV BELOW -->
-          <!-- space-y-10 mt-20 md:mt-40 -->
           <div class="mt-20 space-y-10 md:mt-40">
             <h1 class="text-5xl">Hi there! I'm Daniel</h1>
+            <!-- <h1 class="text-5xl">
+              <span class="typing-text">{{ typedText }}</span>
+            </h1> -->
             <p class="text-2xl">
               A front-end Web Developer passionate about creating interactive
               applications and experiences on the web.
@@ -74,7 +74,47 @@ export default {
 };
 </script>
 
+<!-- <script>
+export default {
+  data() {
+    return {
+      fullText: "Hi there! I'm Daniel",
+      typedText: "",
+      currentIndex: 0,
+      typingSpeed: 100,
+    };
+  },
+  mounted() {
+    this.typeText();
+  },
+  methods: {
+    typeText() {
+      if (this.currentIndex < this.fullText.length) {
+        this.typedText += this.fullText.charAt(this.currentIndex);
+        this.currentIndex++;
+        setTimeout(this.typeText, this.typingSpeed);
+      }
+    },
+  },
+};
+</script> -->
+
 <style scoped>
+/* .typing-text {
+  display: inline-block;
+  border-right: 2px solid transparent; 
+  animation: typing 1s steps(40) infinite;
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffffff; 
+  }
+} */
 .primaryButtons {
   border-radius: 20px;
   background: #c940eb;
