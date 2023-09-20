@@ -102,10 +102,7 @@ export default {
 
       const rect = separatorBarElement.getBoundingClientRect();
       this.LeftWidthOfVerticalBar = rect.left;
-      console.log(this.LeftWidthOfVerticalBar);
-
       this.barWidth = window.innerWidth;
-      console.log(window.innerWidth);
     },
   },
 };

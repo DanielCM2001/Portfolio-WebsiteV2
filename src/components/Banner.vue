@@ -7,7 +7,7 @@
         <div
           class="w-full pl-5 pr-5 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5"
         >
-          <div class="mt-20 space-y-10 md:mt-40">
+          <div class="mt-20 space-y-10 md:mt-24">
             <h1 class="text-5xl">Hi there! I'm Daniel</h1>
             <!-- <h1 class="text-5xl">
               <span class="typing-text">{{ typedText }}</span>
