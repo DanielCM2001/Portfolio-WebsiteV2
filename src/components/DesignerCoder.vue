@@ -1,8 +1,14 @@
 <template>
   <div class="flex items-stretch justify-center w-full">
     <!-- ============================================= -->
-    <div class="items-center justify-center hidden xs:flex xs:w-3/12 md:hidden">
+    <div class="justify-center hidden xs:flex xs:w-3/12 md:hidden">
       <div class="w-5 h-full separatorBar"></div>
+      <div class="absolute w-12 h-12 cursor-pointer separatorBox animate-glow">
+        <img
+          src="../assets/img/IdeasIcon.png"
+          class="object-contain w-full h-full px-2 py-2"
+        />
+      </div>
     </div>
     <!-- ============================================= -->
 

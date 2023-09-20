@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex items-center justify-start md:w-2/4"
+    class="items-center justify-start hidden md:flex md:w-2/4"
     :style="{ 'padding-left': LeftWidthOfVerticalBar + 'px' }"
   >
     <div class="w-full h-5 separatorHorizontalBar"></div>
