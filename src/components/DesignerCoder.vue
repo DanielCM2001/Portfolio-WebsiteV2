@@ -1,19 +1,5 @@
-<!--  <div class="w-full">
-    <div class="flex items-center justify-center">
-      <div class="w-full h-5 separatorBar"></div>
-    </div>
-  </div> -->
-
-<!-- <script>
-export default {
-  setup() {
-    return {};
-  },
-};
-</script> -->
-
 <template>
-  <div class="flex items-stretch justify-center w-full bg-gray-800">
+  <div class="flex items-stretch justify-center w-full">
     <!-- ============================================= -->
     <div class="items-center justify-center hidden xs:flex xs:w-3/12 md:hidden">
       <div class="w-5 h-full separatorBar"></div>
@@ -36,17 +22,17 @@ export default {
       </div>
 
       <!-- Midle bar -->
-      <!-- <div class="items-center justify-center hidden -mb-20 md:flex md:w-1/5">
+      <div class="justify-center hidden -mb-[100px] md:flex md:w-1/5">
         <div class="w-5 h-full separatorBar"></div>
-      </div> -->
-      <div
-        ref="separatorBar"
-        class="items-center justify-center hidden -mb-20 md:flex md:w-1/5"
-      >
-        <div class="w-5 h-full separatorBar"></div>
+        <div
+          class="absolute w-12 h-12 cursor-pointer separatorBox animate-glow"
+        >
+          <img
+            src="../assets/img/IdeasIcon.png"
+            class="object-contain w-full h-full px-2 py-2"
+          />
+        </div>
       </div>
-
-      <!-- =========== -->
 
       <!-- Right Side -->
       <div
@@ -61,48 +47,12 @@ export default {
       </div>
     </div>
   </div>
-
-  <!--  <div class="w-full bg-white">
-    <div class="flex items-center justify-center w-2/4 bg-slate-600">
-      <div class="w-2/4 h-5 separatorBar"></div>
-    </div>
-  </div> -->
-  <!--  <div class="flex items-center justify-start bg-slate-600">
-    <div class="w-[50%] h-5 separatorBar"></div>
-  </div> -->
-
-  <!-- <div
-    class="flex items-center justify-start bg-slate-600 md:w-2/4 md:pl-[9%] lg:pl-[13%] 2xl:pl-[14%]"
-  >
-    <div class="w-full h-5 separatorBar"></div>
-  </div> -->
-  <!--  <div
-    class="flex items-center justify-start bg-slate-600 md:w-2/4 md:pl-[9%] lg:pl-[13%] 2xl:pl-[14%]"
-  >
-    <div class="w-full h-5 separatorBar"></div>
-  </div> -->
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      barWidth: 0,
-    };
-  },
-  mounted() {
-    window.addEventListener("resize", this.updateBarWidth);
-    this.updateBarWidth(); // Call the method once to set the initial width
-  },
-  beforeDestroy() {
-    window.removeEventListener("resize", this.updateBarWidth);
-  },
-  methods: {
-    updateBarWidth() {
-      // Set the separatorBar width based on the window's inner width
-      this.barWidth = window.innerWidth;
-      console.log(window.innerWidth);
-    },
+    return {};
   },
 };
 </script>
@@ -126,5 +76,27 @@ export default {
   box-shadow:
     0px 5px 5px 0px #8c5dc9 inset,
     0px 4px 50px 0px #c940eb;
+}
+
+.separatorBox {
+  border-radius: 15px;
+  background: #c940eb;
+  box-shadow:
+    0px 5px 5px 0px #8c5dc9 inset,
+    0px 4px 50px 0px #c940eb;
+  animation: glow 1.5s infinite alternate; /* Glowing animation */
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px #c940eb; /* Initial glow effect */
+    /*  width: 48px;
+    height: 48px; */
+  }
+  100% {
+    box-shadow: 0 0 30px #c940eb; /* Stronger glow effect */
+    /*  width: 54px;
+    height: 54px; */
+  }
 }
 </style>

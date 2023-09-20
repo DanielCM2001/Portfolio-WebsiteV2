@@ -1,21 +1,21 @@
 <template>
   <div
-    class="flex items-center justify-start bg-slate-600 md:w-2/4"
+    class="flex items-center justify-start md:w-2/4"
     :style="{ 'padding-left': LeftWidthOfVerticalBar + 'px' }"
   >
     <div class="w-full h-5 separatorHorizontalBar"></div>
   </div>
 
-  <div class="flex flex-row items-stretch w-full pt-20 bg-slate-600">
+  <div class="flex flex-row items-stretch w-full pt-20">
     <div
-      class="justify-center hidden -mt-20 xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-5/12"
+      class="justify-center hidden -mt-[100px] xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-5/12"
     >
       <div
         ref="separatorBar"
         class="items-stretch w-5 h-full separatorBar"
       ></div>
       <div
-        class="absolute w-12 h-12 mt-20 cursor-pointer separatorBox animate-glow"
+        class="absolute w-12 h-12 cursor-pointer mt-[100px] separatorBox animate-glow"
       >
         <img
           src="../assets/img/SkillsIcon.png"
