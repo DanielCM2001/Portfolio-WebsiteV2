@@ -13,7 +13,7 @@ export default {
 </script> -->
 
 <template>
-  <div class="flex items-stretch justify-center w-full">
+  <div class="flex items-stretch justify-center w-full bg-gray-800">
     <!-- ============================================= -->
     <div class="items-center justify-center hidden xs:flex xs:w-3/12 md:hidden">
       <div class="w-5 h-full separatorBar"></div>
@@ -21,7 +21,7 @@ export default {
     <!-- ============================================= -->
 
     <div
-      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl xs:w-9/12 md:flex-row"
+      class="flex flex-col items-stretch justify-center w-full mt-20 mb-20 max-w-screen-2xl xs:w-9/12 md:flex-row"
     >
       <!-- Left Side -->
       <div
@@ -36,9 +36,16 @@ export default {
       </div>
 
       <!-- Midle bar -->
-      <div class="items-center justify-center hidden md:flex md:w-1/5">
+      <!-- <div class="items-center justify-center hidden -mb-20 md:flex md:w-1/5">
+        <div class="w-5 h-full separatorBar"></div>
+      </div> -->
+      <div
+        ref="separatorBar"
+        class="items-center justify-center hidden -mb-20 md:flex md:w-1/5"
+      >
         <div class="w-5 h-full separatorBar"></div>
       </div>
+
       <!-- =========== -->
 
       <!-- Right Side -->
@@ -60,7 +67,18 @@ export default {
       <div class="w-2/4 h-5 separatorBar"></div>
     </div>
   </div> -->
-  <!--  <div class="flex items-center justify-center w-2/4 bg-slate-600">
+  <!--  <div class="flex items-center justify-start bg-slate-600">
+    <div class="w-[50%] h-5 separatorBar"></div>
+  </div> -->
+
+  <!-- <div
+    class="flex items-center justify-start bg-slate-600 md:w-2/4 md:pl-[9%] lg:pl-[13%] 2xl:pl-[14%]"
+  >
+    <div class="w-full h-5 separatorBar"></div>
+  </div> -->
+  <!--  <div
+    class="flex items-center justify-start bg-slate-600 md:w-2/4 md:pl-[9%] lg:pl-[13%] 2xl:pl-[14%]"
+  >
     <div class="w-full h-5 separatorBar"></div>
   </div> -->
 </template>
