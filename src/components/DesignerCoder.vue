@@ -77,26 +77,4 @@ export default {
     0px 5px 5px 0px #8c5dc9 inset,
     0px 4px 50px 0px #c940eb;
 }
-
-.separatorBox {
-  border-radius: 15px;
-  background: #c940eb;
-  box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
-  animation: glow 1.5s infinite alternate; /* Glowing animation */
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px #c940eb; /* Initial glow effect */
-    /*  width: 48px;
-    height: 48px; */
-  }
-  100% {
-    box-shadow: 0 0 30px #c940eb; /* Stronger glow effect */
-    /*  width: 54px;
-    height: 54px; */
-  }
-}
 </style>
