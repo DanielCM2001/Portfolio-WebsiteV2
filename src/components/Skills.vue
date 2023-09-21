@@ -27,7 +27,7 @@
       <h1 class="text-4xl">What I'm really good at</h1>
 
       <div
-        class="flex flex-col items-center justify-center px-10 py-6 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
+        class="flex flex-col items-center justify-center px-10 py-6 pt-10 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
       >
         <!-- Box -->
         <div

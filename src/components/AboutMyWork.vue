@@ -20,18 +20,18 @@
       <h1 class="text-4xl">.AboutWork()</h1>
 
       <div
-        class="flex flex-col items-stretch justify-center px-10 py-6 md:w-full md:flex-row md:px-0 xl:w-[90%] 2xl:w-[80%] 3xl:w-[70%]"
+        class="flex flex-col items-stretch justify-center pt-10 space-y-10 px-10 py-6 md:w-full md:flex-row md:px-0 xl:w-[90%] 2xl:w-[80%] 3xl:w-[70%] md:space-y-0"
       >
-        <div class="flex flex-col w-full">
-          <div class="flex flex-col justify-center">
-            <p class="py-5 text-2xl glowLabel">Designer</p>
+        <div class="flex flex-col w-full space-y-10">
+          <div class="flex flex-col justify-center text-center">
+            <p class="py-3 text-2xl glowLabel">Designer</p>
 
             <p class="text-lg">
               Fast load times and lag-free interaction, my highest priority.
             </p>
           </div>
-          <div class="flex flex-col justify-center">
-            <p class="py-5 text-2xl glowLabel">Responsive</p>
+          <div class="flex flex-col justify-center text-center">
+            <p class="py-3 text-2xl glowLabel">Responsive</p>
 
             <p class="text-lg">
               My layouts will work on any device, big or small.
@@ -43,17 +43,17 @@
           <div class="w-5 h-full separatorBar"></div>
         </div>
 
-        <div class="flex flex-col w-full">
-          <div class="flex flex-col justify-center">
-            <p class="py-5 text-2xl glowLabel">Dynamic</p>
+        <div class="flex flex-col w-full space-y-10">
+          <div class="flex flex-col justify-center text-center">
+            <p class="py-3 text-2xl glowLabel">Dynamic</p>
 
             <p class="text-lg">
               Websites don't have to be static, I love making pages come to
               life.
             </p>
           </div>
-          <div class="flex flex-col justify-center">
-            <p class="py-5 text-2xl glowLabel">Intuitive</p>
+          <div class="flex flex-col justify-center text-center">
+            <p class="py-3 text-2xl glowLabel">Intuitive</p>
 
             <p class="text-lg">
               Strong preference for easy to use, intuitive UX/UI.
