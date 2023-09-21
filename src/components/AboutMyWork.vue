@@ -17,12 +17,22 @@
       </div>
     </div>
     <div class="w-full xs:w-9/12 md:w-full 3xl:-ml-10">
-      <h1 class="text-4xl">.Work()</h1>
+      <h1 class="text-4xl">.AboutWork()</h1>
 
       <div
-        class="flex flex-col items-center justify-center px-10 py-6 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
+        class="flex flex-col items-center justify-center px-10 py-6 bg-gray-500 md:flex-row"
       >
-        xd
+        <div class="flex flex-col w-full bg-gray-600">
+          <div>1</div>
+          <div>2</div>
+        </div>
+
+        <div>bar</div>
+
+        <div class="flex flex-col w-full bg-gray-600">
+          <div>3</div>
+          <div>4</div>
+        </div>
       </div>
     </div>
   </div>

@@ -4,6 +4,7 @@ import Banner from "../components/Banner.vue";
 import DesignerCoder from "../components/DesignerCoder.vue";
 import Skills from "../components/Skills.vue";
 import VsCodeSimulator from "../components/VsCodeSimulator.vue";
+import AboutMyWork from "../components/AboutMyWork.vue";
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import VsCodeSimulator from "../components/VsCodeSimulator.vue";
     <DesignerCoder />
     <Skills />
     <VsCodeSimulator />
+    <AboutMyWork />
   </main>
 </template>
