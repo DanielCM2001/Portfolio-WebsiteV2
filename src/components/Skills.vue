@@ -31,7 +31,7 @@
       >
         <!-- Box -->
         <div
-          class="box flex flex-col w-full md:mx-0 md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px]"
+          class="box flex flex-col w-full md:mx-0 md:w-[120px] md:h-[120px] 2md:w-[140px] 2md:h-[140px] lg:w-[150px] lg:h-[150px] xl:w-[160px] xl:h-[160px]"
           v-for="(item, index) in skillItems"
           :key="index"
         >
@@ -41,7 +41,7 @@
           >
             <div class="flex w-1/5 md:w-full md:items-center md:justify-center">
               <div
-                class="item-container md:w-[50px] md:h-[50px] lg:w-[80px] lg:h-[80px]"
+                class="item-container md:w-[50px] md:h-[50px] 2md:w-[60px] 2md:h-[60px] lg:w-[70px] lg:h-[70px] xl:w-[80px] xl:h-[80px]"
               >
                 <img :src="item.src" class="object-contain w-full h-full" />
               </div>
