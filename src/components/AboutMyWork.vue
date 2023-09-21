@@ -20,18 +20,45 @@
       <h1 class="text-4xl">.AboutWork()</h1>
 
       <div
-        class="flex flex-col items-center justify-center px-10 py-6 bg-gray-500 md:flex-row"
+        class="flex flex-col items-stretch justify-center px-10 py-6 md:w-full md:flex-row md:px-0 xl:w-[90%] 2xl:w-[80%] 3xl:w-[70%]"
       >
-        <div class="flex flex-col w-full bg-gray-600">
-          <div>1</div>
-          <div>2</div>
+        <div class="flex flex-col w-full">
+          <div class="flex flex-col justify-center">
+            <p class="py-5 text-2xl glowLabel">Designer</p>
+
+            <p class="text-lg">
+              Fast load times and lag-free interaction, my highest priority.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="py-5 text-2xl glowLabel">Responsive</p>
+
+            <p class="text-lg">
+              My layouts will work on any device, big or small.
+            </p>
+          </div>
         </div>
 
-        <div>bar</div>
+        <div class="justify-center hidden md:flex md:w-1/5">
+          <div class="w-5 h-full separatorBar"></div>
+        </div>
 
-        <div class="flex flex-col w-full bg-gray-600">
-          <div>3</div>
-          <div>4</div>
+        <div class="flex flex-col w-full">
+          <div class="flex flex-col justify-center">
+            <p class="py-5 text-2xl glowLabel">Dynamic</p>
+
+            <p class="text-lg">
+              Websites don't have to be static, I love making pages come to
+              life.
+            </p>
+          </div>
+          <div class="flex flex-col justify-center">
+            <p class="py-5 text-2xl glowLabel">Intuitive</p>
+
+            <p class="text-lg">
+              Strong preference for easy to use, intuitive UX/UI.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -47,6 +74,10 @@ export default {
 </script>
 
 <style scoped>
+.glowLabel {
+  color: #c940eb;
+  text-shadow: 0px 4px 50px #c940eb;
+}
 .separatorBar {
   border-radius: 20px;
   background: #c940eb;
