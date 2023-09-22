@@ -26,9 +26,6 @@ export default {
       // => @media (min-width: 1536px) { ... }
       "3xl": "1920px" /* Might use later on bigger screens */,
     },
-    /* maxWidth: {
-      "1/2": "1920px", 
-    }, */
   },
   plugins: [],
 };
