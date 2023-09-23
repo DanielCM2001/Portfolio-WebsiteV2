@@ -19,10 +19,32 @@
     <div class="w-full xs:w-9/12 md:w-full 3xl:-ml-10">
       <h1 class="text-4xl">.Work()</h1>
 
-      <div
-        class="flex flex-col items-center justify-center px-10 py-6 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12"
+      <!--  <div class="flex flex-col mx-10 my-6 bg-[#161b22] rounded-t-3xl">
+        <div class="">xd</div>
+        <div class="h-96 bg-[#24292f]">xd</div>
+      </div> -->
+      <!--    <div
+        class="flex flex-col mx-10 my-6 bg-[#161b22] rounded-[10px] overflow-hidden border-[#30363d] border-[1px]"
       >
-        xd
+        <div class="flex flex-row pt-2 mx-2">
+          <div class="bg-[#24292f]">Working.Vue</div>
+        </div>
+        <div class="h-96 bg-[#24292f] border-[#30363d] border-[1px]">xd</div>
+      </div> -->
+      <div
+        class="flex flex-col mx-10 my-6 bg-[#161b22] rounded-[10px] overflow-hidden border-[#30363d] border-[1px]"
+      >
+        <div class="flex flex-row pt-2 mx-2 space-x-5">
+          <!-- translate-y-[1px] -->
+          <div class="bg-[#24292f] py-1 px-2 rounded-t-lg">Working.vue</div>
+          <div class="bg-[#161b22] py-1 px-2 rounded-t-lg">Working.js</div>
+        </div>
+        <div class="h-96 bg-[#24292f] border-[#30363d] border-t-[1px]">
+          <div class="flex flex-row w-full bg-gray-700">
+            <div class="px-2 bg-gray-800">1</div>
+            <div>code..</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
