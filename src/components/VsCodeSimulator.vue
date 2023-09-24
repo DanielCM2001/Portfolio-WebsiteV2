@@ -19,20 +19,8 @@
     <div class="w-full xs:w-9/12 md:w-full 3xl:-ml-10">
       <h1 class="text-4xl">.Work()</h1>
 
-      <!--  <div class="flex flex-col mx-10 my-6 bg-[#161b22] rounded-t-3xl">
-        <div class="">xd</div>
-        <div class="h-96 bg-[#24292f]">xd</div>
-      </div> -->
-      <!--    <div
-        class="flex flex-col mx-10 my-6 bg-[#161b22] rounded-[10px] overflow-hidden border-[#30363d] border-[1px]"
-      >
-        <div class="flex flex-row pt-2 mx-2">
-          <div class="bg-[#24292f]">Working.Vue</div>
-        </div>
-        <div class="h-96 bg-[#24292f] border-[#30363d] border-[1px]">xd</div>
-      </div> -->
       <div
-        class="flex flex-col mx-10 my-6 bg-[#161b22] rounded-[10px] overflow-hidden border-[#30363d] border-[1px]"
+        class="flex flex-col mx-10 md:mx-0 md:w-[90%] my-6 bg-[#161b22] rounded-[10px] overflow-hidden border-[#30363d] border-[1px]"
       >
         <div class="flex flex-row pt-2 mx-2 space-x-5">
           <!-- translate-y-[1px] -->

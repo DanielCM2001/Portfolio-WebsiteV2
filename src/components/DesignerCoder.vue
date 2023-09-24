@@ -13,7 +13,7 @@
     <!-- ============================================= -->
 
     <div
-      class="flex flex-col items-stretch justify-center w-full mt-20 mb-20 max-w-screen-2xl xs:w-9/12 md:flex-row"
+      class="flex flex-col items-stretch justify-center w-full my-20 max-w-screen-2xl xs:w-9/12 md:flex-row"
     >
       <!-- Left Side -->
       <div

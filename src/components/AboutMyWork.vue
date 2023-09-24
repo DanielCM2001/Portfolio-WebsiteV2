@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-row items-stretch w-full pt-20">
+  <div class="flex flex-row items-stretch w-full py-20">
     <div
-      class="justify-center hidden -mt-[100px] xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-5/12"
+      class="justify-center hidden -my-[100px] xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-5/12"
     >
       <div
         ref="separatorBar"
@@ -63,12 +63,42 @@
       </div>
     </div>
   </div>
+  <div
+    class="items-center justify-start hidden md:flex md:w-2/4"
+    :style="{ 'padding-left': LeftWidthOfVerticalBar + 'px' }"
+  >
+    <div class="w-full h-5 separatorHorizontalBar"></div>
+  </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      barWidth: 0,
+      LeftWidthOfVerticalBar: 0,
+    };
+  },
+  mounted() {
+    window.addEventListener("resize", this.updateBarWidth);
+    this.updateBarWidth(); // Call the method once to set the initial width
+  },
+  beforeDestroy() {
+    window.removeEventListener("resize", this.updateBarWidth);
+  },
+  methods: {
+    updateBarWidth() {
+      // Set the separatorBar width based on the window's inner width
+
+      //Access the DOM element using $refs
+      const separatorBarElement = this.$refs.separatorBar;
+
+      //Get the position of the element relative to the viewport
+
+      const rect = separatorBarElement.getBoundingClientRect();
+      this.LeftWidthOfVerticalBar = rect.left;
+      this.barWidth = window.innerWidth;
+    },
   },
 };
 </script>
@@ -79,6 +109,14 @@ export default {
   text-shadow: 0px 4px 50px #c940eb;
 }
 .separatorBar {
+  border-radius: 20px;
+  background: #c940eb;
+  box-shadow:
+    0px 5px 5px 0px #8c5dc9 inset,
+    0px 4px 50px 0px #c940eb;
+}
+
+.separatorHorizontalBar {
   border-radius: 20px;
   background: #c940eb;
   box-shadow:
