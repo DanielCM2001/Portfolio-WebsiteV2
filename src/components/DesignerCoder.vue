@@ -17,7 +17,7 @@
     >
       <!-- Left Side -->
       <div
-        class="flex flex-col items-center justify-center w-full md:w-2/5 md:ml-5 lg:ml-0 lg:w-2/5 2xl:w-1/5"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 md:ml-5 lg:ml-0 lg:w-2/5 2xl:w-1/5 hide"
       >
         <p class="py-5 text-5xl DesignerText">Designer</p>
 
@@ -42,7 +42,7 @@
 
       <!-- Right Side -->
       <div
-        class="flex flex-col items-center justify-center w-full md:w-2/5 md:mr-5 lg:mr-0 lg:w-2/5 2xl:w-1/5"
+        class="flex flex-col items-center justify-center w-full md:w-2/5 md:mr-5 lg:mr-0 lg:w-2/5 2xl:w-1/5 hide"
       >
         <p class="py-5 text-5xl">Coder++</p>
 
@@ -57,7 +57,7 @@
 
 <script>
 export default {
-  data() {
+  setup() {
     return {};
   },
 };

@@ -7,18 +7,14 @@
         <div
           class="w-full pl-5 pr-5 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5"
         >
-          <div class="mt-20 space-y-10 md:mt-24">
+          <div class="mt-20 space-y-10 md:mt-24 hide">
             <h1 class="text-5xl">Hi there! I'm Daniel</h1>
-            <!-- <h1 class="text-5xl">
-              <span class="typing-text">{{ typedText }}</span>
-            </h1> -->
             <p class="text-2xl">
               A front-end Web Developer passionate about creating interactive
               applications and experiences on the web.
             </p>
 
-            <div class="flex flex-row space-x-5 text-lg sm:space-x-10">
-              <!-- glow-on-hover -->
+            <div class="flex flex-row space-x-5 text-lg sm:space-x-10 hide">
               <button class="px-8 py-3 primaryButtons">LinkedIn</button>
               <button class="px-5 py-3 primaryButtons">Icon</button>
               <button class="px-5 py-3 primaryButtons">Icon</button>
@@ -26,7 +22,7 @@
           </div>
 
           <div
-            class="flex flex-col px-10 py-6 space-y-5 InfoBox xs:mr-10 sm:flex-row sm:space-y-0 sm:space-x-5 sm:mr-5 lg:-mr-10 max-w-7xl"
+            class="flex flex-col px-10 py-6 space-y-5 InfoBox xs:mr-10 sm:flex-row sm:space-y-0 sm:space-x-5 sm:mr-5 lg:-mr-10 max-w-7xl hide"
           >
             <div
               class="flex flex-row w-full space-x-5 sm:flex-col sm:space-x-0"
@@ -55,11 +51,20 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-end w-full mt-20 md:mt-0 lg:w-1/2">
+
+      <div
+        class="relative flex items-center justify-end w-full mt-20 md:mt-0 lg:w-1/2"
+      >
         <img
           src="../assets/img/BannerRectangle.png"
           alt="Banner image"
           class="w-full max-w-2xl"
+        />
+
+        <img
+          src="../assets/img/Avatar92x.png"
+          alt="Banner image"
+          class="w-full max-w-[650px] absolute top-0 animateAvatar"
         />
       </div>
     </div>
@@ -74,47 +79,19 @@ export default {
 };
 </script>
 
-<!-- <script>
-export default {
-  data() {
-    return {
-      fullText: "Hi there! I'm Daniel",
-      typedText: "",
-      currentIndex: 0,
-      typingSpeed: 100,
-    };
-  },
-  mounted() {
-    this.typeText();
-  },
-  methods: {
-    typeText() {
-      if (this.currentIndex < this.fullText.length) {
-        this.typedText += this.fullText.charAt(this.currentIndex);
-        this.currentIndex++;
-        setTimeout(this.typeText, this.typingSpeed);
-      }
-    },
-  },
-};
-</script> -->
-
 <style scoped>
-/* .typing-text {
-  display: inline-block;
-  border-right: 2px solid transparent; 
-  animation: typing 1s steps(40) infinite;
+.animateAvatar {
+  animation: avatar 1.5s infinite alternate; /* animation */
+}
+@keyframes avatar {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
-@keyframes typing {
-  0%,
-  100% {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #ffffff; 
-  }
-} */
 .primaryButtons {
   border-radius: 20px;
   background: #c940eb;
@@ -137,89 +114,4 @@ export default {
     0px 5px 5px 0px #8c5dc9 inset,
     0px 4px 50px 0px #c940eb;
 }
-
-/* ===================================== */
-/* .glow-on-hover:before { */
-/*  background: linear-gradient(
-    45deg,
-    #ff0000,
-    #ff7300,
-    #fffb00,
-    #48ff00,
-    #00ffd5,
-    #002bff,
-    #7a00ff,
-    #ff00c8,
-    #ff0000
-  ); */
-/* 
-.glow-on-hover {
-  border: none;
-  outline: none;
-  background: #c940eb;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-}
-
-.glow-on-hover:before {
-  content: "";
-
-  background: linear-gradient(
-    45deg,
-    #c940eb,
-    #9d32b7,
-    #5b1d6a,
-    #8c5dc9,
-    #4c2259
-  );
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-
-.glow-on-hover:active {
-  color: #000;
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #c940eb;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-} */
 </style>
