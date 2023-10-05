@@ -4,6 +4,17 @@
       class="relative flex items-center justify-center min-h-screen overflow-hidden space"
       id="space"
     >
+      <img
+        src="../assets/img/Ovni.gif"
+        alt=""
+        class="absolute h-[150px] top-[0%] left-0 z-0"
+      />
+      <img
+        src="../assets/img/moon.png"
+        alt=""
+        class="absolute h-[300px] top-[0%] right-0 z-0"
+      />
+
       <div class="rocket-wrapper absolute top-[60%]">
         <img src="../assets/img/Rocket.png" class="rocket h-[300px]" alt="" />
       </div>
