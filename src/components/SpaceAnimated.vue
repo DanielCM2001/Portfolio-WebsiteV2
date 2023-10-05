@@ -1,6 +1,9 @@
 <template>
   <div>
-    <section class="flex items-center justify-center animation space">
+    <section
+      class="relative flex items-center justify-center min-h-screen overflow-hidden space"
+      id="space"
+    >
       <div class="rocket-wrapper absolute top-[60%]">
         <img src="../assets/img/Rocket.png" class="rocket h-[300px]" alt="" />
       </div>
@@ -22,27 +25,17 @@
       </h1>
     </section>
     <section
-      class="animation bg-gradient-to-b from-[#000514] from-0% to-[#03a9f4] to-80%"
-    ></section>
-    <section
-      class="flex items-center justify-center min-h-full Sky-Background animation"
+      class="animation sky-inside-world bg-gradient-to-b from-[#000514] from-0% to-[#03a9f4] to-80%"
     >
-      <div class="flex flex-col mx-4">
-        <p class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)]">
-          My interest in Web Development started back in 2017
-        </p>
-        <p>When I decided to try making a website for a school project</p>
-        <p class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)]">
-          Turns out making a school project taught me a lot about web
-        </p>
-      </div>
+      <img src="../assets/img/plane.png" alt="" class="plane" />
     </section>
   </div>
 </template>
 
 <script>
 export default {
-  /*  mounted() {
+  mounted() {
+    /*====================== Space Section ======================*/
     const flightPath = {
       curviness: 1.25,
       autoRotate: false,
@@ -85,7 +78,7 @@ export default {
       TweenLite.to(".world-wrapper", 1, {
         scale: 5,
         ease: Linear.easeNone,
-        onComplete: goToNextSection,
+        /*         onComplete: goToNextSection, */
       })
     );
 
@@ -101,25 +94,62 @@ export default {
     // Create a ScrollMagic controller
     const controller = new ScrollMagic.Controller();
 
+    const spaceSection = document.getElementById("space");
+
     // Create a ScrollMagic scene
     const scene = new ScrollMagic.Scene({
-      triggerElement: ".animation",
+      /* triggerElement: ".animation", */
+      triggerElement: spaceSection,
       duration: 1000, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tween)
-      .setPin(".animation")
+      /* .setPin(".animation") */
+      .setPin(spaceSection)
       .addTo(controller);
 
-    function goToNextSection() {
+    /* function goToNextSection() {
       // Transition to the next section (e.g., when the plane zoom-in animation is complete)
       const nextSection = document.querySelector(".sky-inside-world");
       window.scrollTo({
         top: nextSection.offsetTop,
         behavior: "smooth",
       });
-    }
-  }, */
+    } */
+    /*====================== Space Section ======================*/
+
+    const PlaneflightPath = {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        {
+          x: window.innerWidth,
+          y: 0,
+        },
+      ],
+    };
+
+    const tweenPlane = new TimelineLite();
+
+    tweenPlane.add(
+      TweenLite.to(".plane", 1, {
+        bezier: PlaneflightPath,
+        ease: Power1.easeInOut,
+      })
+    );
+
+    const controllerPlane = new ScrollMagic.Controller();
+
+    const scenePlane = new ScrollMagic.Scene({
+      triggerElement: ".animation",
+      duration: 1000,
+      triggerHook: 0,
+    })
+      .setTween(tweenPlane)
+      /* .addIndicators() */
+      .setPin(".animation")
+      .addTo(controllerPlane);
+  },
 };
 </script>
 
@@ -128,6 +158,13 @@ export default {
   position: relative;
   height: 100vh;
   overflow: hidden;
+}
+
+.plane {
+  position: absolute;
+  height: 100px;
+  top: 50%;
+  left: 0;
 }
 
 .space {
@@ -140,22 +177,6 @@ export default {
 /* Pump Animation */
 .rocket-wrapper {
   animation: pump 1.5s infinite alternate;
-}
-
-.world-wrapper {
-  /* position: absolute; */
-  /*   height: 100vh;
-  width: 100%; 
-  bottom: 0;
-  left: 0;
-  z-index: 1;*/
-}
-
-.Sky-Background {
-  background-image: url("../assets/img/Sky.png");
-  background-size: cover;
-  /*  background-position: center; */
-  background-repeat: no-repeat;
 }
 
 @keyframes pump {
@@ -175,4 +196,12 @@ z-index: 1; } -->
   height: 100vh;
   width: 100%;
   background: linear-gradient(180deg, #000514 0%, #03a9f4 80%);
+} -->
+<!-- .world-wrapper {
+   position: absolute; 
+    height: 100vh;
+  width: 100%; 
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 } -->

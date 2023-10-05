@@ -2,6 +2,7 @@
 import TheNavBar from "../components/TheNavBar.vue";
 import Banner from "../components/Banner.vue";
 import SpaceAnimated from "../components/SpaceAnimated.vue";
+import SkyAnimated from "../components/SkyAnimated.vue";
 import NewDesignerCoder from "../components/NewDesigner&Coder.vue";
 import NewSkills from "../components/NewSkills.vue";
 </script>
@@ -11,6 +12,7 @@ import NewSkills from "../components/NewSkills.vue";
     <TheNavBar />
     <Banner />
     <SpaceAnimated />
+    <SkyAnimated />
     <NewDesignerCoder />
     <NewSkills />
   </main>
