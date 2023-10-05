@@ -13,14 +13,14 @@
         <img
           src="../assets/img/WorldX4.png"
           alt=""
-          class="absolute h-[200px] bottom-[0%] z-10 world-world"
+          class="absolute h-[200px] bottom-[0%] z-10 world"
         />
       </div>
       <h1
-        class="text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)]"
+        class="text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[70px] 2xl:text-[80px]"
       >
         I enjoy creating things that live
-        <br />
+        <br class="hidden lg:flex" />
         on the internet...
       </h1>
     </section>
@@ -83,7 +83,7 @@ export default {
     );
 
     tween.add(
-      TweenLite.to(".world-world", 1, {
+      TweenLite.to(".world", 1, {
         opacity: 0,
         ease: Power1.easeInOut,
       })
@@ -94,18 +94,14 @@ export default {
     // Create a ScrollMagic controller
     const controller = new ScrollMagic.Controller();
 
-    const spaceSection = document.getElementById("space");
-
     // Create a ScrollMagic scene
     const scene = new ScrollMagic.Scene({
-      /* triggerElement: ".animation", */
-      triggerElement: spaceSection,
+      triggerElement: ".space",
       duration: 1000, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tween)
-      /* .setPin(".animation") */
-      .setPin(spaceSection)
+      .setPin(".space")
       .addTo(controller);
 
     /* function goToNextSection() {
@@ -146,8 +142,6 @@ export default {
       triggerHook: 0,
     })
       .setTween(tweenPlane)
-      /* .addIndicators() */
-      .setPin(".animation")
       .addTo(controllerPlane);
   },
 };
@@ -160,18 +154,17 @@ export default {
   overflow: hidden;
 }
 
+.space {
+  background-image: url("../assets/img/SpaceBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .plane {
   position: absolute;
   height: 100px;
   top: 50%;
   left: 0;
-}
-
-.space {
-  background-image: url("../assets/img/SpaceBackground.png");
-  background-size: cover;
-  /*  background-position: center; */
-  background-repeat: no-repeat;
 }
 
 /* Pump Animation */
@@ -189,7 +182,7 @@ export default {
 }
 </style>
 
-<!-- .world-world { position: absolute; height: 400px; bottom: 0%; left: 25%;
+<!-- .world { position: absolute; height: 400px; bottom: 0%; left: 25%;
 z-index: 1; } -->
 
 <!-- .sky-inside-world {
