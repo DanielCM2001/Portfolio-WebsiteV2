@@ -7,16 +7,20 @@
       <img
         src="../assets/img/Ovni.gif"
         alt=""
-        class="absolute h-[150px] top-[0%] left-0 z-0"
+        class="absolute hide h-[150px] top-[0%] left-0 z-0 sm:h-[250px] 2xl:h-[300px]"
       />
       <img
         src="../assets/img/moon.png"
         alt=""
-        class="absolute h-[300px] top-[0%] right-0 z-0"
+        class="absolute h-[300px] top-[0%] right-0 z-0 sm:h-[400px] 2xl:h-[600px]"
       />
 
       <div class="rocket-wrapper absolute top-[60%]">
-        <img src="../assets/img/Rocket.png" class="rocket h-[300px]" alt="" />
+        <img
+          src="../assets/img/Rocket.png"
+          class="rocket h-[300px] 2xl:h-[400px]"
+          alt=""
+        />
       </div>
       <div
         class="absolute bottom-0 left-0 z-10 flex items-center justify-center min-w-full min-h-full world-wrapper"
@@ -24,7 +28,7 @@
         <img
           src="../assets/img/WorldX4.png"
           alt=""
-          class="absolute h-[200px] bottom-[0%] z-10 world"
+          class="absolute h-[200px] bottom-[0%] z-10 world sm:h-[300px] 2xl:h-[400px]"
         />
       </div>
       <h1
@@ -38,7 +42,11 @@
     <section
       class="animation sky-inside-world bg-gradient-to-b from-[#000514] from-0% to-[#03a9f4] to-80%"
     >
-      <img src="../assets/img/plane.png" alt="" class="plane" />
+      <img
+        src="../assets/img/plane.png"
+        alt=""
+        class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
+      />
     </section>
   </div>
 </template>
@@ -66,6 +74,10 @@ export default {
         {
           x: 0,
           y: -200,
+        },
+        {
+          x: 0,
+          y: -250,
         },
         {
           x: 0,
@@ -169,13 +181,6 @@ export default {
   background-image: url("../assets/img/SpaceBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.plane {
-  position: absolute;
-  height: 100px;
-  top: 50%;
-  left: 0;
 }
 
 /* Pump Animation */

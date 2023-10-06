@@ -71,9 +71,9 @@
       </div>
     </div>
   </div>
-  <!-- <div
-    class="min-h-[20vh] bg-gradient-to-b from-[#151517] from-50% to-[#000514] to-80%"
-  ></div> -->
+  <div
+    class="min-h-[10vh] bg-gradient-to-b from-[#c940eb] from-0% to-[#000514] to-50%"
+  ></div>
 </template>
 
 <script>
