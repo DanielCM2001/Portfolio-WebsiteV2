@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-stretch justify-center w-full min-h-screen">
+  <div
+    class="flex items-stretch justify-center w-full min-h-screen designerCoder"
+  >
     <div
       class="flex flex-col items-stretch justify-center w-full pl-5 pr-5 max-w-screen-2xl md:flex-row md:space-x-10"
     >

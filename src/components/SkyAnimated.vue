@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex items-center justify-center min-h-screen Sky-Background animation"
+    class="flex items-center justify-center min-h-screen Sky-Background SkyAnimated"
   >
     <div class="flex flex-col mx-4 2xl:mt-40">
       <p
@@ -17,6 +17,11 @@
       >
         Turns out making a school project taught me a lot about web
       </p>
+      <img
+        src="../assets/img/Balloon.png"
+        alt=""
+        class="absolute h-[150px] bottom-[10%] right-20 z-0 sm:h-[250px] 2xl:h-[300px] balloon"
+      />
     </div>
   </section>
 </template>
@@ -24,7 +29,50 @@
 <script>
 export default {
   mounted() {
-    /*  */
+    const BalloonPath = {
+      curviness: 1.25,
+      autoRotate: false,
+      values: [
+        {
+          x: 0,
+          y: -100,
+        },
+        {
+          x: 0,
+          y: -200,
+        },
+      ],
+    };
+
+    const tweenBalloon = new TimelineLite();
+
+    tweenBalloon.add(
+      TweenLite.to(".balloon", 1, {
+        bezier: BalloonPath,
+        ease: Power1.easeInOut,
+        onComplete: goToNextSection,
+      })
+    );
+
+    const controllerBalloon = new ScrollMagic.Controller();
+
+    const sceneBalloon = new ScrollMagic.Scene({
+      triggerElement: ".SkyAnimated",
+      duration: 1000,
+      triggerHook: 0,
+    })
+      .setTween(tweenBalloon)
+      .setPin(".SkyAnimated")
+      .addTo(controllerBalloon);
+
+    function goToNextSection() {
+      // Transition to the next section (e.g., when the plane zoom-in animation is complete)
+      const nextSection = document.querySelector(".designerCoder");
+      window.scrollTo({
+        top: nextSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
   },
 };
 </script>
