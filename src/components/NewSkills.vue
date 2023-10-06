@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-row w-full min-h-screen">
     <div
-      class="justify-center items-center hidden -mt-[20px] xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-4/12"
+      class="items-center justify-center hidden bg-gray-600 xs:flex xs:w-3/12 md:w-1/4 lg:w-2/5 2xl:w-2/5 3xl:w-4/12"
     >
       <div class="relative items-stretch w-5 h-full separator-container hide">
         <div class="top-separator"></div>
