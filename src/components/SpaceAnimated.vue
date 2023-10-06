@@ -93,12 +93,12 @@ export default {
       })
     );
 
-    tween.add(
+    /*   tween.add(
       TweenLite.to(".world", 1, {
         opacity: 0,
         ease: Power1.easeInOut,
       })
-    );
+    ); */
 
     // Finally, add a fade-in effect for the sky inside the world
 
@@ -108,7 +108,7 @@ export default {
     // Create a ScrollMagic scene
     const scene = new ScrollMagic.Scene({
       triggerElement: ".space",
-      duration: 1000, // Adjust the duration as needed
+      duration: 2000, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tween)

@@ -1,4 +1,5 @@
 <template>
+  <!-- bg-gradient-to-b from-[#151517] from-95% to-[#000514] to-100% -->
   <div class="flex flex-col items-center justify-center min-h-screen">
     <div class="flex flex-col items-center justify-center w-full md:flex-row">
       <div
@@ -7,6 +8,7 @@
         <div
           class="w-full pl-5 pr-5 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5"
         >
+          <!-- Fix later the Hide class and JS sense It's overlapping the navbar -->
           <div class="mt-20 space-y-10 md:mt-24 hide">
             <h1 class="text-5xl">Hi there! I'm Daniel</h1>
             <p class="text-2xl">
@@ -69,6 +71,9 @@
       </div>
     </div>
   </div>
+  <!-- <div
+    class="min-h-[20vh] bg-gradient-to-b from-[#151517] from-50% to-[#000514] to-80%"
+  ></div> -->
 </template>
 
 <script>
