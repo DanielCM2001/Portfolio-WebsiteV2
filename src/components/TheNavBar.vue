@@ -54,7 +54,7 @@ export default {
 @media (max-width: 750px) {
   .hamburger {
     display: block;
-    z-index: 1;
+    z-index: 11;
   }
 
   .nav-list {
@@ -73,6 +73,7 @@ export default {
     gap: 0;
 
     pointer-events: none;
+    z-index: 10;
   }
 
   .nav-list a {
