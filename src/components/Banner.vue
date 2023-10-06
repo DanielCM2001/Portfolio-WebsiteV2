@@ -17,9 +17,9 @@
             </p>
 
             <div class="flex flex-row space-x-5 text-lg sm:space-x-10 hide">
-              <button class="px-8 py-3 primaryButtons">LinkedIn</button>
-              <button class="px-5 py-3 primaryButtons">Icon</button>
-              <button class="px-5 py-3 primaryButtons">Icon</button>
+              <button class="px-8 py-3 primaryButtons">Download</button>
+              <button class="px-5 py-3 primaryButtons">Linkedin</button>
+              <button class="px-5 py-3 primaryButtons">GitHub</button>
             </div>
           </div>
 
@@ -29,8 +29,8 @@
             <div
               class="flex flex-row w-full space-x-5 sm:flex-col sm:space-x-0"
             >
-              <p class="text-5xl md:text-4xl lg:text-5xl">+5</p>
-              <p class="text-lg md:text-md lg:text-lg">Lorem Ipsum dolor</p>
+              <p class="text-5xl md:text-4xl lg:text-5xl">+8</p>
+              <p class="text-lg md:text-md lg:text-lg">Projects completed</p>
             </div>
 
             <div class="w-full h-1 sm:h-28 sm:w-5 separatorBar"></div>
@@ -38,8 +38,8 @@
             <div
               class="flex flex-row w-full space-x-5 sm:flex-col sm:space-x-0"
             >
-              <p class="text-5xl md:text-4xl lg:text-5xl">60%</p>
-              <p class="text-lg md:text-md lg:text-lg">Lorem Ipsum dolor</p>
+              <p class="text-5xl md:text-4xl lg:text-5xl">2</p>
+              <p class="text-lg md:text-md lg:text-lg">Years of Experience</p>
             </div>
 
             <div class="w-full h-1 sm:h-28 sm:w-5 separatorBar"></div>
@@ -47,8 +47,8 @@
             <div
               class="flex flex-row w-full space-x-5 sm:flex-col sm:space-x-0"
             >
-              <p class="text-5xl md:text-4xl lg:text-5xl">100</p>
-              <p class="text-lg md:text-md lg:text-lg">Lorem Ipsum dolor</p>
+              <p class="text-5xl md:text-4xl lg:text-5xl">100%</p>
+              <p class="text-lg md:text-md lg:text-lg">Of Happy Clients</p>
             </div>
           </div>
         </div>
