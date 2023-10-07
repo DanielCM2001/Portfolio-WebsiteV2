@@ -21,8 +21,8 @@
 
             <div class="flex flex-row space-x-5 text-lg sm:space-x-10 hide">
               <button class="px-8 py-3 primaryButtons">Download</button>
-              <button class="px-5 py-3 primaryButtons">Linkedin</button>
-              <button class="px-5 py-3 primaryButtons">GitHub</button>
+              <button class="px-5 py-3 primaryButtons">xd</button>
+              <button class="px-5 py-3 primaryButtons">xd</button>
             </div>
           </div>
 

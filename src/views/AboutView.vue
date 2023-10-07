@@ -1,18 +1,10 @@
 <script setup>
-import Banner from "../components/Banner.vue";
-import SpaceAnimated from "../components/SpaceAnimated.vue";
-import SkyAnimated from "../components/SkyAnimated.vue";
-import NewDesignerCoder from "../components/NewDesigner&Coder.vue";
-import NewSkills from "../components/NewSkills.vue";
+import About from "../components/AboutPage/About.vue";
 </script>
 
 <template>
   <main>
-    <Banner />
-    <SpaceAnimated />
-    <SkyAnimated />
-    <NewDesignerCoder />
-    <NewSkills />
+    <About />
   </main>
 </template>
 

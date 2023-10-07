@@ -7,8 +7,14 @@
       <a href="/" class="text-4xl">&lt;Dev&gt;</a>
       <button @click="toggleMobileMenu" class="hamburger"></button>
       <ul class="flex text-2xl list-none gap-11 nav-list">
-        <li><a href="#">.daniel()</a></li>
-        <li><a href="#">.about()</a></li>
+        <li>
+          <router-link to="/" @click="toggleMobileMenu">.daniel()</router-link>
+        </li>
+        <li>
+          <router-link to="/about" @click="toggleMobileMenu"
+            >.about()</router-link
+          >
+        </li>
         <li><a href="#">.email()</a></li>
       </ul>
     </nav>
