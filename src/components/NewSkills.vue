@@ -16,7 +16,9 @@
     </div>
 
     <div class="flex flex-col justify-center w-full xs:w-9/12 md:w-full">
-      <h1 class="text-[5em] hide">What I'm really good at</h1>
+      <h1 class="text-[40px] lg:text-[70px] 2xl:text-[80px] hide">
+        What I'm really good at
+      </h1>
 
       <div
         class="flex flex-col items-center justify-center px-10 py-6 pt-10 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12 2xl:space-x-14 3xl:space-x-16"
@@ -87,6 +89,14 @@ export default {
     0px 3px 3px 0px #8c5dc9 inset,
     0px 4px 40px 0px #c940eb;
 }
+/* .box {
+  border-radius: 40px;
+  background: rgb(246, 245, 245);
+  color: #131313;
+  box-shadow:
+    0px 3px 3px 0px #8c5dc9 inset,
+    0px 4px 40px 0px #c940eb;
+} */
 
 .separatorBar {
   border-radius: 20px;

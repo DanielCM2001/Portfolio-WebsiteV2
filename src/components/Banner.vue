@@ -1,5 +1,8 @@
 <template>
   <!-- bg-gradient-to-b from-[#151517] from-95% to-[#000514] to-100% -->
+  <!-- <div
+    class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#151517] from-95% to-[#c940eb] to-100%"
+  > -->
   <div class="flex flex-col items-center justify-center min-h-screen">
     <div class="flex flex-col items-center justify-center w-full md:flex-row">
       <div
@@ -71,8 +74,11 @@
       </div>
     </div>
   </div>
-  <div
+  <!--  <div
     class="min-h-[10vh] bg-gradient-to-b from-[#c940eb] from-0% to-[#000514] to-50%"
+  ></div> -->
+  <div
+    class="min-h-[5vh] bg-gradient-to-b from-[#151517] from-0% to-[#000514] to-100%"
   ></div>
 </template>
 

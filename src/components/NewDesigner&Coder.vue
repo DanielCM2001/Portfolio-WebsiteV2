@@ -6,16 +6,14 @@
       class="flex flex-col items-stretch justify-center w-full pl-5 pr-5 max-w-screen-2xl md:flex-row md:space-x-10"
     >
       <!-- Left Side -->
-      <div
-        class="flex flex-col items-center justify-center w-full text-center hide"
-      >
+      <div class="flex flex-col items-center justify-center w-full text-center">
         <p
-          class="py-5 text-[70px] lg:text-[90px] 2xl:text-[120px] DesignerText"
+          class="py-5 text-[70px] lg:text-[90px] 2xl:text-[120px] DesignerText hide"
         >
           Designer
         </p>
 
-        <p class="text-xl lg:text-2xl 2xl:text-3xl">
+        <p class="text-xl lg:text-2xl 2xl:text-3xl hide">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, re et dolore
           magna aliqua. Ut enim ad minim veniam, qu
         </p>
@@ -35,12 +33,12 @@
       </div> -->
 
       <!-- Right Side -->
-      <div
-        class="flex flex-col items-center justify-center w-full text-center hide"
-      >
-        <p class="py-5 text-[70px] lg:text-[90px] 2xl:text-[120px]">Coder++</p>
+      <div class="flex flex-col items-center justify-center w-full text-center">
+        <p class="py-5 text-[70px] lg:text-[90px] 2xl:text-[120px] hide">
+          Coder++
+        </p>
 
-        <p class="text-xl lg:text-2xl 2xl:text-3xl">
+        <p class="text-xl lg:text-2xl 2xl:text-3xl hide">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, re et dolore
           magna aliqua. Ut enim ad minim veniam, qu
         </p>
