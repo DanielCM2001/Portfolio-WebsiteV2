@@ -5,6 +5,8 @@ import SkyAnimated from "../components/SkyAnimated.vue";
 import NewDesignerCoder from "../components/NewDesigner&Coder.vue";
 import NewSkills from "../components/NewSkills.vue";
 
+import EndWrapper from "../components/EndWrapper.vue";
+import MadeWithVue from "../components/MadeWith.vue";
 import FooterVue from "../components/Footer/Footer.vue";
 </script>
 
@@ -15,6 +17,8 @@ import FooterVue from "../components/Footer/Footer.vue";
     <SkyAnimated />
     <NewDesignerCoder />
     <NewSkills />
+    <EndWrapper />
+    <MadeWithVue />
     <FooterVue />
   </main>
 </template>
