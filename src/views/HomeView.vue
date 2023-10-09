@@ -4,6 +4,8 @@ import SpaceAnimated from "../components/SpaceAnimated.vue";
 import SkyAnimated from "../components/SkyAnimated.vue";
 import NewDesignerCoder from "../components/NewDesigner&Coder.vue";
 import NewSkills from "../components/NewSkills.vue";
+
+import FooterVue from "../components/Footer/Footer.vue";
 </script>
 
 <template>
@@ -13,6 +15,7 @@ import NewSkills from "../components/NewSkills.vue";
     <SkyAnimated />
     <NewDesignerCoder />
     <NewSkills />
+    <FooterVue />
   </main>
 </template>
 

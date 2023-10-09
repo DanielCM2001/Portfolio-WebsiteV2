@@ -7,5 +7,5 @@
 
 <script setup>
 import { RouterView } from "vue-router";
-import TheNavBarVue from "./components/TheNavBar.vue";
+import TheNavBarVue from "./components/Navigation/TheNavBar.vue";
 </script>
