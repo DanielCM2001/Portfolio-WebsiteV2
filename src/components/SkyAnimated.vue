@@ -317,16 +317,14 @@ export default {
       TweenLite.to(".balloon", 1, {
         bezier: BalloonPath,
         ease: Power1.easeInOut,
-        /* onUpdate: checkBalloonPosition, */ // Call the checkBalloonPosition function on every update
-        /* onComplete: goToNextSection, */
+        onUpdate: checkBalloonPosition,
       })
     );
 
     tweenBalloon.add(
       TweenLite.to(".Sky-Background ", 1, {
         opacity: 0,
-        /* ease: Linear.easeNone, */
-        /* onUpdate: checkBalloonPosition, */ // Call the checkBalloonPosition function on every update
+        ease: Linear.easeNone,
         onComplete: goToNextSection,
       })
     );
