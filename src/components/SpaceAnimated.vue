@@ -54,7 +54,6 @@
 <script>
 export default {
   mounted() {
-    /*====================== Space Section ======================*/
     const flightPath = {
       curviness: 1.25,
       autoRotate: false,
@@ -101,16 +100,8 @@ export default {
       TweenLite.to(".world-wrapper", 1, {
         scale: 5,
         ease: Linear.easeNone,
-        /*         onComplete: goToNextSection, */
       })
     );
-
-    /*   tween.add(
-      TweenLite.to(".world", 1, {
-        opacity: 0,
-        ease: Power1.easeInOut,
-      })
-    ); */
 
     // Finally, add a fade-in effect for the sky inside the world
 
@@ -126,16 +117,6 @@ export default {
       .setTween(tween)
       .setPin(".space")
       .addTo(controller);
-
-    /* function goToNextSection() {
-      // Transition to the next section (e.g., when the plane zoom-in animation is complete)
-      const nextSection = document.querySelector(".sky-inside-world");
-      window.scrollTo({
-        top: nextSection.offsetTop,
-        behavior: "smooth",
-      });
-    } */
-    /*====================== Space Section ======================*/
 
     const PlaneflightPath = {
       curviness: 1.25,
