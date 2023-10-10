@@ -37,6 +37,51 @@
           <li>Figma, Adobe XD</li>
         </ul>
       </div>
+
+      <div class="flex flex-col space-y-5">
+        <p class="text-2xl text-white">Experience</p>
+
+        <ul
+          class="grid gap-y-[1rem] md:grid-flow-col md:grid-cols-4 md:gap-x-[2rem]"
+        >
+          <li>
+            <p
+              class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px]"
+            >
+              Web Developer
+            </p>
+            <p class="text-[18px]">@Risidio</p>
+            <p class="text-[15px]">2023-2023</p>
+          </li>
+          <li>
+            <p
+              class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px]"
+            >
+              Cloud Consultant
+            </p>
+            <p class="text-[18px]">@Accenture</p>
+            <p class="text-[15px]">2021-2021</p>
+          </li>
+          <li>
+            <p
+              class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px]"
+            >
+              Web Developer
+            </p>
+            <p class="text-[18px]">@Sermocol</p>
+            <p class="text-[15px]">2021-2021</p>
+          </li>
+          <li>
+            <p
+              class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px]"
+            >
+              .NET Developer
+            </p>
+            <p class="text-[18px]">@Sermocol</p>
+            <p class="text-[15px]">2021-2021</p>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
