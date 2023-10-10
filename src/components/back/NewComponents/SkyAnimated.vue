@@ -375,12 +375,12 @@ export default {
 }
 
 /* .Sky-Background {
-    background-image: url("../assets/img/Sky.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    height: 100vh;
-  } */
+  background-image: url("../assets/img/Sky.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100vh;
+} */
 
 .Sky-Background {
   background-image: url("../assets/img/Sky.png");
