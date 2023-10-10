@@ -82,6 +82,19 @@
           </li>
         </ul>
       </div>
+
+      <div class="flex flex-col space-y-5">
+        <p class="text-2xl text-white">After work</p>
+
+        <ul
+          class="grid gap-y-[1rem] md:grid-flow-col md:grid-cols-4 md:gap-x-[2rem]"
+        >
+          <li>Learning guitar</li>
+          <li>Working out</li>
+          <li>Photography</li>
+          <li>Watching Movies</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
