@@ -3,8 +3,8 @@ import Banner from "../components/Banner.vue";
 import SpaceAnimated from "../components/SpaceAnimated.vue";
 import SkyAnimated from "../components/SkyAnimated.vue";
 import NewDesignerCoder from "../components/NewDesigner&Coder.vue";
-import NewSkills from "../components/NewSkills.vue";
-
+/* =================== */
+import Skills from "../components/Skills.vue";
 import EndWrapper from "../components/EndWrapper.vue";
 import MadeWithVue from "../components/MadeWith.vue";
 import FooterVue from "../components/Footer/Footer.vue";
@@ -16,7 +16,8 @@ import FooterVue from "../components/Footer/Footer.vue";
     <SpaceAnimated />
     <SkyAnimated />
     <NewDesignerCoder />
-    <NewSkills />
+    <!-- =================== -->
+    <Skills />
     <EndWrapper />
     <MadeWithVue />
     <FooterVue />
