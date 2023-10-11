@@ -317,7 +317,7 @@ export default {
       TweenLite.to(".balloon", 1, {
         bezier: BalloonPath,
         ease: Power1.easeInOut,
-        onUpdate: checkBalloonPosition,
+        /*  onUpdate: checkBalloonPosition, */
       })
     );
 
@@ -329,7 +329,7 @@ export default {
       })
     );
 
-    function checkBalloonPosition() {
+    /* function checkBalloonPosition() {
       // Get the current position of the balloon (you may need to adjust the values)
       const currentPosition = tweenBalloon.time() * 1000; // Convert time to milliseconds
 
@@ -342,7 +342,7 @@ export default {
       } else {
         document.getElementById("windImage").classList.add("hidden");
       }
-    }
+    } */
 
     const controllerBalloon = new ScrollMagic.Controller();
 
