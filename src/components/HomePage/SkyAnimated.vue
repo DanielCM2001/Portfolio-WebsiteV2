@@ -271,14 +271,14 @@ export default {
         Turns out making a school project taught me a lot about web
       </p>
       <img
-        src="../assets/img/Balloon.png"
+        src="../../assets/img/Balloon.png"
         alt=""
         class="absolute h-[150px] bottom-[10%] right-20 z-0 sm:h-[250px] 2xl:h-[300px] balloon"
       />
       <img
         id="windImage"
         class="hidden absolute h-[150px] bottom-[10%] right-0 z-0 sm:h-[250px] 2xl:h-[300px]"
-        src="../assets/img/Wind.png"
+        src="../../assets/img/Wind.png"
         alt="Wind Image"
       />
     </div>
@@ -383,7 +383,7 @@ export default {
 } */
 
 .Sky-Background {
-  background-image: url("../assets/img/Sky.png");
+  background-image: url("../../assets/img/Sky.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;

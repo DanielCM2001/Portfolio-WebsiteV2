@@ -61,13 +61,13 @@
         class="relative flex items-center justify-end w-full mt-20 md:mt-0 lg:w-1/2"
       >
         <img
-          src="../assets/img/BannerRectangle.png"
+          src="../../assets/img/BannerRectangle.png"
           alt="Banner image"
           class="w-full max-w-2xl"
         />
 
         <img
-          src="../assets/img/Avatar92x.png"
+          src="../../assets/img/Avatar92x.png"
           alt="Banner image"
           class="w-full max-w-[650px] absolute top-0 animateAvatar"
         />

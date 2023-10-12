@@ -53,7 +53,7 @@ export default {
       LeftWidthOfVerticalBar: 0,
       skillItems: [
         {
-          src: new URL(`@/assets/img/VueIcon.png`, import.meta.url),
+          src: new URL(`../../assets/img/VueIcon.png`, import.meta.url),
           title: "Vue.JS",
         },
         {

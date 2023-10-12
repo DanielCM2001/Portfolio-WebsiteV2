@@ -1,12 +1,12 @@
 <script setup>
-import Banner from "../components/Banner.vue";
-import SpaceAnimated from "../components/SpaceAnimated.vue";
-import SkyAnimated from "../components/SkyAnimated.vue";
-import NewDesignerCoder from "../components/NewDesigner&Coder.vue";
+import Banner from "../components/HomePage/Banner.vue";
+import SpaceAnimated from "../components/HomePage/SpaceAnimated.vue";
+import SkyAnimated from "../components/HomePage/SkyAnimated.vue";
+import NewDesignerCoder from "../components/HomePage/NewDesigner&Coder.vue";
 /* =================== */
-import Skills from "../components/Skills.vue";
-import EndWrapper from "../components/EndWrapper.vue";
-import MadeWithVue from "../components/MadeWith.vue";
+import Skills from "../components/HomePage/Skills.vue";
+import EndWrapper from "../components/HomePage/EndWrapper.vue";
+import MadeWithVue from "../components/HomePage/MadeWith.vue";
 import FooterVue from "../components/Footer/Footer.vue";
 </script>
 

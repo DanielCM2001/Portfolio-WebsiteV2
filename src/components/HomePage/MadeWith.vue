@@ -146,13 +146,13 @@ export default {
       class="absolute left-0 flex items-center justify-start w-full opacity-10 xl:opacity-100"
     >
       <img
-        src="../assets/img/BannerRectangle2.png"
+        src="../../assets/img/BannerRectangle2.png"
         alt="Banner image"
         class="w-full max-w-xs xs:max-w-sm"
       />
 
       <img
-        src="../assets/img/Avatar2Changed.png"
+        src="../../assets/img/Avatar2Changed.png"
         alt="Banner image"
         class="w-full max-w-[250px] xs:max-w-[300px] absolute"
       />

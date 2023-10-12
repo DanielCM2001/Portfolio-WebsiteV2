@@ -187,19 +187,19 @@ export default {
       <div class="bottom-0 space"></div>
 
       <!--   <img
-        src="../assets/img/Ovni.gif"
+        src="../../assets/img/Ovni.gif"
         alt=""
         class="absolute hide h-[150px] top-[0%] left-0 z-0 sm:h-[250px] 2xl:h-[300px]"
       />
       <img
-        src="../assets/img/moon.png"
+        src="../../assets/img/moon.png"
         alt=""
         class="absolute h-[300px] top-[0%] right-0 z-0 sm:h-[400px] 2xl:h-[600px]"
       /> -->
 
       <div class="rocket-wrapper absolute top-[60%]">
         <img
-          src="../assets/img/Rocket.png"
+          src="../../assets/img/Rocket.png"
           class="rocket h-[300px] 2xl:h-[400px]"
           alt=""
         />
@@ -208,7 +208,7 @@ export default {
         class="absolute bottom-0 left-0 z-10 flex items-center justify-center min-w-full min-h-full world-wrapper"
       >
         <img
-          src="../assets/img/WorldX4.png"
+          src="../../assets/img/WorldX4.png"
           alt=""
           class="absolute h-[200px] bottom-[0%] z-10 world sm:h-[300px] 2xl:h-[400px]"
         />
@@ -225,7 +225,7 @@ export default {
       class="animation sky-inside-world bg-gradient-to-b from-[#000005] from-0% to-[#03a9f4] to-80%"
     >
       <img
-        src="../assets/img/plane.png"
+        src="../../assets/img/plane.png"
         alt=""
         class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
       />
@@ -363,7 +363,7 @@ export default {
 }
 
 .space {
-  background-image: url("../assets/img/StarsBackg.png");
+  background-image: url("../../assets/img/StarsBackg.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
