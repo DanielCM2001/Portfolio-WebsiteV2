@@ -6,7 +6,7 @@
       class="absolute h-[350px] xs:h-[450px] rotate-90 transform -translate-y-1/4 top-[0%] z-0 md:translate-y-0 md:rotate-0 md:top-auto md:left-0 md:opacity-10 md:h-[600px] 2xl:h-[700px] 3xl:h-[800px] xl:opacity-100"
     />
     <div
-      class="w-full xs:w-9/12 lg:w-full lg:mx-[20vw] xl:mx-[25vw] static-container mx-5 pt-[20vh] space-y-10"
+      class="w-full xs:w-9/12 lg:w-full lg:mx-[20vw] xl:mx-[25vw] static-container mx-5 pt-[30vh] md:pt-[20vh] space-y-10"
     >
       <h1
         class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px]"
