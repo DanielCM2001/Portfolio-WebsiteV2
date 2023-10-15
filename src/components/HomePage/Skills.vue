@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center w-full">
     <!-- flex flex-col justify-center items-center -->
     <div
-      class="w-full xs:w-9/12 md:w-full md:mx-[25vw] static-container justify-center items-center flex flex-col"
+      class="w-full xs:w-9/12 md:w-full md:mx-[15vw] static-container justify-center items-center flex flex-col"
     >
       <h1 class="text-[40px] lg:text-[70px] 2xl:text-[80px] hide">
         What I'm really good at

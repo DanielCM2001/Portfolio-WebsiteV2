@@ -5,6 +5,7 @@ import SkyAnimated from "../components/HomePage/SkyAnimated.vue";
 import NewDesignerCoder from "../components/HomePage/NewDesigner&Coder.vue";
 /* =================== */
 import Skills from "../components/HomePage/Skills.vue";
+import Portfolio from "../components/HomePage/Portfolio.vue";
 import EndWrapper from "../components/HomePage/EndWrapper.vue";
 import MadeWithVue from "../components/HomePage/MadeWith.vue";
 import FooterVue from "../components/Footer/Footer.vue";
@@ -18,6 +19,7 @@ import FooterVue from "../components/Footer/Footer.vue";
     <NewDesignerCoder />
     <!-- =================== -->
     <Skills />
+    <Portfolio />
     <EndWrapper />
     <MadeWithVue />
     <FooterVue />
