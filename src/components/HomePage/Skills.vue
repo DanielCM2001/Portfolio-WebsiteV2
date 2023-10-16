@@ -85,7 +85,7 @@ export default {
 
 /* class="relative p-[calc(50vh-3.5rem)] m-0 lg:m-0 xl:m-25vw min-h-screen perspective-900 perspective-origin-center lg:perspective-origin-50-top"> */
 .static-container {
-  padding: calc(50vh - 3.5rem) 0 0;
+  /* padding: calc(50vh - 3.5rem) 0 0; */
   min-height: 100vh;
   perspective: 900px;
   perspective-origin: 50% 50vh;
