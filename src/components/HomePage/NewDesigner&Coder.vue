@@ -1,15 +1,13 @@
 <template>
   <div
-    class="flex items-stretch justify-center w-full min-h-screen designerCoder"
+    class="flex items-stretch justify-center w-full min-h-screen designerCoder bg-gradient-to-b text-white from-[#03A9F4] from-0% to-[#66B7DC] to-80%"
   >
     <div
       class="flex flex-col items-stretch justify-center w-full pl-5 pr-5 max-w-screen-2xl md:flex-row md:space-x-10"
     >
       <!-- Left Side -->
       <div class="flex flex-col items-center justify-center w-full text-center">
-        <p
-          class="py-5 text-[70px] lg:text-[90px] 2xl:text-[120px] DesignerText hide"
-        >
+        <p class="py-5 text-[70px] lg:text-[90px] 2xl:text-[120px] hide">
           Designer
         </p>
 
@@ -18,19 +16,6 @@
           magna aliqua. Ut enim ad minim veniam, qu
         </p>
       </div>
-
-      <!-- Midle bar -->
-      <!--  <div class="justify-center hidden -mb-[20px] md:flex md:w-1/5">
-        <div class="w-5 h-full separatorBar"></div>
-        <div
-          class="absolute w-12 h-12 cursor-pointer separatorBox animate-glow"
-        >
-          <img
-            src="../assets/img/IdeasIcon.png"
-            class="object-contain w-full h-full px-2 py-2"
-          />
-        </div>
-      </div> -->
 
       <!-- Right Side -->
       <div class="flex flex-col items-center justify-center w-full text-center">

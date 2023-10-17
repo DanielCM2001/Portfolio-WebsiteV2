@@ -253,21 +253,19 @@ export default {
 </style> -->
 
 <template>
-  <section class="flex items-center justify-center min-h-screen SkyAnimated">
+  <section
+    class="flex items-center justify-center min-h-screen text-white SkyAnimated"
+  >
     <div class="z-0 Sky-Background"></div>
     <div class="z-10 flex flex-col mx-4 2xl:mt-40">
-      <p
-        class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px] lg:text-[25px] 2xl:text-[35px]"
-      >
+      <p class="text-[20px] lg:text-[25px] 2xl:text-[35px] opacity-85">
         My interest in Web Development started back in 2017
       </p>
-      <p class="text-[30px] lg:text-[45px] 2xl:text-[65px] text-white">
+      <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">
         When I decided to try making a <br class="hidden lg:flex" />
         website for a school project
       </p>
-      <p
-        class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px] lg:text-[25px] 2xl:text-[35px]"
-      >
+      <p class="text-[20px] lg:text-[25px] 2xl:text-[35px] opacity-85">
         Turns out making a school project taught me a lot about web
       </p>
       <img
@@ -321,13 +319,13 @@ export default {
       })
     );
 
-    tweenBalloon.add(
+    /*  tweenBalloon.add(
       TweenLite.to(".Sky-Background ", 1, {
         opacity: 0,
         ease: Linear.easeNone,
         onComplete: goToNextSection,
       })
-    );
+    ); */
 
     /* function checkBalloonPosition() {
       // Get the current position of the balloon (you may need to adjust the values)
