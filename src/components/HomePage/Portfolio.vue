@@ -43,60 +43,14 @@ export default {
       class="w-full xs:w-9/12 md:w-full md:mx-[10vw] xl:mx-[20vw] static-container justify-center text-center items-center flex flex-col"
     >
       <div class="py-10">
-        <p class="text-4xl">What I did?</p>
-        <p class="text-3xl glowLabel">Portfolio</p>
-        <p class="text-2xl">Some of my projects...</p>
+        <!-- <p class="text-[40px] lg:text-[70px] 2xl:text-[60px]">What I did?</p> -->
+        <p class="text-[40px] lg:text-[70px] 2xl:text-[80px] glowLabel">
+          Portfolio
+        </p>
+        <p class="text-[20px] lg:text-[50px] 2xl:text-[40px]">
+          Some of my projects...
+        </p>
       </div>
-
-      <!--    <div
-        class="flex flex-col items-center justify-center w-full space-x-10 bg-gray-800 lg:flex-row"
-      >
-        <div class="w-52 h-[340px] box bg-img"></div>
-        <div class="flex-col space-y-[20px]">
-          <div class="h-40 w-52 box bg-img"></div>
-          <div class="h-40 w-52 box bg-img"></div>
-        </div>
-        <div class="w-52 h-[340px] box bg-img"></div>
-        <div class="flex-col space-y-[20px]">
-          <div class="h-40 w-52 box bg-img"></div>
-          <div class="h-40 w-52 box bg-img"></div>
-        </div>
-      </div> -->
-
-      <!--    <div
-        class="flex flex-col items-center justify-center w-full px-10 py-6 space-y-10 2md:space-y-0 2md:space-x-10 2md:flex-row"
-      > -->
-      <!--  <div class="w-full h-[320px] box">
-          <div class="front"></div>
-          <div class="space-y-5 back">
-            <h1 class="text-2xl">Business Website</h1>
-            <p class="text-lg">Design & Development of a company's website</p>
-          </div>
-        </div> -->
-
-      <!-- <div class="w-full h-[320px] 2md:w-40 box bg-img"></div>
-        <div class="flex-col 2md:space-y-[20px]">
-          <div class="w-full h-[320px] 2md:h-[150px] 2md:w-40 box bg-img"></div>
-          <div class="w-full h-[320px] 2md:h-[150px] 2md:w-40 box bg-img"></div>
-        </div> -->
-
-      <!--      </div> -->
-
-      <!--  <div
-        class="grid gap-y-[1rem] grid-flow-row md:grid-cols-3 md:gap-x-[1rem] xl:gap-x-[4rem] w-full"
-      >
-        <div class="w-full h-[320px] md:w-40 box bg-img">1</div>
-        <div class="w-full h-[320px] md:w-40 box bg-img">2</div>
-        <div class="w-full h-[320px] md:w-40 box bg-img">3</div>
-        <div class="w-full h-[320px] md:w-40 box bg-img">4</div>
-        <div class="w-full h-[320px] md:w-40 box bg-img">5</div>
-        <div class="w-full h-[320px] md:w-40 box bg-img">6</div>
-      </div> -->
-      <!--    <div class="grid grid-cols-3 grid-rows-2 border-2">
-        <div class="col-span-2 row-span-2 border-2">2</div>
-        <div class="col-span-1 border-2">1</div>
-        <div class="col-span-1 border-2">3</div>
-      </div> -->
 
       <div
         class="grid w-full gap-y-[20px] md:grid-cols-4 lg:grid-cols-8 md:grid-rows-2 md:gap-x-[20px] px-10 py-6"
@@ -104,32 +58,32 @@ export default {
         <div
           class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] md:col-span-2 md:row-span-2"
         >
-          1
+          <div class="front"></div>
         </div>
         <div
           class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
         >
-          2
+          <div class="front"></div>
         </div>
         <div
           class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
         >
-          3
+          <div class="front"></div>
         </div>
         <div
           class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] md:col-span-2 md:row-span-2"
         >
-          4
+          <div class="front"></div>
         </div>
         <div
           class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
         >
-          5
+          <div class="front"></div>
         </div>
         <div
           class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
         >
-          6
+          <div class="front"></div>
         </div>
       </div>
     </div>
