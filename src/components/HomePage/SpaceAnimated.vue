@@ -6,12 +6,12 @@
       <div class="bottom-0 opacity-0 space"></div>
 
       <div
-        class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full world-wrapper hide animatedWorld"
+        class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full world-wrapper animatedWorld"
       >
         <img
           src="../../assets/img/WorldX4.png"
           alt=""
-          class="absolute h-[200px] bottom-[0%] z-10 world sm:h-[300px] 2xl:h-[400px]"
+          class="absolute h-[200px] bottom-[0%] z-10 world sm:h-[300px] 2xl:h-[400px] world-world world-hide"
         />
       </div>
       <h1
@@ -39,8 +39,13 @@
   </div>
 </template>
 
-<script>
+<!-- <script>
 export default {
+  data() {
+    return {
+      controller: null,
+    };
+  },
   mounted() {
     const tween = new TimelineLite();
 
@@ -71,16 +76,21 @@ export default {
       TweenLite.to(".space", 1, {
         opacity: 1,
         ease: Linear.easeNone,
-        onComplete: function () {
-          // Add the "show" class to your element when the animation completes
-          document.querySelector(".animatedWorld").classList.add("show");
+        onUpdate: function () {
+          if (document.querySelector(".space").style.opacity !== "1") {
+            document
+              .querySelector(".world-world")
+              .classList.remove("world-show");
+          } else {
+            document.querySelector(".world-world").classList.add("world-show");
+          }
         },
       })
     );
 
     // Finally, add a fade-in effect for the sky inside the world
     // Create a ScrollMagic controller
-    const controller = new ScrollMagic.Controller();
+    this.controller = new ScrollMagic.Controller();
 
     // Create a ScrollMagic scene
     const spaceScene = new ScrollMagic.Scene({
@@ -89,8 +99,124 @@ export default {
       triggerHook: 0,
     })
       .setTween(tween)
+      .addTo(this.controller);
+
+    const tweenxd = new TimelineLite();
+
+    tweenxd.add(
+      TweenLite.to(".world-wrapper", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
+
+        onComplete: function () {
+          console.log("xd");
+
+          TweenLite.to(".world-wrapper", 1, {
+            scale: 5,
+            ease: Linear.easeNone,
+          });
+        },
+      })
+    );
+
+    const worldScene = new ScrollMagic.Scene({
+      triggerElement: ".spacecontainer",
+      duration: 2000, // Adjust the duration as needed
+      triggerHook: 0,
+    })
+      .setTween(tweenxd)
       .setPin(".spacecontainer")
-      .addTo(controller);
+      .addTo(this.controller);
+  },
+  beforeDestroy() {
+    if (this.controller) {
+      this.controller.destroy(true);
+    }
+  },
+};
+</script> -->
+
+<script>
+export default {
+  data() {
+    return {
+      controller: null,
+    };
+  },
+  mounted() {
+    const tween = new TimelineLite();
+
+    // First, the flight path animation for the rocket
+    tween.add(
+      TweenLite.to(".animatedText", 1, {
+        opacity: 0,
+        ease: Linear.easeNone,
+      })
+    );
+
+    tween.add(
+      TweenLite.to(".spacecontainer", 1, {
+        background: "#000005",
+        ease: Power1.easeInOut,
+      })
+    );
+
+    tween.add(
+      TweenLite.to(".space", 0, {
+        opacity: 0,
+        ease: Linear.easeNone,
+      })
+    );
+
+    // Opacity gradually decreases to 0 as you scroll down
+    tween.add(
+      TweenLite.to(".space", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
+        onUpdate: function () {
+          if (document.querySelector(".space").style.opacity <= "0.4") {
+            document
+              .querySelector(".world-world")
+              .classList.remove("world-show");
+          } else {
+            document.querySelector(".world-world").classList.add("world-show");
+          }
+        },
+      })
+    );
+
+    tween.add(
+      TweenLite.to(".world-wrapper", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
+      })
+    );
+
+    tween.add(
+      TweenLite.to(".world-wrapper", 1, {
+        scale: 5,
+        ease: Linear.easeNone,
+      })
+    );
+
+    // Finally, add a fade-in effect for the sky inside the world
+    // Create a ScrollMagic controller
+    this.controller = new ScrollMagic.Controller();
+
+    // Create a ScrollMagic scene
+    const spaceScene = new ScrollMagic.Scene({
+      triggerElement: ".spacecontainer",
+      duration: 2000, // Adjust the duration as needed
+      triggerHook: 0,
+    })
+      .setTween(tween)
+      .setPin(".spacecontainer")
+      .addTo(this.controller);
+  },
+  beforeDestroy() {
+    if (this.controller) {
+      this.controller.destroy(true);
+    }
   },
 };
 </script>
@@ -131,5 +257,14 @@ export default {
     /*   transform: translateY(-20px); */
     transform: translate3d(12px, -22px, -25px);
   }
+}
+
+.world-hide {
+  transform: translateY(100%);
+  transition: all 1s;
+}
+
+.world-show {
+  transform: translateY(0);
 }
 </style>
