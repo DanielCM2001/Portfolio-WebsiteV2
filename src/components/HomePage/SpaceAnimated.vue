@@ -185,6 +185,38 @@ export default {
       .setTween(tween)
       .setPin(".spacecontainer")
       .addTo(this.controller);
+
+    /*====================== Space Section ======================*/
+
+    const PlaneflightPath = {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        {
+          x: window.innerWidth,
+          y: 0,
+        },
+      ],
+    };
+
+    const tweenPlane = new TimelineLite();
+
+    tweenPlane.add(
+      TweenLite.to(".plane", 1, {
+        bezier: PlaneflightPath,
+        ease: Power1.easeInOut,
+      })
+    );
+
+    const controllerPlane = new ScrollMagic.Controller();
+
+    const scenePlane = new ScrollMagic.Scene({
+      triggerElement: ".animation",
+      duration: 1000,
+      triggerHook: 0,
+    })
+      .setTween(tweenPlane)
+      .addTo(controllerPlane);
   },
   beforeDestroy() {
     if (this.controller) {
