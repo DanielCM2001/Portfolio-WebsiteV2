@@ -11,6 +11,12 @@
         class="absolute top-0 left-0 z-30 ovni-hide ovni-ovni h-[150px] sm:h-[250px] 2xl:h-[300px]"
       />
 
+      <img
+        src="../../assets/img/MoonWithoutStars.png"
+        alt=""
+        class="absolute h-[300px] top-0 right-0 z-30 sm:h-[400px] 2xl:h-[600px] moon-hide moon-moon"
+      />
+
       <div
         class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full rocket-wrapper"
       >
@@ -132,12 +138,14 @@ export default {
               .querySelector(".rocket-rocket")
               .classList.remove("rocket-show");
             document.querySelector(".ovni-ovni").classList.remove("ovni-show");
+            document.querySelector(".moon-moon").classList.remove("moon-show");
           } else {
             document.querySelector(".world-world").classList.add("world-show");
             document
               .querySelector(".rocket-rocket")
               .classList.add("rocket-show");
             document.querySelector(".ovni-ovni").classList.add("ovni-show");
+            document.querySelector(".moon-moon").classList.add("moon-show");
           }
         },
       })
@@ -248,6 +256,15 @@ export default {
 }
 
 .ovni-show {
+  transform: translateX(0);
+}
+
+.moon-hide {
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.moon-show {
   transform: translateX(0);
 }
 </style>
