@@ -254,7 +254,7 @@ export default {
 
 <template>
   <section
-    class="flex items-center justify-center min-h-screen text-white SkyAnimated"
+    class="flex items-center justify-center min-h-screen text-white SkyAnimated relative"
   >
     <div class="z-0 Sky-Background"></div>
     <div class="z-10 flex flex-col mx-4 2xl:mt-40">
@@ -273,12 +273,12 @@ export default {
         alt=""
         class="absolute h-[150px] bottom-[10%] right-20 z-0 sm:h-[250px] 2xl:h-[300px] balloon"
       />
-      <img
+      <!--  <img
         id="windImage"
         class="hidden absolute h-[150px] bottom-[10%] right-0 z-0 sm:h-[250px] 2xl:h-[300px]"
         src="../../assets/img/Wind.png"
         alt="Wind Image"
-      />
+      /> -->
     </div>
   </section>
 </template>
@@ -314,53 +314,19 @@ export default {
     tweenBalloon.add(
       TweenLite.to(".balloon", 1, {
         bezier: BalloonPath,
-        ease: Power1.easeInOut,
-        /*  onUpdate: checkBalloonPosition, */
+        ease: Linear.easeInOut,
       })
     );
-
-    /*  tweenBalloon.add(
-      TweenLite.to(".Sky-Background ", 1, {
-        opacity: 0,
-        ease: Linear.easeNone,
-        onComplete: goToNextSection,
-      })
-    ); */
-
-    /* function checkBalloonPosition() {
-      // Get the current position of the balloon (you may need to adjust the values)
-      const currentPosition = tweenBalloon.time() * 1000; // Convert time to milliseconds
-
-      // Define the point at which you want to show the wind image
-      const windImageTriggerPosition = 400; // Adjust this value as needed
-
-      if (currentPosition >= windImageTriggerPosition) {
-        // Show the wind image by removing the "hidden" class
-        document.getElementById("windImage").classList.remove("hidden");
-      } else {
-        document.getElementById("windImage").classList.add("hidden");
-      }
-    } */
 
     const controllerBalloon = new ScrollMagic.Controller();
 
     const sceneBalloon = new ScrollMagic.Scene({
       triggerElement: ".SkyAnimated",
       duration: 1000,
-      triggerHook: 0,
+      triggerHook: 0.2,
     })
       .setTween(tweenBalloon)
-      .setPin(".SkyAnimated")
       .addTo(controllerBalloon);
-
-    function goToNextSection() {
-      // Transition to the next section (e.g., when the plane zoom-in animation is complete)
-      const nextSection = document.querySelector(".designerCoder");
-      window.scrollTo({
-        top: nextSection.offsetTop,
-        behavior: "smooth",
-      });
-    }
   },
 };
 </script>

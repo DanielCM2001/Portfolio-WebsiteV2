@@ -66,15 +66,16 @@ export default {
           <div class="front"></div>
         </div>
         <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
-        >
-          <div class="front"></div>
-        </div>
-        <div
           class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] md:col-span-2 md:row-span-2"
         >
           <div class="front"></div>
         </div>
+        <div
+          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
+        >
+          <div class="front"></div>
+        </div>
+
         <div
           class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
         >

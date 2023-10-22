@@ -77,7 +77,7 @@ export default {
 <style scoped>
 .box {
   border-radius: 40px;
-  background: #151417;
+  background: #c940eb;
   box-shadow:
     0px 3px 3px 0px #8c5dc9 inset,
     0px 4px 40px 0px #c940eb;
