@@ -249,17 +249,11 @@ export default {
   animation: pump 4.5s infinite alternate;
 }
 
-.rocket-wrapper {
-  /*  animation: pump 4.5s infinite alternate; */
-}
-
 @keyframes pump {
   0% {
-    /*  transform: translateY(0); */
     transform: translate3d(0);
   }
   100% {
-    /*   transform: translateY(-20px); */
     transform: translate3d(12px, -22px, -25px);
   }
 }

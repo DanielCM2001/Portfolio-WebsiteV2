@@ -1,5 +1,5 @@
 <template>
-  <div class="px-2 md:px-6">
+  <div class="mx-[2vw] 2xl:mx-[4vw]">
     <nav
       class="nav h-[70px] m-auto flex justify-between items-center"
       :class="{ active: isMobileMenuActive }"
