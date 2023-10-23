@@ -44,7 +44,7 @@
       class="animation sky-inside-world bg-gradient-to-b from-[#000005] from-0% to-[#03a9f4] to-80%"
     >
       <img
-        src="../../assets/img/plane.png"
+        src="../../assets/img/Plane.png"
         alt=""
         class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
       />
