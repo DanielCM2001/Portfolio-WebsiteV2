@@ -235,7 +235,7 @@ export default {
 
 .spacecontainer {
   /* background: linear-gradient(180deg, #151517 45%, #000005 100%); */
-  background: #151517;
+  background: #141414;
   transition: background 0.5s; /* Add a smooth transition for the background change */
 }
 

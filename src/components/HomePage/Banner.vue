@@ -23,7 +23,7 @@
           </div>
 
           <div
-            class="flex flex-col px-10 py-6 space-y-5 InfoBox xs:mr-10 sm:flex-row sm:space-y-0 sm:space-x-5 sm:mr-5 lg:-mr-10 max-w-7xl hide"
+            class="flex flex-col px-10 py-4 space-y-5 InfoBox xs:mr-10 sm:flex-row sm:space-y-0 sm:space-x-5 sm:mr-5 lg:-mr-10 max-w-7xl hide"
           >
             <div
               class="flex flex-row w-full space-x-5 sm:flex-col sm:space-x-0"
