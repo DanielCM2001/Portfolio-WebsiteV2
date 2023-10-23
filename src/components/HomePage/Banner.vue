@@ -63,7 +63,7 @@
         />
 
         <img
-          src="../../assets/img/Avatar92x.png"
+          src="../../assets/img/AvatarBigger.png"
           alt="Banner image"
           class="w-full max-w-[650px] absolute top-0 animateAvatar"
         />
