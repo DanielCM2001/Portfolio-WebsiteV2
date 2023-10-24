@@ -1,6 +1,6 @@
 <script setup>
 import Banner from "../components/HomePage/Banner.vue";
-import SpaceAnimated from "../components/HomePage/SpaceAnimated1.vue";
+import SpaceAnimated from "../components/HomePage/SpaceAnimated.vue";
 import SkyAnimated from "../components/HomePage/SkyAnimated.vue";
 import NewDesignerCoder from "../components/HomePage/NewDesigner&Coder.vue";
 import Skills from "../components/HomePage/Skills.vue";
