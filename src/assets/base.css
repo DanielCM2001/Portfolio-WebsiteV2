@@ -9,10 +9,7 @@
 body {
   min-height: 100vh;
   color: rgba(235, 235, 235, 0.74);
-  background: #141414;
-  /*  transition:
-    color 0.5s,
-    background-color 0.5s; */
+
   line-height: 1.6;
 
   font-family: "Poppins", sans-serif;
@@ -20,6 +17,30 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+html {
+  background: #141414;
+}
+
+body {
+  background: #141414;
+  transition: background-color 0.4s ease-out;
+}
+
+/* body .blue-background {
+  background: #0497d1;
+} */
+
+.blue-background {
+  /* background: linear-gradient(180deg, #141414 50%, #000005 100%); */
+  /* background: #0497d1; */
+  background: #000005;
+  transition: background-color 0.4s ease-out;
+}
+
+/* body {
+  background-color: #141414;
+  transition: background-color 0.5s;
+} */
 
 /* Box on bars */
 .separatorBox {
