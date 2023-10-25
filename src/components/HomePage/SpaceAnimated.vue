@@ -1,13 +1,12 @@
 <template>
   <section class="h-[100vh] flex justify-center items-center newspacecontainer">
     <h1
-      class="animatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[60px] 2xl:text-[70px] z-10"
+      class="hide animatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[60px] 2xl:text-[70px] z-10"
     >
       I enjoy creating things that live
       <br class="hidden lg:flex" />
       on the internet...
       <br />
-      &lt;&gt;
     </h1>
   </section>
 
@@ -16,7 +15,7 @@
   >
     <div class="bottom-0 opacity-0 space"></div>
 
-    <div
+    <!--   <div
       class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full rocket-wrapper"
     >
       <img
@@ -24,7 +23,7 @@
         alt=""
         class="absolute h-[200px] bottom-[0%] z-10 sm:h-[300px] 2xl:h-[350px] rocket-rocket rocket-hide rocket"
       />
-    </div>
+    </div> -->
 
     <div
       class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full world-wrapper animatedWorld"
@@ -37,7 +36,7 @@
     </div>
   </section>
   <section
-    class="animation sky-inside-world bg-gradient-to-b from-[#000005] from-0% to-[#03a9f4] to-80%"
+    class="animation sky-inside-world bg-gradient-to-b from-[#09090d] from-0% to-[#03a9f4] to-80%"
   >
     <img
       src="../../assets/img/Plane.png"
@@ -196,6 +195,45 @@ export default {
       })
     );
 
+    tween.add(
+      TweenLite.to(".space", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
+        onUpdate: function () {
+          if (document.querySelector(".space").style.opacity <= "0.4") {
+            document
+              .querySelector(".world-world")
+              .classList.remove("world-show");
+            document
+              .querySelector(".rocket-rocket")
+              .classList.remove("rocket-show");
+            document.querySelector(".ovni-ovni").classList.remove("ovni-show");
+            document.querySelector(".moon-moon").classList.remove("moon-show");
+          } else {
+            document.querySelector(".world-world").classList.add("world-show");
+            document
+              .querySelector(".rocket-rocket")
+              .classList.add("rocket-show");
+            document.querySelector(".ovni-ovni").classList.add("ovni-show");
+            document.querySelector(".moon-moon").classList.add("moon-show");
+          }
+        },
+      })
+    );
+
+    /*  tween.add(
+      TweenLite.to(".rocket-wrapper", 1, {
+        bezier: flightPath,
+        ease: Linear.easeInOut,
+      })
+    ); */
+
+    tween.add(
+      TweenLite.to(".world-wrapper", 1, {
+        scale: 5,
+        ease: Linear.easeNone,
+      })
+    );
     // Finally, add a fade-in effect for the sky inside the world
     // Create a ScrollMagic controller
     this.controller = new ScrollMagic.Controller();
@@ -203,7 +241,7 @@ export default {
     // Create a ScrollMagic scene
     const spaceScene = new ScrollMagic.Scene({
       triggerElement: ".spacecontainer",
-      duration: 100, // Adjust the duration as needed
+      duration: 2000, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tween)

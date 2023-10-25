@@ -33,7 +33,7 @@ body {
 .blue-background {
   /* background: linear-gradient(180deg, #141414 50%, #000005 100%); */
   /* background: #0497d1; */
-  background: #000005;
+  background: #09090d;
   transition: background-color 0.4s ease-out;
 }
 
