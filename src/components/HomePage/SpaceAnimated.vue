@@ -1,5 +1,5 @@
 <template>
-  <section class="h-[100vh] flex justify-center items-center newspacecontainer">
+  <section class="h-[80vh] flex justify-center items-center newspacecontainer">
     <h1
       class="animatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[60px] 2xl:text-[70px] z-10"
     >
@@ -87,102 +87,6 @@ export default {
 
     const tween = new TimelineLite();
 
-    // First, the flight path animation for the rocket
-    /*   tween.add(
-        TweenLite.to(".animatedText", 1, {
-          opacity: 0,
-          ease: Linear.easeNone,
-          onUpdate: function () {
-            if (document.querySelector(".animatedText").style.opacity == "0") {
-              document.querySelector(".animatedText").classList.add("hidden");
-            } else {
-              document.querySelector(".animatedText").classList.remove("hidden");
-            }
-          },
-        })
-      ); */
-
-    /*     tween.add(
-        TweenLite.to(".spacecontainer", 1, {
-          background: "#000005",
-          ease: Power1.easeInOut,
-        })
-      ); */
-
-    /* tween.add(
-        TweenLite.to(".space", 0, {
-          opacity: 0,
-          ease: Linear.easeNone,
-        })
-      );
-
-      // Opacity gradually decreases to 0 as you scroll down
-      tween.add(
-        TweenLite.to(".space", 1, {
-          opacity: 1,
-          ease: Linear.easeNone,
-          onUpdate: function () {
-            if (document.querySelector(".space").style.opacity <= "0.4") {
-              document
-                .querySelector(".world-world")
-                .classList.remove("world-show");
-              document
-                .querySelector(".rocket-rocket")
-                .classList.remove("rocket-show");
-              document.querySelector(".ovni-ovni").classList.remove("ovni-show");
-              document.querySelector(".moon-moon").classList.remove("moon-show");
-            } else {
-              document.querySelector(".world-world").classList.add("world-show");
-              document
-                .querySelector(".rocket-rocket")
-                .classList.add("rocket-show");
-              document.querySelector(".ovni-ovni").classList.add("ovni-show");
-              document.querySelector(".moon-moon").classList.add("moon-show");
-            }
-          },
-        })
-      );
-
-      tween.add(
-        TweenLite.to(".world-wrapper", 1, {
-          opacity: 1,
-          ease: Linear.easeNone,
-        })
-      );
-
-      tween.add(
-        TweenLite.to(".rocket-wrapper", 1, {
-          bezier: flightPath,
-          ease: Linear.easeInOut,
-        })
-      );
-
-      tween.add(
-        TweenLite.to(".world-wrapper", 1, {
-          scale: 5,
-          ease: Linear.easeNone,
-        })
-      );
-  */
-
-    /*  tween.add(
-        TweenLite.to(".spacecontainer", 1, {
-          ease: Power1.easeInOut,
-          onUpdate: () => {
-            document.body.classList.add(".blue-background");
-          },
-        })
-      ); */
-
-    /*  tween.add(
-        TweenLite.to({}, 1, {
-          ease: Power1.easeInOut,
-          onUpdate: () => {
-            document.body.classList.add("blue-background");
-          },
-        })
-      ); */
-
     tween.add(
       TweenLite.to({}, 1, {
         ease: Power1.easeInOut,
@@ -199,27 +103,59 @@ export default {
       TweenLite.to(".space", 1, {
         opacity: 1,
         ease: Linear.easeNone,
+      })
+    );
+
+    // Finally, add a fade-in effect for the sky inside the world
+    // Create a ScrollMagic controller
+    this.controller = new ScrollMagic.Controller();
+
+    // Create a ScrollMagic scene
+    const spaceScene = new ScrollMagic.Scene({
+      triggerElement: ".spacecontainer",
+      duration: 100, // Adjust the duration as needed
+      triggerHook: 0,
+    })
+      .setTween(tween)
+      /*  .setPin(".spacecontainer") */
+      .addTo(this.controller);
+
+    const tweenSpace = new TimelineLite();
+
+    tweenSpace.add(
+      TweenLite.to(".space", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
         onUpdate: function () {
           if (document.querySelector(".space").style.opacity <= "0.4") {
             document
               .querySelector(".world-world")
               .classList.remove("world-show");
-            document
-              .querySelector(".rocket-rocket")
-              .classList.remove("rocket-show");
-            document.querySelector(".ovni-ovni").classList.remove("ovni-show");
-            document.querySelector(".moon-moon").classList.remove("moon-show");
           } else {
             document.querySelector(".world-world").classList.add("world-show");
-            document
-              .querySelector(".rocket-rocket")
-              .classList.add("rocket-show");
-            document.querySelector(".ovni-ovni").classList.add("ovni-show");
-            document.querySelector(".moon-moon").classList.add("moon-show");
           }
         },
       })
     );
+
+    tweenSpace.add(
+      TweenLite.to(".world-wrapper", 1, {
+        scale: 5,
+        ease: Linear.easeNone,
+      })
+    );
+
+    this.controller = new ScrollMagic.Controller();
+
+    // Create a ScrollMagic scene
+    const newspaceScene = new ScrollMagic.Scene({
+      triggerElement: ".spacecontainer",
+      duration: 1000, // Adjust the duration as needed
+      triggerHook: 0,
+    })
+      .setTween(tweenSpace)
+      .setPin(".spacecontainer")
+      .addTo(this.controller);
 
     /*  tween.add(
       TweenLite.to(".rocket-wrapper", 1, {
@@ -228,25 +164,13 @@ export default {
       })
     ); */
 
-    tween.add(
+    /*     tween.add(
       TweenLite.to(".world-wrapper", 1, {
         scale: 5,
         ease: Linear.easeNone,
       })
-    );
-    // Finally, add a fade-in effect for the sky inside the world
-    // Create a ScrollMagic controller
-    this.controller = new ScrollMagic.Controller();
+    ); */
 
-    // Create a ScrollMagic scene
-    const spaceScene = new ScrollMagic.Scene({
-      triggerElement: ".spacecontainer",
-      duration: 1000, // Adjust the duration as needed
-      triggerHook: 0,
-    })
-      .setTween(tween)
-      .setPin(".spacecontainer")
-      .addTo(this.controller);
     /*====================== Space Section ======================*/
 
     const PlaneflightPath = {
@@ -301,7 +225,7 @@ export default {
   position: absolute;
   height: 100vh;
   width: 100%;
-  animation: pump 4.5s infinite alternate;
+  /*  animation: pump 4.5s infinite alternate; */
 }
 
 @keyframes pump {
