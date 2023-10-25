@@ -14,15 +14,15 @@
         src="../../assets/img/moon.png"
         alt=""
         class="absolute h-[300px] top-[0%] right-0 z-0 sm:h-[400px] 2xl:h-[600px]"
-      />
+      />-->
 
-      <div class="rocket-wrapper absolute top-[60%] z-20">
+      <div class="absolute bottom-0 z-20 rocket-wrapper">
         <img
           src="../../assets/img/Rocket.png"
           class="rocket h-[300px] 2xl:h-[400px]"
           alt=""
         />
-      </div> -->
+      </div>
       <div
         class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full world-wrapper"
       >
@@ -93,13 +93,20 @@ export default {
 
     const tween = new TimelineLite();
 
+    tween.add(
+      TweenLite.to(".spacecontainer", 1, {
+        background: "#000005",
+        ease: Power1.easeInOut,
+      })
+    );
+
     // First, the flight path animation for the rocket
-    /*  tween.add(
+    tween.add(
       TweenLite.to(".rocket", 1, {
         bezier: flightPath,
         ease: Power1.easeInOut,
       })
-    ); */
+    );
 
     // Then, add a scaling effect for the world at the end of the rocket animation
     tween.add(
@@ -117,7 +124,7 @@ export default {
     // Create a ScrollMagic scene
     const scene = new ScrollMagic.Scene({
       triggerElement: ".spacecontainer",
-      duration: 1000, // Adjust the duration as needed
+      duration: 2000, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tween)
@@ -166,8 +173,14 @@ export default {
   overflow: hidden;
 }
 
+/* .spacecontainer {
+  background: linear-gradient(180deg, #141414 20%, #000005 100%);
+} */
+
 .spacecontainer {
-  background: linear-gradient(180deg, #141414 50%, #000005 100%);
+  /* background: linear-gradient(180deg, #151517 45%, #000005 100%); */
+  background: #141414;
+  transition: background 0.5s; /* Add a smooth transition for the background change */
 }
 
 .space {

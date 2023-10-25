@@ -5,7 +5,7 @@
     >
       <div class="bottom-0 opacity-0 space"></div>
 
-      <img
+      <!--       <img
         src="../../assets/img/Ovni.gif"
         alt=""
         class="absolute top-0 left-0 z-30 ovni-hide ovni-ovni h-[150px] sm:h-[250px] 2xl:h-[300px]"
@@ -15,7 +15,7 @@
         src="../../assets/img/MoonWithoutStars.png"
         alt=""
         class="absolute h-[300px] top-0 right-0 z-30 sm:h-[400px] 2xl:h-[600px] moon-hide moon-moon"
-      />
+      /> -->
 
       <div
         class="absolute bottom-0 left-0 z-30 flex items-center justify-center min-w-full min-h-full rocket-wrapper"
@@ -43,10 +43,16 @@
         <br class="hidden lg:flex" />
         on the internet...
       </h1>
-      <h1
+      <!--  <h1
         class="animatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px] lg:text-[30px] 2xl:text-[40px] z-10"
       >
         &lt;Wrapper&gt;
+      </h1> -->
+
+      <h1
+        class="secondanimatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[20px] lg:text-[40px] 2xl:text-[50px] opacity-0"
+      >
+        &lt;/Wrapper&gt;
       </h1>
     </section>
     <section
@@ -107,6 +113,13 @@ export default {
       TweenLite.to(".animatedText", 1, {
         opacity: 0,
         ease: Linear.easeNone,
+        onUpdate: function () {
+          if (document.querySelector(".animatedText").style.opacity == "0") {
+            document.querySelector(".animatedText").classList.add("hidden");
+          } else {
+            document.querySelector(".animatedText").classList.remove("hidden");
+          }
+        },
       })
     );
 
@@ -148,6 +161,12 @@ export default {
             document.querySelector(".moon-moon").classList.add("moon-show");
           }
         },
+      })
+    );
+    tween.add(
+      TweenLite.to(".secondanimatedText", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
       })
     );
 
@@ -240,7 +259,7 @@ export default {
 }
 
 .space {
-  background-image: url("../../assets/img/StarsBackground.png");
+  background-image: url("../../assets/img/NewSpaceBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
