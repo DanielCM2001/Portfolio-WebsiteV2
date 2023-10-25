@@ -1,7 +1,7 @@
 <template>
   <section class="h-[100vh] flex justify-center items-center newspacecontainer">
     <h1
-      class="hide animatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[60px] 2xl:text-[70px] z-10"
+      class="animatedText text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[60px] 2xl:text-[70px] z-10"
     >
       I enjoy creating things that live
       <br class="hidden lg:flex" />
@@ -241,7 +241,7 @@ export default {
     // Create a ScrollMagic scene
     const spaceScene = new ScrollMagic.Scene({
       triggerElement: ".spacecontainer",
-      duration: 2000, // Adjust the duration as needed
+      duration: 1000, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tween)
