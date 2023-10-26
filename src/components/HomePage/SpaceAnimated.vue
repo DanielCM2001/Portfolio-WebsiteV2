@@ -150,7 +150,7 @@ export default {
     // Create a ScrollMagic scene
     const newspaceScene = new ScrollMagic.Scene({
       triggerElement: ".spacecontainer",
-      duration: 1000, // Adjust the duration as needed
+      duration: 1500, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tweenSpace)
@@ -190,6 +190,12 @@ export default {
       TweenLite.to(".plane", 1, {
         bezier: PlaneflightPath,
         ease: Power1.easeInOut,
+        onUpdate: () => {
+          document.body.classList.remove("blue-background");
+        },
+        onReverseComplete: () => {
+          document.body.classList.add("blue-background");
+        },
       })
     );
 
