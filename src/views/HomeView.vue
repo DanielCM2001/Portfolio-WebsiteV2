@@ -14,13 +14,14 @@ import FooterVue from "../components/Footer/Footer.vue";
   <main>
     <Banner />
     <SpaceAnimated />
-    <SkyAnimated />
-    <NewDesignerCoder />
     <Skills />
+    <!-- <SkyAnimated /> 
+    <NewDesignerCoder />
+    
     <Portfolio />
     <EndWrapper />
     <MadeWithVue />
-    <FooterVue />
+    <FooterVue />-->
   </main>
 </template>
 
