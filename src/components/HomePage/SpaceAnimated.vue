@@ -167,7 +167,24 @@ export default {
 }
 </style>
  -->
-
+<!-- <section class="flex flex-col items-end justify-center text-white">
+    <div class="h-[100vh] flex items-end justify-center w-full relative">
+      <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">First phrase</p>
+    </div>
+    <div class="h-[100vh] flex items-end justify-center w-full">
+      <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">Second phrase</p>
+    </div>
+  </section> -->
+<!--  const tweenClouds = new TimelineLite(); tweenClouds.add(
+TweenLite.to(".allClouds", 1, { opacity: 1, ease: Linear.easeNone, }) );
+tweenClouds.add( TweenLite.to(".cloudOne", 1, { transform: "translate(-50%, 10%)
+translate3d(0px, 0px, 0px) scale(1.5)", ease: Linear.easeNone, }) );
+tweenClouds.add( TweenLite.to(".cloudTwo", 1, { transform: "translate(50%, 10%)
+translate3d(0px, 0px, 0px) scale(1.5)", ease: Linear.easeNone, }) );
+this.controller = new ScrollMagic.Controller(); // Create a ScrollMagic scene
+const sceneCloud = new ScrollMagic.Scene({ triggerElement: ".skycontainer",
+duration: "100%", // Adjust the duration as needed triggerHook: 0, })
+.setTween(tweenClouds) .addTo(this.controller);  -->
 <template>
   <section
     class="h-[100vh] relative flex flex-col items-center justify-center overflow-hidden spacecontainer"
@@ -194,25 +211,30 @@ export default {
   </section>
 
   <!-- ================================== -->
-
   <div class="h-[25vh]"></div>
-  <!-- <section class="flex flex-col items-end justify-center text-white">
-    <div class="h-[100vh] flex items-end justify-center w-full relative">
-      <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">First phrase</p>
-    </div>
-    <div class="h-[100vh] flex items-end justify-center w-full">
-      <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">Second phrase</p>
-    </div>
-  </section> -->
+  <!-- ================================== -->
+
   <section
     class="flex flex-col items-end justify-center text-white skycontainer"
   >
-    <div class="h-[100vh] flex items-end justify-center w-full relative">
+    <!-- First Phrase comes here -->
+    <div
+      class="h-[100vh] flex items-end justify-center w-full relative animation overflow-hidden"
+    >
+      <img
+        src="../../assets/img/Plane.png"
+        alt=""
+        class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
+      />
       <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">First phrase</p>
     </div>
+
+    <!-- Second Phrase comes here -->
     <div class="h-[100vh] flex items-end justify-center w-full relative">
       <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">Second phrase</p>
     </div>
+
+    <!-- Clouds come here -->
     <img
       src="../../assets/img/CloudOne.png"
       alt="Fixed Image"
@@ -222,18 +244,14 @@ export default {
       src="../../assets/img/CloudTwo.png"
       alt="Fixed Image"
       class="fixed bottom-0 right-0 opacity-0 cloudTwo allClouds"
-      style="
-        transform: translate(0%, 50%) translate3d(0px, 0px, 0px) scale(1.05017);
-      "
     />
   </section>
-
+  <!-- ================================== -->
   <div class="gap h-[100vh]"></div>
+  <!-- ================================== -->
 </template>
 
 <script>
-import { onUpdated } from "vue";
-
 export default {
   data() {
     return {
@@ -334,7 +352,9 @@ export default {
       .setTween(tweenSkyBG)
       .addTo(this.controller);
 
-    /*  const tweenClouds = new TimelineLite();
+    /* ======================================================================== */
+
+    const tweenClouds = new TimelineLite();
 
     tweenClouds.add(
       TweenLite.to(".allClouds", 1, {
@@ -344,17 +364,8 @@ export default {
     );
 
     tweenClouds.add(
-      TweenLite.to(".cloudOne", 1, {
-        transform: "translate(0%, 50%) translate3d(0px, 0px, 0px) scale(1)",
-        transform: "translate(-50%, 10%) translate3d(0px, 0px, 0px) scale(1.5)",
-        ease: Linear.easeNone,
-      })
-    );
-
-    tweenClouds.add(
-      TweenLite.to(".cloudTwo", 1, {
-        transform: "translate(0%, 50%) translate3d(0px, 0px, 0px) scale(1)",
-        transform: "translate(50%, 10%) translate3d(0px, 0px, 0px) scale(1.5)",
+      TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
+        transform: "translate(-10%, 50%) translate3d(0px, 0px, 0px) scale(1.5)",
         ease: Linear.easeNone,
       })
     );
@@ -368,83 +379,43 @@ export default {
       triggerHook: 0,
     })
       .setTween(tweenClouds)
-      .addTo(this.controller); */
-    /* ======================================================================== */
-    const tweenClouds = new TimelineLite();
-
-    tweenClouds.add(
-      TweenLite.to(".allClouds", 1, {
-        opacity: 1,
-        ease: Linear.easeNone,
-      })
-    );
-
-    tweenClouds.add(
-      TweenLite.to(".cloudOne", 1, {
-        x: "-50%", // Move the cloud to the left by 50%
-        scale: 1.5, // Scale the cloud
-        ease: Linear.easeNone,
-        scrub: 20, // Use scrub for smooth scrolling
-      })
-    );
-
-    this.controller = new ScrollMagic.Controller();
-
-    // Create a ScrollMagic scene for .skycontainer
-    const sceneCloud = new ScrollMagic.Scene({
-      triggerElement: ".skycontainer",
-      duration: "100%", // Adjust the duration as needed
-      triggerHook: 0,
-    })
-      .setTween(tweenClouds)
       .addTo(this.controller);
 
-    /* ======================================================================== */
+    /*====================== Space Section ======================*/
 
-    /* const fixedImage = document.getElementById("fixedImage");
-    const tweenlmao = new TimelineLite();
+    const PlaneflightPath = {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        {
+          x: window.innerWidth,
+          y: 0,
+        },
+      ],
+    };
 
-    tweenlmao.add(
-      TweenLite.to(fixedImage, 0, {
-        opacity: 0,
-        ease: Linear.easeNone,
-      })
-    );
+    const tweenPlane = new TimelineLite();
 
-    tweenlmao.add(
-      TweenLite.to(fixedImage, 0, {
-        opacity: 1,
-        ease: Linear.easeNone,
-      })
-    );
-
-    tweenlmao.add(
-      TweenLite.to({}, 1, {
+    tweenPlane.add(
+      TweenLite.to(".plane", 1, {
+        bezier: PlaneflightPath,
         ease: Power1.easeInOut,
-        onUpdate: () => {
-          document.body.classList.add("skySpace-background");
-          fixedImage.classList.add("fixed");
-        },
-        onReverseComplete: () => {
-          document.body.classList.remove("skySpace-background");
-          fixedImage.classList.remove("fixed");
-        },
       })
     );
 
-    this.controller = new ScrollMagic.Controller();
+    const controllerPlane = new ScrollMagic.Controller();
 
-    const spScene = new ScrollMagic.Scene({
-      triggerElement: ".skycontainer",
-      duration: 2000, // Adjust the duration as needed
+    const scenePlane = new ScrollMagic.Scene({
+      triggerElement: ".animation",
+      duration: 1000,
       triggerHook: 0,
     })
-      .setTween(tweenlmao)
-      .addTo(this.controller); */
+      .setTween(tweenPlane)
+      .addTo(controllerPlane);
 
-    /* ======================================= */
+    /* ======================================================================== */
 
-    /* const newtween = new TimelineLite();
+    /*     const newtween = new TimelineLite();
 
     newtween.add(
       TweenLite.to({}, 1, {
@@ -460,14 +431,22 @@ export default {
       })
     );
 
+    newtween.add(
+      TweenLite.to(".allClouds", 1, {
+        opacity: 0,
+        ease: Linear.easeNone,
+      })
+    );
+
     this.controller = new ScrollMagic.Controller();
 
     const newScene = new ScrollMagic.Scene({
       triggerElement: ".gap",
-      duration: 100, // Adjust the duration as needed
+      duration: 400, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(newtween)
+      .setPin(".gap")
       .addTo(this.controller); */
   },
   beforeDestroy() {
