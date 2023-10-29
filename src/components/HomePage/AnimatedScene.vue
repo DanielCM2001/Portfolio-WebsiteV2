@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import SpaceScene from "./AnimatedScenes/SpaceScene.vue";
-import SkyScene from "./AnimatedScenes/SkyScene.vue";
+import SpaceScene from "./AnimatedScenes/SpaceAnimated.vue";
+import SkyScene from "./AnimatedScenes/SkyAnimated.vue";
 
 export default {
   setup() {

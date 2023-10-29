@@ -15,13 +15,21 @@
     </div>
 
     <h1
-      class="text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[70px] 2xl:text-[80px] z-10"
+      class="text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[3rem] 2xl:text-[4rem] z-10"
     >
       I enjoy creating things that live
       <br class="hidden lg:flex" />
       on the internet...
     </h1>
   </section>
+
+  <!--  <div class="h-[70vh] relative flex items-end justify-center">
+    <h1
+      class="text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[70px] 2xl:text-[80px]"
+    >
+      &lt;Wrapper&gt;
+    </h1>
+  </div> -->
 </template>
 
 <script>
@@ -38,10 +46,12 @@ export default {
       TweenLite.to({}, 1, {
         ease: Power1.easeInOut,
         onUpdate: () => {
+          document.body.classList.remove("skySpace-background");
           document.body.classList.add("darkspace-background");
         },
         onReverseComplete: () => {
           document.body.classList.remove("darkspace-background");
+          document.body.classList.remove("skySpace-background");
         },
       })
     );
@@ -94,7 +104,7 @@ export default {
     // Create a ScrollMagic scene
     const spaceWorldScene = new ScrollMagic.Scene({
       triggerElement: ".spacecontainer",
-      duration: 1000, // Adjust the duration as needed
+      duration: 1500, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tweenSpaceWorld)

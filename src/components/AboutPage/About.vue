@@ -104,6 +104,10 @@ export default {
   data() {
     return {};
   },
+  beforeUnmount() {
+    document.body.classList.remove("darkspace-background");
+    document.body.classList.remove("skySpace-background");
+  },
 };
 </script>
 

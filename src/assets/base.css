@@ -33,8 +33,12 @@ body {
 }
 
 .skySpace-background {
-  background: #03a9f4;
+  background: #0497d1;
   transition: background-color 0.4s ease-out;
+}
+
+.allClouds {
+  transition: opacity 0.4s ease-out;
 }
 
 /* .sky-background {
