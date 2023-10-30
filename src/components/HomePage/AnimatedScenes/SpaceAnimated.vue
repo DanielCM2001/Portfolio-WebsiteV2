@@ -23,12 +23,25 @@
     </h1>
   </section>
   <section
-    class="relative h-[100vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
+    class="relative h-[70vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
   >
     <img
       src="../../../assets/img/Plane.png"
       alt=""
       class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
+    />
+
+    <img
+      src="../../../assets/img/CloudOne.png"
+      alt="Fixed Image"
+      class="fixed bottom-0 left-0 z-10 opacity-0 cloudOne allClouds"
+      style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
+    />
+    <img
+      src="../../../assets/img/CloudTwo.png"
+      alt="Fixed Image"
+      class="fixed bottom-0 right-0 z-10 opacity-0 cloudTwo allClouds"
+      style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
     />
   </section>
 </template>
@@ -113,6 +126,51 @@ export default {
     })
       .setTween(tweenPlanePath)
       .addTo(controllerPlanePath);
+
+    /* ========================================= */
+    const tweenCloudOpacity = new TimelineLite();
+
+    tweenCloudOpacity.add(
+      TweenLite.to(".allClouds", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
+      })
+    );
+
+    const controllerCloudOpacity = new ScrollMagic.Controller();
+
+    const sceneCloudOpacity = new ScrollMagic.Scene({
+      triggerElement: ".atmosphere-container",
+      duration: 400,
+      triggerHook: 0,
+    })
+      .setTween(tweenCloudOpacity)
+      .addTo(controllerCloudOpacity);
+
+    const tweenClouds = new TimelineLite();
+
+    /* tweenClouds.add(
+      TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
+        transform: "translate(-10%, 50%) translate3d(0px, 0px, 0px) scale(1.5)",
+        ease: Linear.easeNone,
+      })
+    ); */
+    tweenClouds.add(
+      TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
+        transform: "translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1.5)",
+        ease: Linear.easeNone,
+      })
+    );
+
+    const controllerCloudPath = new ScrollMagic.Controller();
+
+    const sceneCloud = new ScrollMagic.Scene({
+      triggerElement: ".atmosphere-container",
+      duration: "300%",
+      triggerHook: 0,
+    })
+      .setTween(tweenClouds)
+      .addTo(controllerCloudPath);
   },
   beforeUnmount() {
     document.body.classList.remove("darkspace-background");
