@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center justify-center w-full">
+  <div class="flex items-center justify-center w-full bg-[#141414]">
     <!-- flex flex-col justify-center items-center -->
     <div
       class="w-full xs:w-9/12 md:w-full md:mx-[15vw] static-container justify-center items-center flex flex-col"

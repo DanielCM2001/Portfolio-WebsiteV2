@@ -254,7 +254,7 @@ export default {
 
 <template>
   <section
-    class="relative flex items-center justify-center min-h-screen text-white SkyAnimated"
+    class="relative flex items-center justify-center min-h-screen text-white SkyAnimated bg-[#03A9F4]"
   >
     <div class="z-0 Sky-Background"></div>
     <div class="z-10 flex flex-col mx-4 2xl:mt-40">
@@ -347,9 +347,9 @@ export default {
 } */
 
 .Sky-Background {
-  background-image: url("../../../assets/img/Sky.png");
+  /*  background-image: url("../../../assets/img/Sky.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
   position: absolute;
   height: 100vh;
   width: 100%;

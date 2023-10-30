@@ -295,6 +295,8 @@ export default {
 }
 </style>
  -->
+
+<!-- Last Space -->
 <template>
   <section
     class="h-[100vh] relative flex flex-col items-center justify-center overflow-hidden spacecontainer"
@@ -319,6 +321,15 @@ export default {
       on the internet...
     </h1>
   </section>
+  <section
+    class="relative h-[100vh] overflow-hidden sky-inside-world bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
+  >
+    <!--  <img
+      src="../../../assets/img/Plane.png"
+      alt=""
+      class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
+    /> -->
+  </section>
 </template>
 
 <script>
@@ -329,44 +340,6 @@ export default {
     };
   },
   mounted() {
-    const tweenSpaceBackground = new TimelineLite();
-
-    /*  tweenSpaceBackground.add(
-      TweenLite.to({}, 1, {
-        ease: Power1.easeInOut,
-        onUpdate: () => {
-          document.body.classList.add("darkspace-background");
-        },
-        onReverseComplete: () => {
-          document.body.classList.remove("darkspace-background");
-        },
-      })
-    ); */
-
-    tweenSpaceBackground.add(
-      TweenLite.to(".spacecontainer", 1, {
-        ease: Power1.easeInOut,
-        onUpdate: () => {
-          document.body.classList.add("darkspace-background");
-        },
-        onReverseComplete: () => {
-          document.body.classList.remove("darkspace-background");
-        },
-      })
-    );
-
-    this.controller = new ScrollMagic.Controller();
-
-    const spaceBackgroundScene = new ScrollMagic.Scene({
-      triggerElement: ".spacecontainer",
-      duration: 100, // Adjust the duration as needed
-      triggerHook: 0,
-    })
-      .setTween(tweenSpaceBackground)
-      .setPin(".spacecontainer")
-      .addTo(this.controller);
-
-    /* =================== World Animated Scene ========================= */
     const tweenSpaceWorld = new TimelineLite();
 
     tweenSpaceWorld.add(
@@ -376,17 +349,43 @@ export default {
       })
     );
 
+    /* tweenSpaceWorld.add(
+      TweenLite.to(".space", 1, {
+        opacity: 1,
+        ease: Linear.easeNone,
+        onUpdate: function () {
+          if (document.querySelector(".space").style.opacity != "0") {
+            document.body.classList.add("darkspace-background");
+            document.querySelector(".world-world").classList.add("world-show");
+          } else {
+            document.body.classList.remove("darkspace-background");
+            document
+              .querySelector(".world-world")
+              .classList.remove("world-show");
+          }
+        },
+        onComplete: () => {
+          document.body.classList.remove("darkspace-background");
+        },
+        onReverseComplete: () => {
+          document.body.classList.add("darkspace-background");
+        },
+      })
+    ); */
+
     tweenSpaceWorld.add(
       TweenLite.to(".space", 1, {
         opacity: 1,
         ease: Linear.easeNone,
         onUpdate: function () {
-          if (document.querySelector(".space").style.opacity <= "0.4") {
+          if (document.querySelector(".space").style.opacity != "0") {
+            document.body.classList.add("darkspace-background");
+            document.querySelector(".world-world").classList.add("world-show");
+          } else {
+            document.body.classList.remove("darkspace-background");
             document
               .querySelector(".world-world")
               .classList.remove("world-show");
-          } else {
-            document.querySelector(".world-world").classList.add("world-show");
           }
         },
       })
@@ -410,6 +409,10 @@ export default {
       .setTween(tweenSpaceWorld)
       .setPin(".spacecontainer")
       .addTo(this.controller);
+  },
+  beforeUnmount() {
+    document.body.classList.remove("darkspace-background");
+    document.body.classList.remove("skySpace-background");
   },
   beforeDestroy() {
     if (this.controller) {
