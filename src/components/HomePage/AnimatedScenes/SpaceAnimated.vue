@@ -31,7 +31,7 @@
       class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
     />
 
-    <img
+    <!--  <img
       src="../../../assets/img/CloudOne.png"
       alt="Fixed Image"
       class="fixed bottom-0 left-0 z-10 opacity-0 cloudOne allClouds"
@@ -42,7 +42,7 @@
       alt="Fixed Image"
       class="fixed bottom-0 right-0 z-10 opacity-0 cloudTwo allClouds"
       style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
-    />
+    /> -->
   </section>
 </template>
 
@@ -128,7 +128,7 @@ export default {
       .addTo(controllerPlanePath);
 
     /* ========================================= */
-    const tweenCloudOpacity = new TimelineLite();
+    /*  const tweenCloudOpacity = new TimelineLite();
 
     tweenCloudOpacity.add(
       TweenLite.to(".allClouds", 1, {
@@ -149,12 +149,6 @@ export default {
 
     const tweenClouds = new TimelineLite();
 
-    /* tweenClouds.add(
-      TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
-        transform: "translate(-10%, 50%) translate3d(0px, 0px, 0px) scale(1.5)",
-        ease: Linear.easeNone,
-      })
-    ); */
     tweenClouds.add(
       TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
         transform: "translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1.5)",
@@ -170,7 +164,7 @@ export default {
       triggerHook: 0,
     })
       .setTween(tweenClouds)
-      .addTo(controllerCloudPath);
+      .addTo(controllerCloudPath); */
   },
   beforeUnmount() {
     document.body.classList.remove("darkspace-background");
