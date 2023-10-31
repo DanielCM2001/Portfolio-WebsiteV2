@@ -5,20 +5,76 @@
   <section
     class="relative flex flex-col items-center justify-center text-white skycontainer"
   >
-    <!-- First Phrase comes here -->
+    <!--  First Phrase comes here
     <div
       class="h-[100vh] flex items-center justify-center w-full relative overflow-hidden bg-[#03a9f4]"
     >
       <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">First phrase</p>
     </div>
 
-    <!-- Second Phrase comes here -->
+    Second Phrase comes here
     <div
       class="h-[100vh] flex items-center justify-center w-full relative bg-gradient-to-b from-[#03a9f4] from-0% to-[#03a9f4] to-80%"
     >
       <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">Second phrase</p>
+    </div> -->
+
+    <!-- First Phrase comes here -->
+    <div
+      class="h-[100vh] flex items-center justify-center w-full relative overflow-hidden bg-[#03a9f4]"
+    >
+      <div class="z-30 flex flex-col mx-4">
+        <p class="text-[20px] lg:text-[25px] 2xl:text-[35px] opacity-85">
+          My interest in Web Development started back in 2017
+        </p>
+        <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">
+          When I decided to try making a <br class="hidden lg:flex" />
+          website for a school project
+        </p>
+        <p class="text-[20px] lg:text-[25px] 2xl:text-[35px] opacity-85">
+          Turns out making a school project taught me a lot about web
+        </p>
+      </div>
     </div>
 
+    <!--  Second Phrase comes here -->
+    <div
+      class="h-[100vh] flex items-center justify-center w-full relative bg-gradient-to-b from-[#03a9f4] from-0% to-[#03a9f4] to-80%"
+    >
+      <div
+        class="z-30 flex flex-col items-stretch justify-center w-full pl-5 pr-5 max-w-screen-2xl md:flex-row md:space-x-10"
+      >
+        <!-- Left Side -->
+        <div
+          class="flex flex-col items-center justify-center w-full text-center"
+        >
+          <p class="text-[70px] lg:text-[90px] 2xl:text-[120px] hide">
+            Designer
+          </p>
+
+          <p class="text-xl lg:text-2xl 2xl:text-3xl hide">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, re et
+            dolore magna aliqua. Ut enim ad minim veniam, qu
+          </p>
+        </div>
+
+        <!-- Right Side -->
+        <div
+          class="flex flex-col items-center justify-center w-full text-center"
+        >
+          <p class="text-[70px] lg:text-[90px] 2xl:text-[120px] hide">
+            Coder++
+          </p>
+
+          <p class="text-xl lg:text-2xl 2xl:text-3xl hide">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, re et
+            dolore magna aliqua. Ut enim ad minim veniam, qu
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Parts -->
     <img
       src="../../../assets/img/HouseBalloonsFirst.png"
       alt=""
@@ -29,13 +85,13 @@
       src="../../../assets/img/CloudOne.png"
       alt="Fixed Image"
       class="fixed bottom-0 left-0 z-10 opacity-0 cloudOne"
-      style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
+      style="transform: translate(0%, 70%) translate3d(0px, 0px, 0px) scale(1)"
     />
     <img
       src="../../../assets/img/CloudTwo.png"
       alt="Fixed Image"
       class="fixed bottom-0 right-0 z-10 opacity-0 cloudTwo"
-      style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
+      style="transform: translate(0%, 70%) translate3d(0px, 0px, 0px) scale(1)"
     />
   </section>
   <!-- ================================== -->
