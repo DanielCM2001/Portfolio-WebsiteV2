@@ -22,31 +22,17 @@
       on the internet...
     </h1>
   </section>
-  <div
-    class="h-[25vh] bg-gradient-to-b from-[#070707] from-0% to-[#070707] to-80% hidden"
-  ></div>
-  <!--  <section
-    class="relative h-[5vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#070707] to-80%"
-  > -->
-  <!--  <img
+  <!-- bg-gradient-to-b from-[#070707] from-0% to-[#0497d1] to-80% -->
+  <!-- bg-gradient-to-b from-[#000005] from-0% to-[#03a9f4] to-80% -->
+  <section
+    class="relative h-[100vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
+  >
+    <img
       src="../../../assets/img/Plane.png"
       alt=""
       class="plane top-[50%] left-0 absolute h-[100px] lg:h-[150px] 2xl:h-[200px]"
-    /> -->
-
-  <!--  <img
-      src="../../../assets/img/CloudOne.png"
-      alt="Fixed Image"
-      class="fixed bottom-0 left-0 z-10 opacity-0 cloudOne allClouds"
-      style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
     />
-    <img
-      src="../../../assets/img/CloudTwo.png"
-      alt="Fixed Image"
-      class="fixed bottom-0 right-0 z-10 opacity-0 cloudTwo allClouds"
-      style="transform: translate(0%, 60%) translate3d(0px, 0px, 0px) scale(1)"
-    /> -->
-  <!-- </section> -->
+  </section>
 </template>
 
 <script>
@@ -66,51 +52,12 @@ export default {
       TweenLite.to(".space", 1, {
         opacity: 1,
         ease: Linear.easeNone,
-        /* onUpdate: function () {
-          if (document.querySelector(".space").style.opacity != "0") {
-            document.body.classList.add("darkspace-background");
-            document.querySelector(".world-world").classList.add("world-show");
-          } else {
-            document.body.classList.remove("darkspace-background");
-            document
-              .querySelector(".world-world")
-              .classList.remove("world-show");
-          }
-        }, */
-        /* onUpdate: function () {
-          if (document.querySelector(".space").style.opacity != "0") {
-            document.body.classList.add("darkspace-background");
-            document.body.classList("darkspace-background").style.background =
-              "#0497d1";
-
-            document.querySelector(".world-world").classList.add("world-show");
-          } else {
-            document.body.classList.remove("darkspace-background");
-            document
-              .querySelector(".world-world")
-              .classList.remove("world-show");
-          }
-        }, */
         onUpdate: function () {
-          if (document.querySelector(".space").style.opacity !== "0") {
-            // Add the class to the body
+          if (document.querySelector(".space").style.opacity != "0") {
             document.body.classList.add("darkspace-background");
-
-            /*   const darkspaceBackground = document.querySelector(
-              ".darkspace-background"
-            );
-            darkspaceBackground.style.backgroundColor = "#0497d1"; */
-
             document.querySelector(".world-world").classList.add("world-show");
           } else {
-            // Remove the class from the body
-            const darkspaceBackground = document.querySelector(
-              ".darkspace-background"
-            );
-            darkspaceBackground.style.backgroundColor = null;
-
             document.body.classList.remove("darkspace-background");
-
             document
               .querySelector(".world-world")
               .classList.remove("world-show");
@@ -139,7 +86,7 @@ export default {
       .addTo(controllerSpace);
     /*====================== Plane Section ======================*/
 
-    /* const planeflightPath = {
+    const planeflightPath = {
       curviness: 1.25,
       autoRotate: true,
       values: [
@@ -167,46 +114,9 @@ export default {
       triggerHook: 0,
     })
       .setTween(tweenPlanePath)
-      .addTo(controllerPlanePath); */
+      .addTo(controllerPlanePath);
 
     /* ========================================= */
-    /*  const tweenCloudOpacity = new TimelineLite();
-
-    tweenCloudOpacity.add(
-      TweenLite.to(".allClouds", 1, {
-        opacity: 1,
-        ease: Linear.easeNone,
-      })
-    );
-
-    const controllerCloudOpacity = new ScrollMagic.Controller();
-
-    const sceneCloudOpacity = new ScrollMagic.Scene({
-      triggerElement: ".atmosphere-container",
-      duration: 400,
-      triggerHook: 0,
-    })
-      .setTween(tweenCloudOpacity)
-      .addTo(controllerCloudOpacity);
-
-    const tweenClouds = new TimelineLite();
-
-    tweenClouds.add(
-      TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
-        transform: "translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1.5)",
-        ease: Linear.easeNone,
-      })
-    );
-
-    const controllerCloudPath = new ScrollMagic.Controller();
-
-    const sceneCloud = new ScrollMagic.Scene({
-      triggerElement: ".atmosphere-container",
-      duration: "300%",
-      triggerHook: 0,
-    })
-      .setTween(tweenClouds)
-      .addTo(controllerCloudPath); */
   },
   beforeUnmount() {
     document.body.classList.remove("darkspace-background");
