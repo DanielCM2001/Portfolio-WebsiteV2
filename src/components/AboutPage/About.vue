@@ -104,9 +104,9 @@ export default {
   data() {
     return {};
   },
-  beforeUnmount() {
+  /*  beforeUnmount() {
     document.body.classList.remove("darkspace-background");
-  },
+  }, */
 };
 </script>
 
