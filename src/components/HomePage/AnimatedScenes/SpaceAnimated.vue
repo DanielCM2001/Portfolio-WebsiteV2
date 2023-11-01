@@ -22,10 +22,11 @@
       on the internet...
     </h1>
   </section>
-  <!-- bg-gradient-to-b from-[#070707] from-0% to-[#0497d1] to-80% -->
-  <!-- bg-gradient-to-b from-[#000005] from-0% to-[#03a9f4] to-80% -->
+  <div
+    class="h-[25vh] bg-gradient-to-b from-[#070707] from-0% to-[#070707] to-80% hidden"
+  ></div>
   <section
-    class="relative h-[100vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
+    class="relative h-[50vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
   >
     <img
       src="../../../assets/img/Plane.png"
@@ -52,15 +53,38 @@ export default {
       TweenLite.to(".space", 1, {
         opacity: 1,
         ease: Linear.easeNone,
+
         onUpdate: function () {
-          if (document.querySelector(".space").style.opacity != "0") {
+          const spaceElement = document.querySelector(".space");
+          const darkspaceBackgroundElement = document.querySelector(
+            ".darkspace-background"
+          );
+          const worldWorldElement = document.querySelector(".world-world");
+
+          if (spaceElement && spaceElement.style.opacity !== "0") {
+            // Add the class to the body
             document.body.classList.add("darkspace-background");
-            document.querySelector(".world-world").classList.add("world-show");
+
+            // Change the background color of the class
+            if (darkspaceBackgroundElement) {
+              darkspaceBackgroundElement.style.backgroundColor = "#070707"; // Set the desired background color
+            }
+
+            if (worldWorldElement) {
+              worldWorldElement.classList.add("world-show");
+            }
           } else {
+            // Remove the class from the body
             document.body.classList.remove("darkspace-background");
-            document
-              .querySelector(".world-world")
-              .classList.remove("world-show");
+
+            // Remove the background color style
+            if (darkspaceBackgroundElement) {
+              darkspaceBackgroundElement.style.backgroundColor = null;
+            }
+
+            if (worldWorldElement) {
+              worldWorldElement.classList.remove("world-show");
+            }
           }
         },
       })
@@ -115,8 +139,6 @@ export default {
     })
       .setTween(tweenPlanePath)
       .addTo(controllerPlanePath);
-
-    /* ========================================= */
   },
   beforeUnmount() {
     document.body.classList.remove("darkspace-background");

@@ -106,7 +106,7 @@ export default {
     const tweenCloudsPlaneOpacity = new TimelineLite();
 
     tweenCloudsPlaneOpacity.add(
-      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon"], 1, {
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon"], 0, {
         opacity: 0,
         ease: Linear.easeNone,
       })
