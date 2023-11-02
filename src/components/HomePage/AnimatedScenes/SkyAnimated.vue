@@ -85,8 +85,16 @@
       src="../../../assets/img/CloudOne.png"
       alt="Fixed Image"
       class="fixed bottom-0 left-0 z-10 opacity-0 cloudOne"
-      style="transform: translate(0%, 70%) translate3d(0px, 0px, 0px) scale(1)"
+      style="transform: translate(0%, 40%) translate3d(0px, 0px, 0px) scale(1)"
     />
+
+    <img
+      src="../../../assets/img/TestingGrass.png"
+      alt="Fixed Image"
+      class="fixed bottom-0 z-20 blur-[2px] opacity-0 grass"
+      style="transform: translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1)"
+    />
+
     <img
       src="../../../assets/img/CloudTwo.png"
       alt="Fixed Image"
@@ -106,14 +114,14 @@ export default {
     const tweenCloudsPlaneOpacity = new TimelineLite();
 
     tweenCloudsPlaneOpacity.add(
-      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon"], 0, {
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon", ".grass"], 0, {
         opacity: 0,
         ease: Linear.easeNone,
       })
     );
 
     tweenCloudsPlaneOpacity.add(
-      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon"], 1, {
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon", ".grass"], 1, {
         opacity: 1,
         ease: Linear.easeNone,
       })
@@ -180,13 +188,46 @@ export default {
       .addTo(controllerBalloon);
     /* ============================================ */
 
-    const tweenClouds = new TimelineLite();
+    const tweenClouds = new TimelineLite({ stagger: 0.1 });
 
-    tweenClouds.add(
-      TweenLite.to([".cloudOne", ".cloudTwo"], 1, {
+    /*  tweenClouds.add(
+      TweenLite.to([".cloudOne", ".cloudTwo", ".grass"], 1, {
         transform: "translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1.5)",
         ease: Linear.easeNone,
       })
+    ); */
+
+    /*  tweenClouds.to([".cloudOne", ".cloudTwo"], 1, {
+      transform: "translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1.5)",
+    });
+    tweenClouds.to(
+      ".grass",
+      1,
+      { transform: "translate(0%, 10%) translate3d(0px, 0px, 0px) scale(2)" },
+      "0"
+    ); */
+
+    /*  gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.create({
+      trigger: ".holdMe",
+      animation: gsap.fromTo(".resizeMe", { scale: 1 }, { scale: 10 }),
+      pin: true,
+      start: "center center",
+      end: "bottom top",
+      scrub: 1, // I like the 1 sec delay, set to true for exact anime on scroll
+      //markers: true,
+    }); */
+
+    tweenClouds.to([".cloudOne", ".cloudTwo"], 1, {
+      transform: "translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1.5)",
+    });
+
+    tweenClouds.to(
+      ".grass",
+      1,
+      { transform: "translate(0%, 10%) translate3d(0px, 0px, 0px) scale(2)" },
+      "0"
     );
 
     const controllerCloudPath = new ScrollMagic.Controller();
@@ -203,7 +244,7 @@ export default {
     const changetweenCloudsPlaneOpacity = new TimelineLite();
 
     changetweenCloudsPlaneOpacity.add(
-      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon"], 1, {
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon", ".grass"], 1, {
         opacity: 0,
         ease: Linear.easeNone,
       })

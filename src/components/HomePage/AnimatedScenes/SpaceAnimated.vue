@@ -23,7 +23,7 @@
     </h1>
   </section>
   <div
-    class="h-[25vh] bg-gradient-to-b from-[#070707] from-0% to-[#070707] to-80% hidden"
+    class="h-[1vh] bg-gradient-to-b from-[#070707] from-0% to-[#070707] to-80% hidden"
   ></div>
   <section
     class="relative h-[50vh] overflow-hidden atmosphere-container bg-gradient-to-b from-[#070707] from-0% to-[#03a9f4] to-80%"
