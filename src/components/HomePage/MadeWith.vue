@@ -140,7 +140,7 @@ export default {
 <!-- ================================================================== -->
 <template>
   <div
-    class="flex flex-col items-center justify-center w-full sm:flex-row py-20"
+    class="flex flex-col items-center justify-center w-full sm:flex-row py-20 bg-[#141414]"
   >
     <div
       class="absolute left-0 flex items-center justify-start w-full opacity-10 xl:opacity-100"
@@ -148,13 +148,13 @@ export default {
       <img
         src="../../assets/img/BannerRectangle2.png"
         alt="Banner image"
-        class="w-full max-w-xs xs:max-w-sm"
+        class="w-full max-w-xs xs:max-w-sm lg:max-w-md"
       />
 
       <img
         src="../../assets/img/Avatar2Changed.png"
         alt="Banner image"
-        class="w-full max-w-[250px] xs:max-w-[300px] absolute"
+        class="w-full max-w-[250px] xs:max-w-[300px] lg:max-w-[350px] absolute"
       />
     </div>
 

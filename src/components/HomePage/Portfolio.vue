@@ -38,7 +38,7 @@ export default {
  -->
 
 <template>
-  <div class="flex items-center justify-center w-full">
+  <div class="flex items-center justify-center w-full bg-[#141414]">
     <div
       class="w-full xs:w-9/12 md:w-full md:mx-[10vw] xl:mx-[20vw] static-container justify-center text-center items-center flex flex-col"
     >

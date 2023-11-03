@@ -19,13 +19,12 @@ import FooterVue from "../components/Footer/Footer.vue";
     <!--    <NewDesignerCoder /> -->
     <Skills />
     <!--   -->
-    <!-- <SkyAnimated /> 
-  
-    
+    <!-- <SkyAnimated /> -->
+
     <Portfolio />
     <EndWrapper />
     <MadeWithVue />
-    <FooterVue />-->
+    <FooterVue />
   </main>
 </template>
 
