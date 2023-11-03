@@ -102,7 +102,7 @@ export default {
     // Create a ScrollMagic scene
     const sceneSpace = new ScrollMagic.Scene({
       triggerElement: ".space-container",
-      duration: 2000, // Adjust the duration as needed
+      duration: 1500, // Adjust the duration as needed
       triggerHook: 0,
     })
       .setTween(tweenSpace)
@@ -110,28 +110,35 @@ export default {
       .addTo(controllerSpace);
     /*====================== Plane Section ======================*/
 
-    let tween_Plane_Path = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".atmosphere-container",
-        scrub: 2, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
-      },
-    });
+    const planeflightPath = {
+      curviness: 1.25,
+      autoRotate: true,
+      values: [
+        {
+          x: window.innerWidth,
+          y: 0,
+        },
+      ],
+    };
 
-    tween_Plane_Path.to(".plane", {
-      motionPath: {
-        path: [
-          { x: 50, y: 0 },
-          { x: 100, y: 0 },
-          { x: 150, y: 0 },
-          { x: 200, y: 0 },
-          { x: 250, y: 0 },
-          { x: 300, y: 0 },
-          { x: window.innerWidth, y: 0 },
-        ],
-        curviness: 1.25,
-        autoRotate: true,
-      },
-    });
+    const tweenPlanePath = new TimelineLite();
+
+    tweenPlanePath.add(
+      TweenLite.to(".plane", 1, {
+        bezier: planeflightPath,
+        ease: Power1.easeInOut,
+      })
+    );
+
+    const controllerPlanePath = new ScrollMagic.Controller();
+
+    const scenePlanePath = new ScrollMagic.Scene({
+      triggerElement: ".atmosphere-container",
+      duration: 1000,
+      triggerHook: 0,
+    })
+      .setTween(tweenPlanePath)
+      .addTo(controllerPlanePath);
   },
   beforeUnmount() {
     document.body.classList.remove("darkspace-background");

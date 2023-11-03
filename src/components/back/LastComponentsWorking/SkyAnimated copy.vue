@@ -61,7 +61,7 @@
     <img
       src="../../../assets/img/HouseBalloonsFirst.png"
       alt=""
-      class="fixed top-[60%] right-[10%] h-[150px] sm:h-[250px] 2xl:h-[600px] balloon z-20 opacity-0"
+      class="fixed bottom-[0%] right-20 h-[150px] sm:h-[250px] 2xl:h-[600px] balloon z-20 opacity-0"
     />
 
     <img
@@ -72,24 +72,17 @@
     />
 
     <img
+      src="../../../assets/img/TestingGrass.png"
+      alt="Fixed Image"
+      class="fixed bottom-0 z-20 blur-[2px] opacity-0 grass"
+      style="transform: translate(0%, 0%) translate3d(0px, 0px, 0px) scale(1)"
+    />
+
+    <img
       src="../../../assets/img/CloudTwo.png"
       alt="Fixed Image"
       class="fixed bottom-0 right-0 z-10 opacity-0 cloudTwo"
       style="transform: translate(0%, 80%) translate3d(0px, 0px, 0px) scale(1)"
-    />
-
-    <img
-      src="../../../assets/img/LeftMountain.png"
-      alt="Fixed Image"
-      class="fixed bottom-0 z-20 blur-[2px] opacity-0 left-0 grassOne"
-      style="transform: translate(0%, 30%) translate3d(0px, 0px, 0px) scale(1)"
-    />
-
-    <img
-      src="../../../assets/img/RightMountain.png"
-      alt="Fixed Image"
-      class="fixed bottom-0 z-20 blur-[2px] opacity-0 right-0 grassTwo"
-      style="transform: translate(0%, 20%) translate3d(0px, 0px, 0px) scale(1)"
     />
   </section>
 
@@ -105,23 +98,15 @@ export default {
     const tween_Layers_Opacity_True = new TimelineLite();
 
     tween_Layers_Opacity_True.add(
-      TweenLite.to(
-        [".cloudOne", ".cloudTwo", ".balloon", ".grassOne", ".grassTwo"],
-        0,
-        {
-          opacity: 0,
-        }
-      )
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon", ".grass"], 0, {
+        opacity: 0,
+      })
     );
 
     tween_Layers_Opacity_True.add(
-      TweenLite.to(
-        [".cloudOne", ".cloudTwo", ".balloon", ".grassOne", ".grassTwo"],
-        1,
-        {
-          opacity: 1,
-        }
-      )
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon", ".grass"], 1, {
+        opacity: 1,
+      })
     );
 
     const controller_Layers_Opacity_True = new ScrollMagic.Controller();
@@ -154,9 +139,8 @@ export default {
           { x: 0, y: -100 },
           { x: 0, y: -150 },
           { x: 0, y: -200 },
-          { x: 0, y: -250 },
           { x: -100, y: -300 },
-          { x: -200, y: -350 },
+          { x: -200, y: -400 },
           { x: -300, y: -window.innerHeight },
         ],
         curviness: 1.25,
@@ -177,16 +161,9 @@ export default {
       },
     });
 
-    tween_Mountain_Clouds.to(".grassOne", {
-      transform: "translate(-80%, 10%) translate3d(0px, 0px, 0px) scale(1.5)",
+    tween_Mountain_Clouds.to(".grass", {
+      transform: "translate(0%, 10%) translate3d(0px, 0px, 0px) scale(2)",
     });
-    tween_Mountain_Clouds.to(
-      ".grassTwo",
-      {
-        transform: "translate(80%, 10%) translate3d(0px, 0px, 0px) scale(1.5)",
-      },
-      "0"
-    );
     tween_Mountain_Clouds.to(
       [".cloudOne", ".cloudTwo"],
       {
@@ -198,14 +175,9 @@ export default {
     const tween_Layers_Opacity_False = new TimelineLite();
 
     tween_Layers_Opacity_False.add(
-      TweenLite.to(
-        [".cloudOne", ".cloudTwo", ".balloon", ".grassOne", ".grassTwo"],
-        1,
-        {
-          opacity: 0,
-          onComplete: goToNextSection,
-        }
-      )
+      TweenLite.to([".cloudOne", ".cloudTwo", ".balloon", ".grass"], 1, {
+        opacity: 0,
+      })
     );
 
     const controller_Layers_Opacity_False = new ScrollMagic.Controller();
@@ -219,15 +191,6 @@ export default {
       .setTween(tween_Layers_Opacity_False)
       .setPin(".gap")
       .addTo(controller_Layers_Opacity_False);
-
-    function goToNextSection() {
-      // Transition to the next section (e.g., when the plane zoom-in animation is complete)
-      const nextSection = document.querySelector(".skill-container");
-      window.scrollTo({
-        top: nextSection.offsetTop,
-        behavior: "smooth",
-      });
-    }
   },
 };
 </script>
