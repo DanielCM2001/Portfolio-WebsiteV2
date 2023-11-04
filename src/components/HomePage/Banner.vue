@@ -15,8 +15,14 @@
               applications and experiences on the web.
             </p>
 
-            <div class="flex flex-row space-x-5 text-lg sm:space-x-10 hide">
+            <!--  <div class="flex flex-row space-x-5 text-lg sm:space-x-10 hide">
               <button class="px-8 py-3 primaryButtons">Download</button>
+              <button class="px-5 py-3 primaryButtons">xd</button>
+              <button class="px-5 py-3 primaryButtons">xd</button>
+            </div> -->
+
+            <div class="flex flex-row space-x-5 text-lg sm:space-x-10 hide">
+              <button class="px-5 py-3 primaryButtons">xd</button>
               <button class="px-5 py-3 primaryButtons">xd</button>
               <button class="px-5 py-3 primaryButtons">xd</button>
             </div>
@@ -102,7 +108,7 @@ export default {
 }
 .InfoBox {
   border-radius: 30px;
-  background: #151417;
+  background: #141414;
   box-shadow:
     0px 5px 5px 0px #8c5dc9 inset,
     0px 4px 50px 0px #c940eb;

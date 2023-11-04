@@ -130,7 +130,7 @@ export default {
     const Scene_Layers_Opacity_True = new ScrollMagic.Scene({
       triggerElement: ".skycontainer",
       duration: 200, // Adjust the duration as needed
-      triggerHook: 0.5,
+      triggerHook: 0.4,
     })
       .setTween(tween_Layers_Opacity_True)
       .addTo(controller_Layers_Opacity_True);
