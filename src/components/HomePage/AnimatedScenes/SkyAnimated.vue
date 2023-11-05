@@ -1,20 +1,35 @@
 <template>
   <section
-    class="relative flex flex-col items-center justify-center text-white skycontainer"
+    class="relative flex flex-col items-center justify-center text-[#dbdbdb] skycontainer"
   >
     <!-- First Phrase comes here -->
     <div
       class="h-[100vh] flex items-center justify-center w-full relative overflow-hidden bg-[#03a9f4]"
     >
       <div class="z-30 flex flex-col mx-4">
-        <p class="text-[20px] lg:text-[25px] 2xl:text-[35px] opacity-85">
+        <p class="text-[20px] lg:text-[25px] 2xl:text-[25px] opacity-85">
           My interest in Web Development started back in 2017
         </p>
-        <p class="text-[30px] lg:text-[45px] 2xl:text-[65px]">
-          When I decided to try making a <br class="hidden lg:flex" />
-          website for a school project
+        <!--  <p class="text-[30px] lg:text-[45px] 2xl:text-[65px] font-bold">
+          When I decided to
+          <span class="text-[#682ae9] font-bold">
+            try making a <br class="hidden lg:flex" />
+            website for a school project</span
+          >
+        </p> -->
+        <!-- a9337c -->
+        <!-- cf3e98 -->
+        <!-- a921ff -->
+        <p class="text-[30px] lg:text-[45px] 2xl:text-[65px] font-bold">
+          When I decided to
+          <span class="text-[#C3023A] font-bold">
+            make a <br class="hidden lg:flex" />
+            website for a school project</span
+          >
         </p>
-        <p class="text-[20px] lg:text-[25px] 2xl:text-[35px] opacity-85">
+
+        <!-- When I decided to make a website for a school project -->
+        <p class="text-[20px] lg:text-[25px] 2xl:text-[25px] opacity-85">
           Turns out making a school project taught me a lot about web
         </p>
       </div>
@@ -31,7 +46,7 @@
         <div
           class="flex flex-col items-center justify-center w-full text-center"
         >
-          <p class="text-[70px] lg:text-[90px] 2xl:text-[120px] hide">
+          <p class="text-[70px] lg:text-[90px] 2xl:text-[120px] font-bold hide">
             Designer
           </p>
 
@@ -45,7 +60,7 @@
         <div
           class="flex flex-col items-center justify-center w-full text-center"
         >
-          <p class="text-[70px] lg:text-[90px] 2xl:text-[120px] hide">
+          <p class="text-[70px] lg:text-[90px] 2xl:text-[120px] font-bold hide">
             Coder++
           </p>
 
@@ -61,7 +76,7 @@
     <img
       src="../../../assets/img/HouseBalloonsFirst.png"
       alt=""
-      class="fixed top-[60%] right-[10%] h-[150px] sm:h-[250px] 2xl:h-[600px] balloon z-20 opacity-0"
+      class="fixed top-[60%] right-[0%] h-[150px] sm:h-[250px] 2xl:h-[600px] balloon z-20 opacity-0"
     />
 
     <img
@@ -155,9 +170,9 @@ export default {
           { x: 0, y: -150 },
           { x: 0, y: -200 },
           { x: 0, y: -250 },
-          { x: -100, y: -300 },
-          { x: -200, y: -350 },
-          { x: -300, y: -window.innerHeight },
+          { x: -50, y: -300 },
+          { x: -100, y: -350 },
+          { x: -200, y: -window.innerHeight },
         ],
         curviness: 1.25,
         autoRotate: false,

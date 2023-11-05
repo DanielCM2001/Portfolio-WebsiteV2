@@ -78,11 +78,16 @@ export default {
 
 <style scoped>
 .box {
-  border-radius: 40px;
+  /*  border-radius: 40px;
   background: #c940eb;
   box-shadow:
     0px 3px 3px 0px #8c5dc9 inset,
-    0px 4px 40px 0px #c940eb;
+    0px 4px 40px 0px #c940eb; */
+  border-radius: 40px;
+  background: #c3023a;
+  box-shadow:
+    0px 3px 3px 0px #c3023a inset,
+    0px 4px 40px 0px #c3023a;
 }
 
 /* class="relative p-[calc(50vh-3.5rem)] m-0 lg:m-0 xl:m-25vw min-h-screen perspective-900 perspective-origin-center lg:perspective-origin-50-top"> */

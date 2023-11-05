@@ -10,9 +10,16 @@ body {
   min-height: 100vh;
   color: rgba(235, 235, 235, 0.74);
 
-  line-height: 1.6;
+  line-height: 1.5;
 
-  font-family: "Poppins", sans-serif;
+  /*   font-family: "Poppins", sans-serif; */
+  font-family:
+    Roboto Mono,
+    monospace;
+
+  display: block;
+  /*   font-size: 4rem; */
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
