@@ -63,7 +63,7 @@
         class="relative flex items-center justify-end w-full mt-20 md:mt-0 lg:w-1/2"
       >
         <img
-          src="../../assets/img/BannerRectangle.png"
+          src="../../assets/img/BannerRectangleRed.png"
           alt="Banner image"
           class="w-full max-w-2xl"
         />
