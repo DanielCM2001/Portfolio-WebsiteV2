@@ -39,6 +39,11 @@ body {
   transition: background-color 0.4s ease-out;
 }
 
+.default-background {
+  background: #141414;
+  transition: background-color 0.4s ease-out;
+}
+
 .skySpace-background {
   background: #0497d1;
   transition: background-color 0.4s ease-out;

@@ -1,6 +1,6 @@
 <template>
   <section>
-    <SpaceScene />
+    <!-- <SpaceScene /> -->
     <SkyScene />
   </section>
 </template>

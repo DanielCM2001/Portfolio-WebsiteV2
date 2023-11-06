@@ -9,7 +9,7 @@
         >
           <!-- Fix later the Hide class and JS sense It's overlapping the navbar -->
           <div class="mt-20 space-y-10 md:mt-24 hide">
-            <h1 class="text-5xl">Hi there! I'm Daniel</h1>
+            <h1 class="text-4xl">Hi there! I'm Daniel</h1>
             <p class="text-2xl">
               A front-end Web Developer passionate about creating interactive
               applications and experiences on the web.
@@ -101,24 +101,24 @@ export default {
 
 .primaryButtons {
   border-radius: 20px;
-  background: #c940eb;
+  background: #c3023a;
   box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
+    0px 5px 5px 0px #c3023a inset,
+    0px 4px 50px 0px #c3023a;
 }
 .InfoBox {
   border-radius: 30px;
   background: #141414;
   box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
+    0px 5px 5px 0px #c3023a inset,
+    0px 4px 50px 0px #c3023a;
 }
 
 .separatorBar {
   border-radius: 20px;
-  background: #c940eb;
+  background: #c3023a;
   box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
+    0px 5px 5px 0px #c3023a inset,
+    0px 4px 50px 0px #c3023a;
 }
 </style>

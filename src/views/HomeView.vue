@@ -17,10 +17,10 @@ import FooterVue from "../components/Footer/Footer.vue";
     <Banner />
     <AnimatedScene />
     <!--    <NewDesignerCoder /> -->
-    <Skills />
+
     <!--   -->
     <!-- <SkyAnimated /> -->
-
+    <Skills />
     <Portfolio />
     <EndWrapper />
     <MadeWithVue />
