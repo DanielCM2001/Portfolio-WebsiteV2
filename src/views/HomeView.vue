@@ -17,8 +17,6 @@ import FooterVue from "../components/Footer/Footer.vue";
     <Banner />
     <AnimatedScene />
     <!--    <NewDesignerCoder /> -->
-
-    <!--   -->
     <!-- <SkyAnimated /> -->
     <Skills />
     <Portfolio />

@@ -1,23 +1,27 @@
 <!-- <template>
-  <div class="mx-[2vw] 2xl:mx-[4vw]">
-    <nav
-      class="nav h-[70px] m-auto flex justify-between items-center"
-      :class="{ active: isMobileMenuActive }"
-    >
-      <a href="/" class="text-4xl">&lt;Dev&gt;</a>
-      <button @click="toggleMobileMenu" class="hamburger"></button>
-      <ul class="flex text-2xl list-none gap-11 nav-list">
-        <li>
-          <router-link to="/" @click="toggleMobileMenu">.daniel()</router-link>
-        </li>
-        <li>
-          <router-link to="/about" @click="toggleMobileMenu"
-            >.about()</router-link
-          >
-        </li>
-        <li><a href="#">.email()</a></li>
-      </ul>
-    </nav>
+  <div class="w-full fixed-navbar">
+    <div class="mx-[2vw] 2xl:mx-[4vw]">
+      <nav
+        class="nav h-[70px] m-auto flex justify-between items-center"
+        :class="{ active: isMobileMenuActive }"
+      >
+        <a href="/" class="text-4xl">&lt;Dev&gt;</a>
+        <button @click="toggleMobileMenu" class="hamburger"></button>
+        <ul class="flex text-2xl list-none gap-11 nav-list">
+          <li>
+            <router-link to="/" @click="toggleMobileMenu"
+              >.daniel()</router-link
+            >
+          </li>
+          <li>
+            <router-link to="/about" @click="toggleMobileMenu"
+              >.about()</router-link
+            >
+          </li>
+          <li><a href="#">.email()</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </template>
 
@@ -129,7 +133,7 @@ export default {
  -->
 
 <template>
-  <div class="w-full fixed-navbar">
+  <div class="w-full fixed z-50 navbar-container">
     <div class="mx-[2vw] 2xl:mx-[4vw]">
       <nav
         class="nav h-[70px] m-auto flex justify-between items-center"
@@ -171,6 +175,14 @@ export default {
 </script>
 
 <style scoped>
+.navbar-container {
+  /* 0497d1 */
+  background: linear-gradient(180deg, #141414 3rem, rgba(4, 151, 209, 0));
+}
+
+.navbar-container-sky {
+  background: linear-gradient(180deg, #0497d1 3rem, rgba(4, 151, 209, 0));
+}
 .hamburger {
   display: none;
   border: none;
@@ -203,7 +215,7 @@ export default {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #c940eb;
+    background: #c3023a;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
 

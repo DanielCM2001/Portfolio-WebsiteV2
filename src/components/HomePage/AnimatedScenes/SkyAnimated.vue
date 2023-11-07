@@ -155,6 +155,7 @@ export default {
         markers: true,
       });
     }); */
+    const navbar = document.querySelector(".navbar-container");
 
     ScrollTrigger.create({
       trigger: ".skycontainer",
@@ -164,20 +165,26 @@ export default {
         /*  body.classList.remove(previousClassName);
         body.classList.add(className); */
         document.body.classList.add("skySpace-background");
+        /*  navbar.classList.remove("navbar-container"); */
+        navbar.classList.add("navbar-container-sky");
       },
       onEnterBack: () => {
         /* body.classList.remove(previousClassName);
         body.classList.remove(nextClassName);
         body.classList.add(className); */
         document.body.classList.add("skySpace-background");
+        /*   navbar.classList.remove("navbar-container"); */
+        navbar.classList.add("navbar-container-sky");
       },
       onLeaveBack: () => {
         /*   body.classList.remove(className); */
         document.body.classList.remove("skySpace-background");
+        navbar.classList.remove("navbar-container-sky");
       },
       onLeave: () => {
         /*   body.classList.remove(className); */
         document.body.classList.remove("skySpace-background");
+        navbar.classList.remove("navbar-container-sky");
       },
       /* markers: true, */
     });
@@ -279,7 +286,8 @@ export default {
           { x: 0, y: -250 },
           { x: -50, y: -300 },
           { x: -100, y: -350 },
-          { x: -200, y: -window.innerHeight },
+          /*  { x: -200, y: -window.innerHeight }, */
+          { x: -window.innerWidth, y: -500 },
         ],
         curviness: 1.25,
         autoRotate: false,
