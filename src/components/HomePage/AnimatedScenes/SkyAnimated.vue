@@ -1,6 +1,5 @@
 <template>
   <!-- <div class="h-[25vh] newskycontainer"></div> -->
-
   <section
     class="relative flex flex-col items-center justify-center text-[#dbdbdb] skycontainer"
   >

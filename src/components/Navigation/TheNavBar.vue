@@ -133,13 +133,13 @@ export default {
  -->
 
 <template>
-  <div class="w-full fixed z-50 navbar-container">
-    <div class="mx-[2vw] 2xl:mx-[4vw]">
+  <div class="fixed z-50 w-full navbar-container">
+    <div class="mx-[2vw] 2xl:mx-[6vw]">
       <nav
         class="nav h-[70px] m-auto flex justify-between items-center"
         :class="{ active: isMobileMenuActive }"
       >
-        <a href="/" class="text-4xl">&lt;Dev&gt;</a>
+        <a href="/" class="text-4xl">&lt;dev&gt;</a>
         <button @click="toggleMobileMenu" class="hamburger"></button>
         <ul class="flex text-2xl list-none gap-11 nav-list">
           <li>

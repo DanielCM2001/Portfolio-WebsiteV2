@@ -5,7 +5,7 @@
         class="flex flex-col w-full md:items-center md:justify-center lg:w-1/2"
       >
         <div
-          class="w-full pl-5 pr-5 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5 mt-20 md:mt-28"
+          class="w-full pl-5 pr-5 mt-20 space-y-20 2xl:space-y-40 md:pr-0 lg:w-4/5 lg:pl-0 2xl:w-3/5 md:mt-28"
         >
           <!-- Fix later the Hide class and JS sense It's overlapping the navbar -->
           <div class="mt-20 space-y-10 md:mt-24 hide">
