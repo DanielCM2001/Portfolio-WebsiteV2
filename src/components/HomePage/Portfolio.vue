@@ -38,51 +38,53 @@ export default {
  -->
 
 <template>
-  <div class="flex items-center justify-center w-full bg-[#141414]">
+  <div class="flex items-center justify-center w-full">
     <div
-      class="w-full xs:w-9/12 md:w-full md:mx-[10vw] xl:mx-[20vw] static-container justify-center text-center items-center flex flex-col"
+      class="w-full xs:w-9/12 md:w-full md:mx-[5vw] 2xl:mx-[15vw] static-container justify-center text-center items-center flex flex-col"
     >
       <div class="py-10">
         <!-- <p class="text-[40px] lg:text-[70px] 2xl:text-[60px]">What I did?</p> -->
-        <p class="text-[40px] lg:text-[70px] 2xl:text-[80px] glowLabel">
-          Portfolio
-        </p>
+        <!--  <p class="text-[40px] lg:text-[70px] glowLabel">Portfolio</p>
         <p class="text-[20px] lg:text-[50px] 2xl:text-[40px]">
           Some of my projects...
-        </p>
+        </p> -->
+
+        <p class="text-[30px]">What I did?</p>
+        <p class="text-[45px] glowLabel">Portfolio</p>
+        <p class="text-[45px]">Some of my projects...</p>
       </div>
 
       <div
-        class="grid w-full gap-y-[20px] md:grid-cols-4 lg:grid-cols-8 md:grid-rows-2 md:gap-x-[20px] px-10 py-6"
+        class="grid w-full gap-y-[20px] md:grid-cols-4 lg:grid-cols-8 md:grid-rows-2 md:gap-x-[40px] px-10"
       >
         <div
-          class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] md:col-span-2 md:row-span-2"
+          class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] 2xl:h-[500px] md:col-span-2 md:row-span-2"
         >
           <div class="front"></div>
         </div>
         <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
+          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
         >
           <div class="front"></div>
         </div>
         <div
-          class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] md:col-span-2 md:row-span-2"
+          class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] 2xl:h-[500px] md:col-span-2 md:row-span-2"
         >
           <div class="front"></div>
         </div>
         <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
+          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
         >
           <div class="front"></div>
         </div>
 
         <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
+          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
         >
           <div class="front"></div>
         </div>
         <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] md:col-span-2"
+          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
         >
           <div class="front"></div>
         </div>
@@ -113,8 +115,8 @@ export default {
   border-radius: 40px;
   background: #151417;
   box-shadow:
-    0px 3px 3px 0px #8c5dc9 inset,
-    0px 4px 40px 0px #c940eb;
+    0px 3px 3px 0px #c3023a inset,
+    0px 4px 40px 0px #c3023a;
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
@@ -152,7 +154,7 @@ export default {
   perspective-origin: 50% 50vh;
 }
 .glowLabel {
-  color: #c940eb;
-  text-shadow: 0px 4px 50px #c940eb;
+  color: #c3023a;
+  text-shadow: 0px 4px 50px #c3023a;
 }
 </style>
