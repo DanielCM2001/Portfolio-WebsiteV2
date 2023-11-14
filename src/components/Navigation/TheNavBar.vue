@@ -133,7 +133,7 @@ export default {
  -->
 
 <template>
-  <div class="fixed z-50 w-full text-2xl navbar-container">
+  <div class="fixed z-50 w-full text-[22px] navbar-container">
     <div class="mx-[2vw] 2xl:mx-[6vw]">
       <nav
         class="nav h-[70px] m-auto flex justify-between items-center"
