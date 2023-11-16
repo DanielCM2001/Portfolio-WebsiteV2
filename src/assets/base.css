@@ -15,28 +15,26 @@ body {
   font-family:
     Roboto Mono,
     monospace;
-
   /* font-family: "Poppins", sans-serif; */
   /*   font-family: "Acme", sans-serif; */
 
   display: block;
-  /*   font-size: 4rem; */
-
+  color: #dbdbdb;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 html {
-  background: #141414;
+  background: #131313;
   scroll-behavior: smooth;
 }
 
 body {
-  background: #141414;
+  background: #131313;
   transition: background-color 0.4s ease-out;
 }
 
-.darkspace-background {
+/* .darkspace-background {
   background: #070707;
   transition: background-color 0.4s ease-out;
 }
@@ -44,7 +42,7 @@ body {
 .default-background {
   background: #141414;
   transition: background-color 0.4s ease-out;
-}
+} */
 
 .skySpace-background {
   background: #0497d1;
