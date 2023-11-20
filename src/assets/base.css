@@ -12,11 +12,12 @@ body {
 
   line-height: 1.5;
 
-  font-family:
+  /* font-family:
     Roboto Mono,
-    monospace;
+    monospace; */
   /* font-family: "Poppins", sans-serif; */
   /*   font-family: "Acme", sans-serif; */
+  font-family: "Bebas Neue", sans-serif;
 
   display: block;
   color: #dbdbdb;
@@ -32,6 +33,10 @@ html {
 body {
   background: #131313;
   transition: background-color 0.4s ease-out;
+}
+
+.secondaryFont {
+  font-family: "Aclonica", sans-serif;
 }
 
 /* .darkspace-background {
