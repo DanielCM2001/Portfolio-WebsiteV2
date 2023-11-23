@@ -142,13 +142,15 @@ export default {
   <div
     class="fixed z-50 w-full text-[24px] 3xl:text-[1.4vw] text-[#F5EEE6] navbar-container"
   >
-    <div class="mx-[4vw] 2xl:mx-[6vw] hideNavBar">
+    <!--  2xl:mx-[6vw] -->
+    <div class="mx-[4vw] 2xl:mx-[4vw] hideNavBar">
       <nav
         class="nav h-[80px] m-auto flex justify-between items-center"
         :class="{ active: isMobileMenuActive }"
       >
-        <div class="text-[18px] 3xl:text-[0.8vw] space-x-10">
+        <div class="text-[18px] 3xl:text-[0.8vw] space-x-10 flex flex-row">
           <a href="/" class="secondaryFont">Daniel Martins</a>
+          <!-- Change the fonts -->
           <a href="/" class="hidden lg:block secondaryFont"
             >DEVELOPER, UX/UI DESIGNER</a
           >
@@ -186,10 +188,14 @@ export default {
 <style scoped>
 .navbar-container {
   background: linear-gradient(180deg, #131313 3rem, rgba(4, 151, 209, 0));
+  /*  background-color: transparent;
+  backdrop-filter: blur(2px); */
 }
 
 .navbar-container-sky {
   background: linear-gradient(180deg, #0497d1 3rem, rgba(4, 151, 209, 0));
+  /*  background-color: transparent;
+  backdrop-filter: blur(2px); */
 }
 .hamburger {
   display: none;
