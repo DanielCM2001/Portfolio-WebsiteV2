@@ -15,7 +15,7 @@
     </div>
 
     <h1
-      class="text-center text-[#c3023a] [text-shadow:0_4px_50px_rgba(195,2,58,1)] text-[40px] lg:text-[70px] font-bold z-10"
+      class="text-center text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[40px] lg:text-[70px] 2xl:text-[80px] z-10"
     >
       I enjoy creating things that live
       <br class="hidden lg:flex" />

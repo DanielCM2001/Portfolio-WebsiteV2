@@ -10,27 +10,44 @@ body {
   min-height: 100vh;
   color: rgba(235, 235, 235, 0.74);
 
-  line-height: 1.6;
+  line-height: 1.5;
 
-  font-family: "Poppins", sans-serif;
+  /* font-family:
+    Roboto Mono,
+    monospace; */
+  /* font-family: "Poppins", sans-serif; */
+  /*   font-family: "Acme", sans-serif; */
+  font-family: "Bebas Neue", sans-serif;
+
+  display: block;
+  color: #dbdbdb;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 html {
-  background: #141414;
+  background: #131313;
   scroll-behavior: smooth;
 }
 
 body {
-  background: #141414;
+  background: #131313;
   transition: background-color 0.4s ease-out;
 }
 
-.darkspace-background {
+.secondaryFont {
+  font-family: "Aclonica", sans-serif;
+}
+
+/* .darkspace-background {
   background: #070707;
   transition: background-color 0.4s ease-out;
 }
+
+.default-background {
+  background: #141414;
+  transition: background-color 0.4s ease-out;
+} */
 
 .skySpace-background {
   background: #0497d1;

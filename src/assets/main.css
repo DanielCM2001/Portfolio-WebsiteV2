@@ -34,3 +34,38 @@
   filter: blur(0);
   transform: translateX(0);
 }
+
+/* ======================================= */
+
+.hideBannerTitle {
+  opacity: 0;
+  rotate: 15deg;
+  transform: translateY(80%);
+  transition: all 0.5s;
+}
+
+.showBannerTitle {
+  opacity: 1;
+  rotate: 0deg;
+  transform: translateY(0);
+}
+
+.hideBannerSubtitle {
+  opacity: 0;
+  transform: translateY(10%);
+  transition: all 0.5s;
+}
+
+.showBannerSubtitle {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.hideNavBar {
+  transform: translateY(-100%);
+  transition: all 0.5s;
+}
+
+.showNavBar {
+  transform: translateY(0%);
+}

@@ -1,13 +1,10 @@
 <template>
-  <!-- <div class="h-[25vh] newskycontainer"></div> -->
   <section
     class="relative flex flex-col items-center justify-center text-[#dbdbdb] skycontainer"
   >
     <!-- First Phrase comes here -->
-    <!-- bg-[#03a9f4] -->
-    <div class="h-[100vh] newskycontainer"></div>
     <div
-      class="h-[100vh] flex items-center justify-center w-full relative overflow-hidden"
+      class="h-[100vh] flex items-center justify-center w-full relative overflow-hidden bg-[#03a9f4]"
     >
       <div class="z-30 flex flex-col mx-4">
         <p class="text-[20px] lg:text-[25px] 2xl:text-[25px] opacity-85">
@@ -39,8 +36,9 @@
     </div>
 
     <!--  Second Phrase comes here -->
-    <!-- bg-gradient-to-b from-[#03a9f4] from-0% to-[#03a9f4] to-80% -->
-    <div class="h-[100vh] flex items-center justify-center w-full relative">
+    <div
+      class="h-[100vh] flex items-center justify-center w-full relative bg-gradient-to-b from-[#03a9f4] from-0% to-[#03a9f4] to-80%"
+    >
       <div
         class="z-30 flex flex-col items-stretch justify-center w-full pl-5 pr-5 max-w-screen-2xl md:flex-row md:space-x-10"
       >
@@ -111,84 +109,14 @@
   </section>
 
   <!-- The "Gap" div below is used to make the Animated Layers below disappear by changing their opacity back to 0 -->
-  <!-- bg-gradient-to-b from-[#03a9f4] from-0% to-[#66B7DC] to-80% -->
-  <div class="gap h-[100vh]"></div>
+  <div
+    class="gap h-[100vh] bg-gradient-to-b from-[#03a9f4] from-0% to-[#66B7DC] to-80%"
+  ></div>
 </template>
 
 <script>
 export default {
   mounted() {
-    /* const sections = gsap.utils.toArray(".section");
-    const body = document.querySelector("body");
-
-    sections.forEach((element, index) => {
-      console.log("height", element.offsetHeight);
-      let className = element.dataset.name;
-      let previousClassName;
-      let nextClassName;
-      if (index > 0) {
-        previousClassName = sections[index - 1].dataset.name;
-      }
-      if (index < sections.length - 1) {
-        nextClassName = sections[index + 1].dataset.name;
-      }
-      ScrollTrigger.create({
-        trigger: element,
-        start: "top bottom",
-        end: "bottom top",
-        onEnter: () => {
-          body.classList.remove(previousClassName);
-          body.classList.add(className);
-        },
-        onEnterBack: () => {
-          body.classList.remove(previousClassName);
-          body.classList.remove(nextClassName);
-          body.classList.add(className);
-        },
-        onLeaveBack: () => {
-          body.classList.remove(className);
-        },
-        onLeave: () => {
-          body.classList.remove(className);
-        },
-        markers: true,
-      });
-    }); */
-    const navbar = document.querySelector(".navbar-container");
-
-    ScrollTrigger.create({
-      trigger: ".skycontainer",
-      start: "top top",
-      end: "bottom top",
-      onEnter: () => {
-        /*  body.classList.remove(previousClassName);
-        body.classList.add(className); */
-        document.body.classList.add("skySpace-background");
-        /*  navbar.classList.remove("navbar-container"); */
-        navbar.classList.add("navbar-container-sky");
-      },
-      onEnterBack: () => {
-        /* body.classList.remove(previousClassName);
-        body.classList.remove(nextClassName);
-        body.classList.add(className); */
-        document.body.classList.add("skySpace-background");
-        /*   navbar.classList.remove("navbar-container"); */
-        navbar.classList.add("navbar-container-sky");
-      },
-      onLeaveBack: () => {
-        /*   body.classList.remove(className); */
-        document.body.classList.remove("skySpace-background");
-        navbar.classList.remove("navbar-container-sky");
-      },
-      onLeave: () => {
-        /*   body.classList.remove(className); */
-        document.body.classList.remove("skySpace-background");
-        navbar.classList.remove("navbar-container-sky");
-      },
-      /* markers: true, */
-    });
-
-    /* ============================= */
     const tween_Layers_Opacity_True = new TimelineLite();
 
     tween_Layers_Opacity_True.add(
@@ -207,47 +135,6 @@ export default {
         1,
         {
           opacity: 1,
-          /*  onUpdate: function () {
-            const spaceElement = document.querySelector(".cloudOne");
-            const sky = document.querySelector(".something");
-            const darkspaceBackgroundElement = document.querySelector(
-              ".skySpace-background"
-            );
-
-            if (spaceElement && spaceElement.style.opacity !== "0") {
-              // Add the class to the body
-
-              sky.classList.remove("default-background");
-
-              sky.classList.add("skySpace-background");
-
-              // Change the background color of the class
-              if (darkspaceBackgroundElement) {
-                darkspaceBackgroundElement.style.backgroundColor = "#070707"; // Set the desired background color
-              }
-            } else {
-              // Remove the class from the body
-              sky.classList.remove("skySpace-background");
-              sky.classList.add("default-background");
-
-              // Remove the background color style
-              if (darkspaceBackgroundElement) {
-                darkspaceBackgroundElement.style.backgroundColor = null;
-              }
-            }
-          }, */
-
-          /*  onUpdate: function () {
-            const spaceElement = document.querySelector(".cloudOne");
-            const darkspaceBackgroundElement = document.querySelector(
-              ".skySpace-background"
-            );
-            const container = document.querySelector(".newskycontainer");
-
-            document.body.classList.add("skySpace-background");
-
-            
-          }, */
         }
       )
     );
@@ -258,7 +145,7 @@ export default {
     const Scene_Layers_Opacity_True = new ScrollMagic.Scene({
       triggerElement: ".skycontainer",
       duration: 200, // Adjust the duration as needed
-      triggerHook: 0,
+      triggerHook: 0.4,
     })
       .setTween(tween_Layers_Opacity_True)
       .addTo(controller_Layers_Opacity_True);
@@ -285,8 +172,7 @@ export default {
           { x: 0, y: -250 },
           { x: -50, y: -300 },
           { x: -100, y: -350 },
-          /*  { x: -200, y: -window.innerHeight }, */
-          { x: -window.innerWidth, y: -500 },
+          { x: -200, y: -window.innerHeight },
         ],
         curviness: 1.25,
         autoRotate: false,
@@ -332,7 +218,7 @@ export default {
         1,
         {
           opacity: 0,
-          /* onComplete: goToNextSection, */
+          onComplete: goToNextSection,
         }
       )
     );

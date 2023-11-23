@@ -140,39 +140,41 @@ export default {
 <!-- ================================================================== -->
 <template>
   <div
-    class="flex flex-col items-center justify-center w-full sm:flex-row py-20 bg-[#141414]"
+    class="flex flex-col items-center justify-center w-full py-10 sm:flex-row"
   >
     <div
-      class="absolute left-0 flex items-center justify-start w-full opacity-10 xl:opacity-100"
+      class="absolute left-0 flex items-center justify-start w-full -mt-20 opacity-10 xl:opacity-100"
     >
-      <img
+      <!-- <img
         src="../../assets/img/BannerRectangle2.png"
         alt="Banner image"
         class="w-full max-w-xs xs:max-w-sm lg:max-w-md"
-      />
+      /> -->
 
       <img
         src="../../assets/img/Avatar2Changed.png"
         alt="Banner image"
-        class="w-full max-w-[250px] xs:max-w-[300px] lg:max-w-[350px] absolute"
+        class="w-full max-w-[250px] xs:max-w-[300px] lg:max-w-[320px] absolute drop-shadow-[0_4px_10px_rgba(195,2,58,1)]"
       />
     </div>
+    <!-- drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] -->
 
+    <!-- [shadow:0_4px_50px_rgba(195,2,58,1)] -->
     <div
       class="w-full xs:w-9/12 lg:w-full lg:mx-[25vw] xl:mx-[30vw] px-5 space-y-5 static-container flex flex-col"
     >
       <h1
-        class="text-[#c940eb] [text-shadow:0_4px_50px_rgba(201,64,235,1)] text-[30px]"
+        class="text-[#C3023A] [text-shadow:0_4px_50px_rgba(195,2,58,1)] text-[30px]"
       >
         //Made with
       </h1>
 
       <div
-        class="grid gap-y-[1rem] sm:grid-flow-col sm:grid-cols-3 sm:gap-x-[4rem] xl:gap-x-[4rem]"
+        class="grid gap-y-[1rem] sm:grid-flow-col sm:grid-cols-3 sm:gap-x-[4rem] xl:gap-x-[2rem]"
       >
-        <ul class="space-y-5">
+        <ul class="space-y-5 text-xl">
           <h1>(){&lt;/&gt;}</h1>
-          <li class="space-y-0">
+          <li class="space-y-0 text-lg">
             <p>Javascript,</p>
             <p>CSS, HTML,</p>
             <P>Vue,</P>
@@ -181,17 +183,17 @@ export default {
           </li>
         </ul>
 
-        <ul class="space-y-5">
+        <ul class="space-y-5 text-xl">
           <h1>~</h1>
-          <li class="space-y-0">
+          <li class="space-y-0 text-lg">
             <p>+10 cups of cappuccino,</p>
             <p>+4 mixed cheese and ham toasts</p>
           </li>
         </ul>
 
-        <ul class="space-y-5">
+        <ul class="space-y-5 text-xl">
           <h1>🎵</h1>
-          <li class="space-y-0">
+          <li class="space-y-0 text-lg">
             <p>Music 1</p>
             <p>Music 2</p>
             <p>Music 3</p>
