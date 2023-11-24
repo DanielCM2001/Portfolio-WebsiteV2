@@ -4,7 +4,9 @@
     <div
       class="w-full xs:w-9/12 md:w-full md:mx-[15vw] static-container justify-center items-center flex flex-col"
     >
-      <h1 class="text-[40px] lg:text-[70px] hide">What I'm really good at</h1>
+      <h1 class="text-[40px] lg:text-[80px] text-[#F5EEE6] hide">
+        What I'm really good at
+      </h1>
 
       <div
         class="flex flex-col items-center justify-center px-10 py-6 pt-10 space-y-10 md:px-0 md:justify-start md:flex-row md:space-y-0 md:space-x-10 xl:space-x-12 2xl:space-x-14 3xl:space-x-16"
@@ -80,10 +82,8 @@ export default {
     0px 3px 3px 0px #8c5dc9 inset,
     0px 4px 40px 0px #c940eb; */
   border-radius: 40px;
-  background: #c3023a;
-  box-shadow:
-    0px 3px 3px 0px #c3023a inset,
-    0px 4px 40px 0px #c3023a;
+  background: #181818;
+  box-shadow: 0px 4px 50px 0px #f5eee6;
 }
 
 /* class="relative p-[calc(50vh-3.5rem)] m-0 lg:m-0 xl:m-25vw min-h-screen perspective-900 perspective-origin-center lg:perspective-origin-50-top"> */
