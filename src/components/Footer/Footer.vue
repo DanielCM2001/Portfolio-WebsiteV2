@@ -1,7 +1,9 @@
 <template>
-  <div class="flex flex-col items-center justify-center w-full pt-10">
-    <p class="text-[30px]">Made with 🤍 in 2023</p>
-    <p class="text-[25px]">Daniel Martins</p>
+  <div
+    class="flex flex-col items-center justify-center w-full pt-20 text-[25px]"
+  >
+    <p>Made with 🤍 in 2023</p>
+    <p>Daniel Martins</p>
   </div>
 </template>
 

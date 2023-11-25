@@ -74,7 +74,7 @@ export default {
 </style>
  -->
 
-<template>
+<!-- <template>
   <div
     class="flex flex-col items-stretch justify-center w-full py-10 space-y-10 md:space-y-0 md:flex-row md:space-x-10 xl:space-x-[20%]"
   >
@@ -149,6 +149,125 @@ export default {
 <style scoped>
 .MadeWithImage {
   background-image: url("../../assets/img/WrapperImage.png");
+  background-size: cover;
+}
+</style> -->
+
+<!-- <template>
+  <div class="flex flex-row space-x-[20%] space-y-0">
+    <div
+      class="relative flex items-center w-full md:justify-center md:w-[40%] hide"
+    >
+      <img
+        class="absolute z-0 w-full h-full MadeWithImage grayscale opacity-10"
+      />
+      <h1 class="secondaryFont uppercase text-[100px] z-10 py-5 text-[#F5EEE6]">
+        LET'S <br />GET IN <br /><span class="line-through">Contact</span>
+      </h1>
+    </div>
+
+    <div
+      class="flex flex-col justify-center items-start w-full space-y-5 md:w-[40%] hide"
+    >
+      <div>
+        <h1 class="text-[30px] 2xl:text-[90px] text-[#F5EEE6]">
+          Are you minding a <br />
+          project?
+        </h1>
+
+        <div class="flex flex-row w-full space-x-10 text-[35px]">
+          <p>Linkedin</p>
+          <p>Email</p>
+          <p>Github</p>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="text-[30px] 2xl:text-[30px]">//Made with</h1>
+
+        <div class="flex flex-col w-full space-y-0 text-[24px] opacity-50">
+          <p>JavaScript, CSS, HTML, React, Vue, Canvas, SVG, WebGL</p>
+          <p>+10 cups of cappuccino</p>
+          <p>MUSIC 1, MUSIC 2, MUSIC 3, MUSIC 4</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
+
+<style scoped>
+.MadeWithImage {
+  background-image: url("../../assets/img/WrapperImage.png");
+  background-size: cover;
+}
+</style>
+ -->
+
+<template>
+  <div
+    class="flex flex-col space-y-10 md:flex-row md:space-x-[5%] md:space-y-0 2md:space-x-[10%] w-full"
+  >
+    <div class="relative flex items-center w-full md:justify-center md:w-[45%]">
+      <img
+        class="absolute z-0 w-full h-full opacity-20 MadeWithImage grayscale"
+      />
+      <h1
+        class="secondaryFont uppercase text-[50px] md:text-[60px] lg:text-[70px] 2xl:text-[128px] z-10 py-5 text-[#F5EEE6] mx-[4vw] md:mx-[0vw]"
+      >
+        LET'S <br />GET IN <br /><span class="line-through">Contact</span>
+      </h1>
+    </div>
+
+    <div
+      class="flex flex-col justify-center items-start 2xl:items-center w-full space-y-10 md:w-[45%] mx-[4vw] md:mx-[0vw]"
+    >
+      <div>
+        <h1
+          class="text-[40px] md:text-[50px] lg:text-[60px] 2xl:text-[96px] text-[#F5EEE6]"
+        >
+          Are you minding a <br />
+          project?
+        </h1>
+
+        <div class="flex flex-row w-full space-x-10 text-[40px] line-through">
+          <p>Linkedin</p>
+          <p>Email</p>
+          <p>Github</p>
+        </div>
+      </div>
+
+      <div>
+        <h1 class="text-[30px] 2xl:text-[40px]">//Made with</h1>
+
+        <div class="flex flex-col w-full text-[28px] opacity-50">
+          <p>JavaScript, CSS, HTML, Vue, Figma, GSAP</p>
+          <p>+10 cups of cappuccino</p>
+          <p>GRETA VAN FLEET, JOHN MAYER, MICHAEL JACKSON, SANTANA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {};
+  },
+};
+</script>
+
+<style scoped>
+.MadeWithImage {
+  background-image: url("../../assets/img/WrappedImage.jpg");
   background-size: cover;
 }
 </style>
