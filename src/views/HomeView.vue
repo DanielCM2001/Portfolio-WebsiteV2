@@ -16,12 +16,11 @@ import FooterVue from "../components/Footer/Footer.vue";
   <main>
     <Banner />
     <AnimatedScene />
-
-    <!-- <Skills />
+    <Skills />
     <Portfolio />
     <EndWrapper />
     <MadeWithVue />
-    <FooterVue /> -->
+    <FooterVue />
   </main>
 </template>
 

@@ -10,7 +10,7 @@
       class="h-[100vh] flex items-center justify-center w-full relative overflow-hidden"
     >
       <div class="z-30 flex flex-col mx-4">
-        <p class="text-[20px] lg:text-[25px] 2xl:text-[25px] opacity-85">
+        <p class="text-[20px] lg:text-[25px] 2xl:text-[36px] opacity-85">
           My interest in Web Development started back in 2017
         </p>
         <!--  <p class="text-[30px] lg:text-[45px] 2xl:text-[65px] font-bold">
@@ -23,16 +23,13 @@
         <!-- a9337c -->
         <!-- cf3e98 -->
         <!-- a921ff -->
-        <p class="text-[30px] lg:text-[45px] 2xl:text-[65px] font-bold">
-          When I decided to
-          <span class="text-[#C3023A] font-bold">
-            make a <br class="hidden lg:flex" />
-            website for a school project</span
-          >
+        <p class="text-[30px] lg:text-[45px] 2xl:text-[80px] font-bold">
+          When I decided to make a <br class="hidden lg:flex" />
+          website for a school project
         </p>
 
         <!-- When I decided to make a website for a school project -->
-        <p class="text-[20px] lg:text-[25px] 2xl:text-[25px] opacity-85">
+        <p class="text-[20px] lg:text-[25px] 2xl:text-[36px] opacity-85">
           Turns out making a school project taught me a lot about web
         </p>
       </div>

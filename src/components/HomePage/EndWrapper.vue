@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center justify-center w-full h-[50vh]">
+  <div class="flex items-center justify-center w-full h-[100vh]">
     <h1
-      class="text-center text-[#C3023A] [text-shadow:0_4px_50px_rgba(195,2,58,1)] text-[40px] lg:text-[70px] hide"
+      class="text-[#F5EEE6] secondaryFont text-[40px] lg:text-[70px] xl:text-[80px] hide"
     >
       &lt;/Wrapper&gt;
     </h1>
