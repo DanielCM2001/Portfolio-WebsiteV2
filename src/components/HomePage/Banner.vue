@@ -218,7 +218,7 @@
 
         <!-- MichaelAngeloBackground lg:px-10 lg:py-10 py-10 space-y-5 h-[50%] -->
         <!-- 2xl:mt-0 2xl:ml-0 -->
-         <div class="py-10 space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 MichaelAngeloBackground">
+         <div class="py-10 space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 3xl:mt-0 MichaelAngeloBackground">
           <h1 class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px]">
             Passionate about creating interactive applications and experiences
             on the web.

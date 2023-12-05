@@ -227,7 +227,7 @@ export default {
     </div>
 
     <div
-      class="flex flex-col px-[4vw] bg-black justify-center items-start 2xl:items-center w-full space-y-10 md:px-[0vw] md:w-[45%]  md:mx-[0vw]"
+      class="flex flex-col px-[4vw] justify-center items-start 2xl:items-center w-full space-y-10 md:px-[0vw] md:w-[45%]  md:mx-[0vw]"
     >
     
        <div>
@@ -238,12 +238,6 @@ export default {
           project?
         </h1>
 
-       <!--  <div class="flex flex-row w-full space-x-10 text-[40px] line-through  break-words">
-          <p>Linkedin</p>
-          <p>Email</p>
-          <p>Github</p>
-        </div> -->
-    
         <div class="flex flex-col w-full xs:flex-row xs:space-x-10 text-[40px] line-through  break-words">
           <p>Linkedin</p>
           <p>Email</p>

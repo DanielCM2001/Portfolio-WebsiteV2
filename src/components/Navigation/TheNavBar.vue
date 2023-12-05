@@ -231,7 +231,7 @@ export default {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #c3023a;
+    background: #131313;
     clip-path: circle(100px at 90% -15%);
     transition: 1s ease-out;
 
