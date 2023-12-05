@@ -220,16 +220,17 @@ export default {
         class="absolute z-0 w-full h-full opacity-20 MadeWithImage grayscale"
       />
       <h1
-        class="secondaryFont uppercase text-[50px] md:text-[60px] lg:text-[70px] 2xl:text-[128px] z-10 py-5 text-[#F5EEE6] mx-[4vw] md:mx-[0vw]"
+        class="secondaryFont uppercase text-[50px] md:text-[60px] lg:text-[70px] 2xl:text-[128px] z-10 py-5 text-[#F5EEE6] mx-[4vw]  md:mx-[0vw]"
       >
         LET'S <br />GET IN <br /><span class="line-through">Contact</span>
       </h1>
     </div>
 
     <div
-      class="flex flex-col justify-center items-start 2xl:items-center w-full space-y-10 md:w-[45%] mx-[4vw] md:mx-[0vw]"
+      class="flex flex-col px-[4vw] bg-black justify-center items-start 2xl:items-center w-full space-y-10 md:px-[0vw] md:w-[45%]  md:mx-[0vw]"
     >
-      <div>
+    
+       <div>
         <h1
           class="text-[40px] md:text-[50px] lg:text-[60px] 2xl:text-[96px] text-[#F5EEE6]"
         >
@@ -237,7 +238,13 @@ export default {
           project?
         </h1>
 
-        <div class="flex flex-row w-full space-x-10 text-[40px] line-through">
+       <!--  <div class="flex flex-row w-full space-x-10 text-[40px] line-through  break-words">
+          <p>Linkedin</p>
+          <p>Email</p>
+          <p>Github</p>
+        </div> -->
+    
+        <div class="flex flex-col w-full xs:flex-row xs:space-x-10 text-[40px] line-through  break-words">
           <p>Linkedin</p>
           <p>Email</p>
           <p>Github</p>
@@ -252,13 +259,11 @@ export default {
           <p>+10 cups of cappuccino</p>
           <p>GRETA VAN FLEET, JOHN MAYER, MICHAEL JACKSON, SANTANA</p>
         </div>
-      </div>
+      </div> 
     </div>
   </div>
 </template>
 
-<!-- ================ -->
-<!-- ================ -->
 <script>
 export default {
   data() {

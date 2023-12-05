@@ -62,40 +62,7 @@
   </section>
 </template> -->
 
-<template>
-  <section
-    class="flex flex-row items-center justify-center min-h-screen w-full pt-[80px] px-[4vw]"
-  >
-    <!--   <img
-      class="absolute z-0 w-full h-full MichaelAngeloBackground grayscale opacity-10"
-    /> -->
-    <div class="z-10 flex items-stretch w-full">
-      <div class="flex flex-col justify-center break-words w-[70%]">
-        <h1 class="text-[36px] secondaryFont text-[#f5eee6]">
-          Hi there! I'm Daniel
-        </h1>
-
-        <div class="overflow-hidden">
-          <h1 class="text-[140px] uppercase secondaryFont text-[#F5EEE6]">
-            Designer <span class="text-[64px]">&</span> <br />
-            Developer
-            <!--   I AM A FRONT <br />
-            END <br />
-            DEVELOPER -->
-          </h1>
-        </div>
-
-        <h1 class="text-[40px] text-[#f5eee6]">
-          +2
-          <span class="text-[36px]">Years of Experience</span>
-        </h1>
-        <h1 class="text-[40px] text-[#f5eee6]">
-          +7
-          <span class="text-[36px]">Projects Completed</span>
-        </h1>
-      </div>
-
-      <!-- <div class="flex justify-center items-center h-[60%]">
+   <!-- <div class="flex justify-center items-center h-[60%]">
           <div class="flex flex-col items-center justify-center">
             <img
               src="../../assets/img/ArrowRight.png"
@@ -112,8 +79,38 @@
           />
         </div> -->
 
-      <div class="break-words flex flex-col w-[30%]">
-        <!-- Left side content -->
+<!-- <template>
+  <section
+    class="flex flex-row items-center justify-center min-h-screen w-full pt-[80px] px-[4vw]"
+  >
+    <div class="z-10 flex items-stretch w-full flex-col md:flex-row">
+      <div class="flex flex-col justify-center break-words w-full md:w-[70%]  bg-black border">
+        <h1 class="text-[36px] secondaryFont text-[#f5eee6]">
+          Hi there! I'm Daniel
+        </h1>
+
+        <div class="overflow-hidden">
+           <h1 class="text-[140px] uppercase secondaryFont text-[#F5EEE6]">
+            Designer <span class="text-[64px]">&</span> <br />
+            Developer
+          </h1>    
+            <h1 class="text-[14vw]  md:text-[80px] uppercase secondaryFont text-[#F5EEE6]">
+            Designer <span class="text-[30px] md:text-[64px]">&</span> <br />
+            Developer
+          </h1>
+        </div>
+
+        <h1 class="text-[40px] text-[#f5eee6]">
+          +2
+          <span class="text-[36px]">Years of Experience</span>
+        </h1>
+        <h1 class="text-[40px] text-[#f5eee6]">
+          +7
+          <span class="text-[36px]">Projects Completed</span>
+        </h1>
+      </div>
+
+      <div class="break-words flex flex-col w-full md:w-[30%]">
         <div class="flex justify-center items-center h-[50%] relative">
           <div
             class="absolute left-0 flex flex-col items-center justify-center"
@@ -132,17 +129,14 @@
             class="max-w-[100%] max-h-[100%] z-10"
           />
 
-          <!--  <div
-            class="w-[15px] h-[100%] -mt-[100%] bg-[#b9acac] absolute z-0 border-[#000000] border-4"
-          ></div> -->
-          <div
+         
+           <div
             class="w-[14px] h-[150%] -top-[100%] bg-[#b9acac] absolute z-0 border-[#201a27] border-[3px]"
-          ></div>
+          ></div> 
         </div>
 
-        <!-- mx-[-40px] px-[40px] MichaelAngeloBackground--><!-- px-10  -->
         <div class="py-10 space-y-5 h-[50%] px-10 MichaelAngeloBackground">
-          <h1 class="text-[40px]">
+          <h1 class="text-[40px] md:text-[4vw]">
             Passionate about creating interactive applications and experiences
             on the web.
           </h1>
@@ -156,6 +150,89 @@
             />
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+</template> -->
+
+
+<template>
+  <section
+    class="flex flex-row items-center justify-center min-h-screen w-full pt-[80px] px-[4vw] "
+  >
+    <div class="z-10 flex items-stretch w-full flex-col md:flex-row  md:space-x-[0%]  ">
+      <div class="flex flex-col justify-center break-words md:break-normal w-full md:w-[70%] z-10 ">
+        <h1 class="text-[11.2vw] xs:text-[36px] secondaryFont text-[#f5eee6]">
+          Hi there! I'm Daniel
+        </h1>
+
+        <!-- overflow-hidden  -->
+        <!-- overflow-y-clip  -->
+        <div class="overflow-y-clip ">
+            <h1 class="text-[14.4vw] md:text-[10.4vw] 2md:text-[90px] xl:text-[110px] 2xl:text-[140px] uppercase secondaryFont text-[#F5EEE6]  ">
+            Designer <span class="text-[9.3vw] md:text-[35px] xl:text-[45px] 2xl:text-[64px] ">&</span><br />
+            Developer
+          </h1>
+        </div>
+
+        <!-- 2md:text-[45px] -->
+        <!-- 2md:text-[40px] -->
+         <h1 class="text-[12.5vw] xs:text-[40px] text-[#f5eee6]">
+          +2
+          <span class="text-[11.2vw] xs:text-[36px]">Years of Experience</span>
+        </h1>
+        <h1 class="text-[12.5vw] xs:text-[40px]  text-[#f5eee6]">
+          +7
+          <span class="text-[11.2vw] xs:text-[36px]">Projects Completed</span>
+        </h1> 
+      </div>
+
+      <div class="break-words flex flex-col w-full md:w-[30%]    ">
+      
+        <!-- justify-center items-stretch -->
+         <div class="flex flex-row md:flex-row h-[50%] relative py-5 md:-ml-10 ">
+
+          <!-- Arrow right -->
+            <div class="w-1/2 flex flex-col items-center justify-end">
+              <img
+              src="../../assets/img/ArrowRight.png"
+              alt=""
+              class="max-w-[80%] md:max-w-[100%] "
+              />
+              <h1 class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through">Click here</h1>
+            </div>
+
+            <!-- Lightbulb -->
+            <div class="w-1/2 flex items-center justify-center">
+              <img
+                  src="../../assets/img/LightBulb.png"
+                  alt=""
+                  class="max-w-[100%] max-h-[100%] z-10 rotate-180 md:rotate-0 "
+              />
+              <!-- <div
+                class="w-[14px] h-[150%] -top-[100%] bg-[#b9acac] absolute  z-0 border-[#201a27] border-[3px]"
+               ></div>  -->
+            </div>
+        </div> 
+
+
+        <!-- MichaelAngeloBackground lg:px-10 lg:py-10 py-10 space-y-5 h-[50%] -->
+        <!-- 2xl:mt-0 2xl:ml-0 -->
+         <div class="py-10 space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 MichaelAngeloBackground">
+          <h1 class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px]">
+            Passionate about creating interactive applications and experiences
+            on the web.
+          </h1>
+
+          <div class="flex flex-row items-center space-x-5">
+            <h1 class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through">LET'S GET IN CONTACT</h1>
+            <img
+              src="../../assets/img/GithubIcon.png"
+              alt=""
+              class="h-[40px] w-[35px] -mt-1"
+            />
+          </div>
+        </div> 
       </div>
     </div>
   </section>

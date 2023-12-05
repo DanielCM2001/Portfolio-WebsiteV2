@@ -18,7 +18,7 @@ import FooterVue from "../components/Footer/Footer.vue";
     <AnimatedScene />
     <Skills />
     <Portfolio />
-    <EndWrapper />
+    <EndWrapper /> 
     <MadeWithVue />
     <FooterVue />
   </main>

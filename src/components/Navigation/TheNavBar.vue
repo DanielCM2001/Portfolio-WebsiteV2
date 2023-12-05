@@ -140,10 +140,11 @@ export default {
 
 <template>
   <div
-    class="fixed z-50 w-full text-[24px] 3xl:text-[1.4vw] text-[#F5EEE6] navbar-container"
+    class="fixed z-50 w-full text-[24px] 3xl:text-[1.4vw] text-[#F5EEE6] navbar-container "
   >
     <!--  2xl:mx-[6vw] -->
-    <div class="mx-[4vw] 2xl:mx-[4vw] hideNavBar">
+    <!-- hideNavBar -->
+    <div class="mx-[4vw] 2xl:mx-[4vw] ">
       <nav
         class="nav h-[80px] m-auto flex justify-between items-center"
         :class="{ active: isMobileMenuActive }"
@@ -187,13 +188,14 @@ export default {
 
 <style scoped>
 .navbar-container {
-  background: linear-gradient(180deg, #131313 3rem, rgba(4, 151, 209, 0));
+  background: linear-gradient(180deg, #131313 3rem, rgba(4, 151, 209, 0)); 
   /*  background-color: transparent;
   backdrop-filter: blur(2px); */
 }
 
 .navbar-container-sky {
-  background: linear-gradient(180deg, #0497d1 3rem, rgba(4, 151, 209, 0));
+
+  background: linear-gradient(180deg, #0497d1 3rem, rgba(4, 151, 209, 0)); 
   /*  background-color: transparent;
   backdrop-filter: blur(2px); */
 }
