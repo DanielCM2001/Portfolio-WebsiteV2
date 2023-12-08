@@ -144,7 +144,7 @@ export default {
   >
     <!--  2xl:mx-[6vw] -->
     <!-- hideNavBar -->
-    <div class="mx-[4vw] 2xl:mx-[4vw] ">
+    <div class="mx-[4vw] 2xl:mx-[4vw] hideNavBar">
       <nav
         class="nav h-[80px] m-auto flex justify-between items-center"
         :class="{ active: isMobileMenuActive }"

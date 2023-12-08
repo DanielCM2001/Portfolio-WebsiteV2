@@ -36,10 +36,18 @@
 }
 
 /* ======================================= */
+.hideNavBar {
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.showNavBar {
+  transform: translateY(0%);
+}
 
 .hideBannerTitle {
   opacity: 0;
-  rotate: 15deg;
+  rotate: 8deg;
   transform: translateY(80%);
   transition: all 0.5s;
 }
@@ -61,11 +69,38 @@
   opacity: 1;
 }
 
-.hideNavBar {
-  transform: translateY(-100%);
+/* .hideBannerImage {
+   opacity: 0; 
+   transition: all 1s;
+}
+
+.showBannerImage {
+   opacity: 1;
+} */
+
+
+/* background: repeating-linear-gradient(45deg,#FF6B6B 0 10px,#4ECDC4 0 20px);
+  --g: content-box 50% 50%/200% 200% no-repeat;
+  -webkit-mask:
+    linear-gradient(#000 0 0),
+    linear-gradient(calc(135deg + var(--a,0deg)),#000 50.1%,#0000 0) var(--g),
+    linear-gradient(calc(-45deg + var(--a,0deg)),#000 50.1%,#0000 0) var(--g);
+  -webkit-mask-composite: xor, source-over;
+          mask-composite: exclude, add;
+  transition: .5s;
+  cursor: pointer; */
+
+  /*  -webkit-mask-position: 0% 0%,100% 100%; */
+/* =================================== */
+/* .hideBannerText {
+  opacity: 0;
+  rotate: 8deg;
+  transform: translateY(80%);
   transition: all 0.5s;
 }
 
-.showNavBar {
-  transform: translateY(0%);
-}
+.showBannerText {
+  opacity: 1;
+  rotate: 0deg;
+  transform: translateY(0);
+} */

@@ -169,7 +169,7 @@
         <!-- overflow-hidden  -->
         <!-- overflow-y-clip  -->
         <div class="overflow-y-clip ">
-            <h1 class="text-[14.4vw] md:text-[10.4vw] 2md:text-[90px] xl:text-[110px] 2xl:text-[140px] uppercase secondaryFont text-[#F5EEE6]  ">
+            <h1 class="text-[14.4vw] md:text-[10.4vw] 2md:text-[90px] xl:text-[110px] 2xl:text-[140px] uppercase secondaryFont text-[#F5EEE6] hideBannerTitle ">
             Designer <span class="text-[9.3vw] md:text-[35px] xl:text-[45px] 2xl:text-[64px] ">&</span><br />
             Developer
           </h1>
@@ -177,11 +177,11 @@
 
         <!-- 2md:text-[45px] -->
         <!-- 2md:text-[40px] -->
-         <h1 class="text-[12.5vw] xs:text-[40px] text-[#f5eee6]">
+         <h1 class="text-[12.5vw] xs:text-[40px] text-[#f5eee6] hideBannerSubtitle">
           +2
           <span class="text-[11.2vw] xs:text-[36px]">Years of Experience</span>
         </h1>
-        <h1 class="text-[12.5vw] xs:text-[40px]  text-[#f5eee6]">
+        <h1 class="text-[12.5vw] xs:text-[40px]  text-[#f5eee6] hideBannerSubtitle">
           +7
           <span class="text-[11.2vw] xs:text-[36px]">Projects Completed</span>
         </h1> 
@@ -199,7 +199,7 @@
               alt=""
               class="max-w-[80%] md:max-w-[100%] "
               />
-              <h1 class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through">Click here</h1>
+              <h1 class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through ">Click here</h1>
             </div>
 
             <!-- Lightbulb -->
@@ -218,8 +218,8 @@
 
         <!-- MichaelAngeloBackground lg:px-10 lg:py-10 py-10 space-y-5 h-[50%] -->
         <!-- 2xl:mt-0 2xl:ml-0 -->
-         <div class="py-10 space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 3xl:mt-0 MichaelAngeloBackground">
-          <h1 class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px]">
+          <div class="py-10 space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 3xl:mt-0 MichaelAngeloBackground ">
+          <h1 class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px] ">
             Passionate about creating interactive applications and experiences
             on the web.
           </h1>
@@ -232,7 +232,9 @@
               class="h-[40px] w-[35px] -mt-1"
             />
           </div>
-        </div> 
+        </div>  
+
+        
       </div>
     </div>
   </section>
@@ -241,19 +243,7 @@
 <script>
 export default {
   mounted() {
-    // Check if the clientHeight is greater than 0
-    /*  if (entry.target.clientHeight > 0) {
-            // Add an event listener for the 'transitionend' event
-            entry.target.addEventListener(
-              "transitionend",
-              () => {
-                entry.target.classList.add("showBannerSubtitle");
-              },
-              { once: true }
-            ); // { once: true } ensures the event listener is only triggered once
-          } */
-
-    const observer = new IntersectionObserver((entries) => {
+     /* const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add("showBannerTitle");
@@ -289,7 +279,61 @@ export default {
     hiddenElementsY.forEach((el) => observer.observe(el));
 
     const hiddenElementsX = document.querySelectorAll(".hideNavBar");
-    hiddenElementsX.forEach((el) => observer.observe(el));
+    hiddenElementsX.forEach((el) => observer.observe(el)); */ 
+
+
+    /* THIS ONE'S WORKING */
+     const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showBannerTitle");
+
+      if (entry.target.clientHeight > 0) {
+        // Flag to track whether showBannerTitle animation has completed
+        let titleAnimationComplete = false;
+
+        // Flag to track whether showNavBar animation has completed
+        let navBarAnimationComplete = false;
+
+        // Function to handle completion of showBannerTitle animation
+        const onTitleAnimationEnd = () => {
+          titleAnimationComplete = true;
+
+          // Check if both animations have completed
+          if (titleAnimationComplete && navBarAnimationComplete) {
+            entry.target.classList.add("showBannerSubtitle");
+          }
+        };
+
+        // Function to handle completion of showNavBar animation
+        const onNavBarAnimationEnd = () => {
+          navBarAnimationComplete = true;
+
+          // Check if both animations have completed
+          if (titleAnimationComplete && navBarAnimationComplete) {
+            entry.target.classList.add("showBannerSubtitle");
+          }
+        };
+
+        // Add event listener for the 'transitionend' event of showBannerTitle
+        entry.target.addEventListener("transitionend", onTitleAnimationEnd, { once: true });
+
+        // Add event listener for the 'transitionend' event of showNavBar
+        entry.target.addEventListener("transitionend", onNavBarAnimationEnd, { once: true });
+      }
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll(".hideBannerTitle");
+hiddenElements.forEach((el) => observer.observe(el));
+
+const hiddenElementsX = document.querySelectorAll(".hideNavBar");
+hiddenElementsX.forEach((el) => observer.observe(el));
+
+const hiddenElementsY = document.querySelectorAll(".hideBannerSubtitle");
+hiddenElementsY.forEach((el) => observer.observe(el)); 
+
   },
 };
 </script>
@@ -299,28 +343,4 @@ export default {
   background-image: url("../../assets/img/MichaelAngeloBanner.png");
   background-size: cover;
 }
-
-/* .hideBannerTitle {
-  opacity: 0;
-  rotate: 15deg;
-  transform: translateY(80%);
-  transition: all 1s;
-}
-
-.showBannerTitle {
-  opacity: 1;
-  rotate: 0deg;
-  transform: translateY(0);
-}
-
-.hideBannerSubtitle {
-  opacity: 0;
-  transform: translateY(10%);
-  transition: all 1s;
-}
-
-.showBannerSubtitle {
-  transform: translateY(0%);
-  opacity: 1;
-} */
 </style>

@@ -37,7 +37,7 @@
       class="h-[50vh] newskycontainer flex items-end justify-center relative"
     >
       <h1
-        class="text-center text-[#C3023A] [text-shadow:0_4px_50px_rgba(195,2,58,1)] text-[40px] lg:text-[70px] 2xl:text-[80px] hide"
+        class="text-center secondaryFont text-[#f5eee6] text-[40px] lg:text-[70px] 2xl:text-[80px] hide"
       >
         &lt;Wrapper&gt;
       </h1>
