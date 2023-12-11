@@ -214,11 +214,9 @@
                ></div>  -->
             </div>
         </div> 
+       
 
-
-        <!-- MichaelAngeloBackground lg:px-10 lg:py-10 py-10 space-y-5 h-[50%] -->
-        <!-- 2xl:mt-0 2xl:ml-0 -->
-          <div class="py-10 space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 3xl:mt-0 MichaelAngeloBackground ">
+     <!--    <div class="py-10  space-y-5 h-[50%] md:px-10 md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 3xl:mt-0 MichaelAngeloBackground">
           <h1 class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px] ">
             Passionate about creating interactive applications and experiences
             on the web.
@@ -232,9 +230,30 @@
               class="h-[40px] w-[35px] -mt-1"
             />
           </div>
-        </div>  
+        </div>  --> 
 
-        
+      
+        <div class=" h-[50%]  md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-20 2xl:ml-0 3xl:mt-0   ">
+            <div class="hideBannerImage   flex justify-center flex-col ">
+               <div class="MichaelAngeloBackground md:px-10 py-10 space-y-5">
+
+          <h1 class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px] ">
+            Passionate about creating interactive applications and experiences
+            on the web.
+          </h1>
+
+              <div class="flex flex-row items-center space-x-5">
+                <h1 class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through">LET'S GET IN CONTACT</h1>
+                <img
+                  src="../../assets/img/GithubIcon.png"
+                  alt=""
+                  class="h-[40px] w-[35px] -mt-1"
+                />
+              </div>
+           </div>  
+          </div>  
+        </div>
+
       </div>
     </div>
   </section>
@@ -283,7 +302,7 @@ export default {
 
 
     /* THIS ONE'S WORKING */
-     const observer = new IntersectionObserver((entries) => {
+/*      const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("showBannerTitle");
@@ -294,6 +313,7 @@ export default {
 
         // Flag to track whether showNavBar animation has completed
         let navBarAnimationComplete = false;
+
 
         // Function to handle completion of showBannerTitle animation
         const onTitleAnimationEnd = () => {
@@ -325,15 +345,87 @@ export default {
   });
 });
 
-const hiddenElements = document.querySelectorAll(".hideBannerTitle");
-hiddenElements.forEach((el) => observer.observe(el));
+    const hiddenElements = document.querySelectorAll(".hideBannerTitle");
+    hiddenElements.forEach((el) => observer.observe(el));
 
-const hiddenElementsX = document.querySelectorAll(".hideNavBar");
-hiddenElementsX.forEach((el) => observer.observe(el));
+    const hiddenElementsX = document.querySelectorAll(".hideNavBar");
+    hiddenElementsX.forEach((el) => observer.observe(el));
 
-const hiddenElementsY = document.querySelectorAll(".hideBannerSubtitle");
-hiddenElementsY.forEach((el) => observer.observe(el)); 
+    const hiddenElementsY = document.querySelectorAll(".hideBannerSubtitle");
+    hiddenElementsY.forEach((el) => observer.observe(el));  */
 
+    const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("showBannerTitle");
+
+      if (entry.target.clientHeight > 0) {
+        // Flag to track whether showBannerTitle animation has completed
+        let titleAnimationComplete = false;
+
+        // Flag to track whether showNavBar animation has completed
+        let navBarAnimationComplete = false;
+
+        let subtitleAnimationComplete = false;
+
+
+
+        // Function to handle completion of showBannerTitle animation
+        const onTitleAnimationEnd = () => {
+          titleAnimationComplete = true;
+
+          // Check if both animations have completed
+          if (titleAnimationComplete && navBarAnimationComplete ) {
+            entry.target.classList.add("showBannerSubtitle");
+          }
+        };
+
+        // Function to handle completion of showNavBar animation
+        const onNavBarAnimationEnd = () => {
+          navBarAnimationComplete = true;
+
+          // Check if both animations have completed
+          if (titleAnimationComplete && navBarAnimationComplete ) {
+            entry.target.classList.add("showBannerSubtitle");
+          }
+        };
+
+        const onSubtitleAnimationEnd = () => {
+          subtitleAnimationComplete = true;
+
+          // Check if both animations have completed
+          if (titleAnimationComplete && navBarAnimationComplete && subtitleAnimationComplete) {
+            entry.target.classList.add("showBannerImage");
+          }
+        };
+
+      
+
+        // Add event listener for the 'transitionend' event of showBannerTitle
+        entry.target.addEventListener("transitionend", onTitleAnimationEnd, { once: true });
+
+        // Add event listener for the 'transitionend' event of showNavBar
+        entry.target.addEventListener("transitionend", onNavBarAnimationEnd, { once: true });
+
+        entry.target.addEventListener("transitionend", onSubtitleAnimationEnd, { once: true });
+
+      }
+    }
+  });
+});
+
+    const hiddenElements = document.querySelectorAll(".hideBannerTitle");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    const hiddenElementsX = document.querySelectorAll(".hideNavBar");
+    hiddenElementsX.forEach((el) => observer.observe(el));
+
+    const hiddenElementsY = document.querySelectorAll(".hideBannerSubtitle");
+    hiddenElementsY.forEach((el) => observer.observe(el));
+
+    const hiddenElementsZ = document.querySelectorAll(".hideBannerImage");
+    hiddenElementsZ.forEach((el) => observer.observe(el));
+   
   },
 };
 </script>

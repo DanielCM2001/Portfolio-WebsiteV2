@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="h-[25vh] newskycontainer"></div> -->
   <section
-    class="relative flex flex-col items-center justify-center text-[#dbdbdb] skycontainer"
+    class="relative flex flex-col items-center justify-center text-[#f5eee6] skycontainer"
   >
     <!-- First Phrase comes here -->
     <!-- bg-[#03a9f4] -->
@@ -23,7 +23,7 @@
         <!-- a9337c -->
         <!-- cf3e98 -->
         <!-- a921ff -->
-        <p class="text-[30px] lg:text-[45px] 2xl:text-[80px] font-bold">
+        <p class="text-[30px] lg:text-[45px] 2xl:text-[90px] font-bold">
           When I decided to make a <br class="hidden lg:flex" />
           website for a school project
         </p>
