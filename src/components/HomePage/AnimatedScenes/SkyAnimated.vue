@@ -75,7 +75,7 @@
     <img
       src="../../../assets/img/HouseBalloonsFirst.png"
       alt=""
-      class="fixed top-[60%] right-[0%] h-[150px] sm:h-[250px] 2xl:h-[600px] balloon z-20 opacity-0"
+      class="fixed top-[60%] right-[0%] h-[200px] sm:h-[250px] 2xl:h-[600px] balloon z-20 opacity-0"
     />
 
     <img
