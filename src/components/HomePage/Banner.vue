@@ -202,7 +202,9 @@
 
       <div class="break-words flex flex-col w-full md:w-[30%]">
         <!-- justify-center items-stretch -->
-        <div class="flex flex-row md:flex-row h-[50%] relative py-5 md:-ml-10">
+        <div
+          class="flex flex-row md:flex-row h-[50%] relative py-5 2xl:py-0 md:-ml-10"
+        >
           <!-- Arrow right -->
           <div class="w-1/2 flex flex-col items-center justify-end">
             <img
@@ -219,6 +221,7 @@
 
           <!-- Lightbulb -->
           <!-- rotate-180 md:rotate-0 -->
+          <!--    style="filter: drop-shadow(0px 2px 80px #e3d9cd)" -->
           <div class="w-1/2 flex items-center justify-center">
             <img
               src="../../assets/img/LightBulb.png"
@@ -228,7 +231,7 @@
 
             <!-- w-[14px] -->
             <div
-              class="w-[14px] h-[20%] -top-[0%] md:h-[150%] md:-top-[100%] bg-[#b9acac] absolute z-0 border-[#201a27] border-[3px]"
+              class="w-[14px] h-[20%] -top-[0%] md:h-[150%] md:-top-[100%] bg-[#b9acac] absolute z-0 border-[#0e0f1e] border-[3px]"
             ></div>
             <!-- w-[24%] right-[0vw] -->
             <!-- w-[20%] right-[4vw] -->
@@ -237,7 +240,7 @@
             <!--   style="width: calc(25vw + 1.5%)" -->
             <!-- -right-[4vw] -->
             <div
-              class="-right-[4vw] h-[14px] -top-[0%] bg-[#b9acac] absolute z-0 border-[#201a27] border-t-[3px] border-b-[3px] md:hidden"
+              class="-right-[4vw] h-[14px] -top-[0%] bg-[#b9acac] absolute z-0 border-[#0e0f1e] border-t-[3px] border-b-[3px] md:hidden"
               style="width: calc(25% + 4vw - 4px)"
             ></div>
 
