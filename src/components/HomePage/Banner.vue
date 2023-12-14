@@ -231,7 +231,7 @@
 
             <!-- w-[14px] -->
             <div
-              class="w-[14px] h-[20%] -top-[0%] md:h-[150%] md:-top-[100%] bg-[#b9acac] absolute z-0 border-[#0e0f1e] border-[3px]"
+              class="w-[14px] h-[20%] -top-[0%] md:h-[150%] md:-top-[100%] bg-[#f5eee6] absolute z-0 border-[#0e0f1e] border-[3px]"
             ></div>
             <!-- w-[24%] right-[0vw] -->
             <!-- w-[20%] right-[4vw] -->
@@ -240,7 +240,7 @@
             <!--   style="width: calc(25vw + 1.5%)" -->
             <!-- -right-[4vw] -->
             <div
-              class="-right-[4vw] h-[14px] -top-[0%] bg-[#b9acac] absolute z-0 border-[#0e0f1e] border-t-[3px] border-b-[3px] md:hidden"
+              class="-right-[4vw] h-[14px] -top-[0%] bg-[#f5eee6] absolute z-0 border-[#0e0f1e] border-t-[3px] border-b-[3px] md:hidden"
               style="width: calc(25% + 4vw - 4px)"
             ></div>
 
@@ -285,9 +285,14 @@
                   LET'S GET IN CONTACT
                 </h1>
                 <img
-                  src="../../assets/img/GithubIcon.png"
+                  src="../../assets/img/logo.png"
                   alt=""
-                  class="h-[40px] w-[35px] -mt-1"
+                  class="h-[30px] w-[30px] -mt-1"
+                />
+                <img
+                  src="../../assets/img/linkedin.png"
+                  alt=""
+                  class="h-[30px] w-[30px] -mt-1"
                 />
               </div>
             </div>
