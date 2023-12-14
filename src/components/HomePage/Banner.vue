@@ -165,6 +165,7 @@
       <div
         class="flex flex-col justify-center break-words md:break-normal w-full md:w-[70%] z-10"
       >
+        <!-- e9dac9 -->
         <h1 class="text-[11.2vw] xs:text-[36px] secondaryFont text-[#f5eee6]">
           Hi there! I'm Daniel
         </h1>
