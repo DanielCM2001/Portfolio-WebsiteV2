@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="h-[25vh] newskycontainer"></div> -->
   <section
-    class="relative flex flex-col items-center justify-center text-[#f5eee6] skycontainer"
+    class="relative flex flex-col items-center justify-center text-[#f5eee6] skycontainer -mt-[0vh]"
   >
     <!-- First Phrase comes here -->
     <!-- bg-[#03a9f4] -->

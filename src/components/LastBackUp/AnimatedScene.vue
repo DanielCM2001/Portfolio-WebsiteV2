@@ -33,7 +33,7 @@
       </div>
       <div class="arrow"></div>
     </div> -->
-    <!--  <div
+    <div
       class="h-[50vh] newskycontainer flex items-end justify-center relative"
     >
       <h1
@@ -41,7 +41,7 @@
       >
         &lt;Wrapper&gt;
       </h1>
-    </div> -->
+    </div>
 
     <!--  <SpaceScene /> -->
     <SkyScene />

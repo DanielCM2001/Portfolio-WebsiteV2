@@ -140,7 +140,7 @@ export default {
 
 <template>
   <div
-    class="fixed z-50 w-full text-[24px] 3xl:text-[1.4vw] text-[#F5EEE6] navbar-container "
+    class="fixed z-50 w-full text-[24px] 3xl:text-[1.4vw] text-[#F5EEE6] navbar-container"
   >
     <!--  2xl:mx-[6vw] -->
     <!-- hideNavBar -->
@@ -188,14 +188,16 @@ export default {
 
 <style scoped>
 .navbar-container {
-  background: linear-gradient(180deg, #131313 3rem, rgba(4, 151, 209, 0)); 
+  background: linear-gradient(180deg, #131313 3rem, rgba(4, 151, 209, 0));
+  /* background: #131313;
+  border-bottom: 1px solid; */
+
   /*  background-color: transparent;
   backdrop-filter: blur(2px); */
 }
 
 .navbar-container-sky {
-
-  background: linear-gradient(180deg, #0497d1 3rem, rgba(4, 151, 209, 0)); 
+  background: linear-gradient(180deg, #0497d1 3rem, rgba(4, 151, 209, 0));
   /*  background-color: transparent;
   backdrop-filter: blur(2px); */
 }

@@ -1,93 +1,39 @@
-<!-- <template>
-  <div class="flex items-stretch justify-center w-full">
-    <div
-      class="flex flex-col items-stretch justify-center w-full max-w-screen-2xl xs:w-9/12"
-    >
-      <div class="py-10">
-        <p class="text-2xl">What I did?</p>
-        <p class="text-3xl glowLabel">Portfolio</p>
-        <p class="text-4xl">Some of my projects...</p>
-      </div>
-    </div>
-
-    <div class="bg-gray-800">Portfolio here</div>
-  </div>
-</template>
-
-<script>
-export default {
-  data() {
-    return {};
-  },
-};
-</script>
-
-<style scoped>
-.glowLabel {
-  color: #c940eb;
-  text-shadow: 0px 4px 50px #c940eb;
-}
-.separatorBar {
-  border-radius: 20px;
-  background: #c940eb;
-  box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
-}
-</style>
- -->
-
 <template>
-  <div class="flex items-center justify-center w-full">
+  <div
+    class="flex items-center justify-center w-full skill-container min-h-screen"
+  >
     <div
-      class="w-full xs:w-9/12 md:w-full md:mx-[5vw] 2xl:mx-[15vw] static-container justify-center text-center items-center flex flex-col"
+      class="w-full md:w-full mx-[4vw] justify-center items-center flex flex-col"
     >
-      <div class="py-10">
-        <!-- <p class="text-[40px] lg:text-[70px] 2xl:text-[60px]">What I did?</p> -->
-        <!--  <p class="text-[40px] lg:text-[70px] glowLabel">Portfolio</p>
-        <p class="text-[20px] lg:text-[50px] 2xl:text-[40px]">
-          Some of my projects...
-        </p> -->
-
-        <p class="text-[30px]">What I did?</p>
-        <p class="text-[45px] glowLabel">Portfolio</p>
-        <p class="text-[45px]">Some of my projects...</p>
-      </div>
-
-      <div
-        class="grid w-full gap-y-[20px] md:grid-cols-4 lg:grid-cols-8 md:grid-rows-2 md:gap-x-[40px] px-10"
+      <h1
+        class="text-[12.5vw] xs:text-[50px] md:text-[80px] xl:text-[110px] 2xl:text-[120px] text-[#F5EEE6]"
       >
-        <div
-          class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] 2xl:h-[500px] md:col-span-2 md:row-span-2"
-        >
-          <div class="front"></div>
-        </div>
-        <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
-        >
-          <div class="front"></div>
-        </div>
-        <div
-          class="box col-span-3 h-[300px] md:h-[320px] lg:h-[400px] 2xl:h-[500px] md:col-span-2 md:row-span-2"
-        >
-          <div class="front"></div>
-        </div>
-        <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
-        >
-          <div class="front"></div>
-        </div>
+        LATEST WORK
+      </h1>
 
+      <h1
+        class="text-[12.5vw] xs:text-[50px] md:text-[80px] xl:text-[110px] 2xl:text-[120px] text-[#F5EEE6]"
+      >
+        SOME OF MY PROJECTS...
+      </h1>
+
+      <div class="w-full flex flex-col">
+        <hr class="w-full border-b-2 my-5" />
         <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
+          class="flex flex-row w-full justify-evenly text-[40px] link relative"
         >
-          <div class="front"></div>
+          <h1>LOREM IPSUM</h1>
+          <h1>Development, Design</h1>
+          <h1>2023</h1>
+          <div class="hover-reveal image01">
+            <img
+              src="../../assets/img/1.png"
+              class="hidden-img z-10 mix-blend-difference"
+              alt=""
+            />
+          </div>
         </div>
-        <div
-          class="box col-span-3 h-[300px] md:h-[150px] lg:h-[190px] 2xl:h-[240px] md:col-span-2"
-        >
-          <div class="front"></div>
-        </div>
+        <hr class="w-full border-b-2 my-5" />
       </div>
     </div>
   </div>
@@ -98,63 +44,73 @@ export default {
   data() {
     return {};
   },
+  mounted() {
+    /* const link = document.querySelectorAll(".link");
+    const hoverReveal = document.querySelectorAll(".hover-reveal");
+    const linkImages = document.querySelectorAll(".hidden-img");
+
+    for (var i = 0; i < link.length; i++) {
+      link[i].addEventListener("mousemove", (e) => {
+        hoverReveal[i].style.opacity = 1;
+        hoverReveal[i].style.transform = `translate(-100%,-50%) rotate(5deg)`;
+        linkImages[i].style.transform = "scale(1,1)";
+        hoverReveal[i].style.left = e.clientX + "px";
+      });
+      link[i].addEventListener("mouseleave", (e) => {
+        hoverReveal[i].style.opacity = 0;
+        hoverReveal[i].style.transform = `translate(-50%,-50%) rotate(-5deg)`;
+        linkImages[i].style.transform = "scale(0.8,0.8)";
+      });
+    } */
+  },
 };
 </script>
 
 <style scoped>
-.container {
-  /*  perspective: 500px; */
-}
-.container:hover > .box {
-  cursor: pointer;
-  /*  transform: rotateY(180deg) rotateZ(180deg); */
-  transform: rotateY(180deg);
-}
-
-.box {
-  border-radius: 40px;
-  background: #151417;
-  box-shadow:
-    0px 3px 3px 0px #c3023a inset,
-    0px 4px 40px 0px #c3023a;
-  position: relative;
-  transition: transform 1500ms;
-  transform-style: preserve-3d;
+/* .hover-reveal {
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-out;
 }
 
-.front,
-.back {
+.hover-reveal img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  position: relative;
+  transition: text-transform 0.5s ease-out;
+} */
+
+.link img {
   position: absolute;
-  backface-visibility: hidden;
-}
-.front {
-  border-radius: 40px;
-  background-image: url("../../assets/img/Test.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.back {
-  border-radius: 40px;
-  background: #151417;
-  /* transform: rotateY(180deg) rotateZ(180deg); */
-  transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 300px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-100%, -50%) rotate(5deg);
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.5s ease-out;
 }
 
-/* class="relative p-[calc(50vh-3.5rem)] m-0 lg:m-0 xl:m-25vw min-h-screen perspective-900 perspective-origin-center lg:perspective-origin-50-top"> */
-.static-container {
-  /* padding: calc(50vh - 3.5rem) 0 0; */
-  min-height: 100vh;
-  perspective: 900px;
-  perspective-origin: 50% 50vh;
-}
-.glowLabel {
-  color: #c3023a;
-  text-shadow: 0px 4px 50px #c3023a;
+.link:hover img {
+  /*  width: 100%;
+  height: 100%; */
+  transform: translate(-50%, -50%) rotate(-5deg);
+  object-fit: cover;
+  position: absolute;
+
+  opacity: 1;
+  transition: text-transform 0.5s ease-out;
 }
 </style>
