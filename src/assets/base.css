@@ -1,44 +1,11 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  font-weight: normal;
-}
-
-body {
-  /* min-height: 100vh;
+/* body
+ min-height: 100vh;
   max-width: 100vw; */
-  color: rgba(235, 235, 235, 0.74);
 
-  line-height: 1.5;
-
-  /* font-family:
-    Roboto Mono,
-    monospace; */
-  /* font-family: "Poppins", sans-serif; */
-  /*   font-family: "Acme", sans-serif; */
-  font-family: "Bebas Neue", sans-serif;
-
-  display: block;
-  color: #dbdbdb;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-html {
-  background: #131313;
-  scroll-behavior: smooth;
-}
-
-body {
-  background: #131313;
-  transition: background-color 0.4s ease-out;
-}
-
-.secondaryFont {
+/* I was only using this one
+  .secondaryFont {
   font-family: "Aclonica", sans-serif;
-}
+} */
 
 /* .darkspace-background {
   background: #070707;
@@ -49,6 +16,42 @@ body {
   background: #141414;
   transition: background-color 0.4s ease-out;
 } */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  display: block;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  /* font-family: "Bebas Neue", sans-serif; */
+  font-family: "Cabinet Grotesk";
+  color: #dbdbdb;
+}
+
+.secondaryFont {
+  font-family: "General Sans";
+}
+
+.thirdFont {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+html {
+  background: #0f0e0f;
+}
+
+body {
+  background: #0f0e0f;
+  transition: background-color 0.4s ease-out;
+}
 
 .skySpace-background {
   background: #0497d1;
@@ -67,27 +70,4 @@ body {
   transition:
     opacity 1s ease-in,
     opacity 0s ease-out;
-}
-
-/* Box on bars */
-.separatorBox {
-  border-radius: 15px;
-  background: #c940eb;
-  box-shadow:
-    0px 5px 5px 0px #8c5dc9 inset,
-    0px 4px 50px 0px #c940eb;
-  animation: glow 1.5s infinite alternate; /* Glowing animation */
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 5px #c940eb; /* Initial glow effect */
-    /*  width: 48px;
-    height: 48px; */
-  }
-  100% {
-    box-shadow: 0 0 30px #c940eb; /* Stronger glow effect */
-    /*  width: 52px;
-    height: 52px; */
-  }
 }

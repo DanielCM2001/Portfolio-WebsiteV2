@@ -1,7 +1,9 @@
 <script setup>
-/* import Banner from "../components/HomePage/Banner.vue";
+import Banner from "../components/HomePage/Banner.vue";
+/* import AnimatedScene from "../components/HomePage/AnimatedScene.vue"; */
+/* 
 import IntroWrapper from "../components/HomePage/IntroWrapper.vue";
-import AnimatedScene from "../components/HomePage/AnimatedScene.vue";
+
 
 import NewDesignerCoder from "../components/HomePage/NewDesigner&Coder.vue";
 import Skills from "../components/HomePage/Skills.vue";
@@ -13,7 +15,7 @@ import FooterVue from "../components/Footer/Footer.vue"; */
 {
   /* <Banner />
      <IntroWrapper />
-    <AnimatedScene />
+  
     <Skills />
     <Portfolio />
      <EndWrapper />
@@ -23,7 +25,7 @@ import FooterVue from "../components/Footer/Footer.vue"; */
 </script>
 
 <template>
-  <main></main>
+  <main><Banner /></main>
 </template>
 
 <script>

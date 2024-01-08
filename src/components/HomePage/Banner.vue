@@ -1,269 +1,103 @@
-<!-- <template>
-  <section
-    class="flex flex-row items-center justify-center min-h-screen w-full pt-[80px] px-[4vw] MichaelAngeloBackground"
-  >
-    <div
-      class="z-10 flex items-stretch w-full flex-col md:flex-row md:space-x-[0%] bottom-[5%] absolute px-[4vw]"
-    >
-      <div
-        class="flex flex-col justify-center break-words md:break-normal w-full md:w-[70%] z-10"
-      >
-        <h1 class="text-[11.2vw] xs:text-[36px] secondaryFont text-[#F3DBC7]">
-          Hi there! I'm Daniel
-        </h1>
-
-   
-        <div class="overflow-y-clip">
-          <h1 class="text-[240px] leading-[1.2] uppercase text-[#F5EEE6]">
-            Designer
-            <span
-              class="text-[9.3vw] md:text-[35px] xl:text-[45px] 2xl:text-[94px]"
-              >&</span
-            ><br />
-            Developer
-          </h1>
-        </div>
-      </div>
-
-      <div class="break-words flex flex-col w-full md:w-[30%]">
-      
-        <div class="h-[100%] flex items-end">
-          <div class="flex justify-center flex-col">
-        
-            <div class="md:px-10 py-10 space-y-5">
-              <h1
-                class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px]"
-              >
-                Passionate about creating interactive applications and
-                experiences on the web.
-              </h1>
-
-              <div class="flex flex-row items-center space-x-5">
-                <h1
-                  class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through"
-                >
-                  LET'S GET IN CONTACT
-                </h1>
-                <img
-                  src="../../assets/img/logo.png"
-                  alt=""
-                  class="h-[30px] w-[30px] -mt-1"
-                />
-                <img
-                  src="../../assets/img/linkedin.png"
-                  alt=""
-                  class="h-[30px] w-[30px] -mt-1"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</template> -->
-
-<!-- ========================================================== -->
 <template>
-  <!-- items-center -->
-  <section
-    class="flex flex-row items-end justify-center min-h-screen w-full pt-[80px] px-[4vw]"
-  >
-    <div
-      class="z-10 flex items-stretch w-full flex-col md:flex-row md:space-x-[0%] 2xl:mb-[5%]"
+  <section class="w-full pt-[20vh] flex flex-col text-center">
+    <h1
+      class="secondaryFont uppercase text-[#C7C8BF] font-semibold text-[180px] leading-tight"
     >
-      <div
-        class="flex flex-col justify-center break-words md:break-normal w-full md:w-[70%] z-10 2xl:mt-40"
+      Designer <span class="text-[110px] font-semibold uppercase">&</span>
+    </h1>
+    <h1
+      class="secondaryFont uppercase text-[#C7C8BF] font-semibold text-[180px] leading-tight"
+    >
+      Developer
+    </h1>
+    <h2 class="text-[60px] font-bold">Hello I'm Daniel.</h2>
+
+    <div class="flex flex-row justify-center items-center space-x-10">
+      <a
+        class="relative py-[.40rem] px-[2rem] rounded-[2rem] border border-[#cbc8c4] text-[#C7C8BF]"
+        href="#contact"
+        ><span class="font-bold text-[30px]">Let's talk</span></a
       >
-        <h1 class="text-[11.2vw] tracking-wider xs:text-[36px] text-[#ff8709]">
-          Hi there! I'm Daniel
-        </h1>
+      <a
+        class="relative py-[.40rem] px-[2rem] rounded-[2rem] bg-[#C7C8BF] text-[#131313]"
+        href="#contact"
+        ><span class="font-bold text-[30px]">About me</span></a
+      >
+    </div>
 
-        <div class="overflow-y-clip tracking-wider">
-          <h1
-            class="text-[25vw] md:text-[10.4vw] 2md:text-[90px] xl:text-[200px] 2xl:text-[240px] leading-[1.2] uppercase text-[#F5EEE6]"
-          >
-            Designer
-            <span
-              class="text-[9.3vw] md:text-[35px] xl:text-[45px] 2xl:text-[94px] text-[#9D95FF]"
-              >&</span
-            ><br />
-            Developer
-          </h1>
-        </div>
-      </div>
-
-      <div class="break-words flex flex-col w-full md:w-[30%]">
-        <div
-          class="flex flex-row md:flex-row h-[50%] relative py-5 2xl:py-0 md:-ml-10"
-        >
-          <div class="w-1/2 flex flex-col items-center justify-end">
-            <img
-              src="../../assets/img/ArrowRight.png"
-              alt=""
-              class="max-w-[80%] md:max-w-[100%]"
-            />
-            <h1
-              class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through text-[#C4F4FF]"
-            >
-              Click here
-            </h1>
-          </div>
-
-          <div class="w-1/2 flex items-center justify-center">
-            <img
-              src="../../assets/img/LightBulb.png"
-              alt=""
-              class="max-w-[100%] max-h-[100%] z-10 rotate-0 mr-[1px]"
-            />
-
-            <div
-              class="w-[14px] h-[20%] -top-[0%] md:h-[150%] md:-top-[100%] bg-[#f5eee6] absolute z-0 border-[#0e0f1e] border-[3px]"
-            ></div>
-
-            <div
-              class="-right-[4vw] h-[14px] -top-[0%] bg-[#f5eee6] absolute z-0 border-[#0e0f1e] border-t-[3px] border-b-[3px] md:hidden"
-              style="width: calc(25% + 4vw - 4px)"
-            ></div>
-          </div>
-        </div>
-
-        <div
-          class="h-[50%] md:-ml-44 md:mt-52 xl:mt-20 xl:-ml-20 2xl:mt-10 2xl:ml-0 3xl:mt-0"
-        >
-          <div class="flex justify-center flex-col">
-            <div class="MichaelAngeloBackground md:px-10 py-10 space-y-5">
-              <h1
-                class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[40px]"
-              >
-                Passionate about creating interactive applications and
-                experiences on the web.
-              </h1>
-
-              <!--    <h1
-                class="text-[12.5vw] xs:text-[40px] md:text-[3.9vw] 2md:text-[36px] 2xl:text-[36px]"
-              >
-                Web design is the canvas where technology and art seamlessly
-                converge
-              </h1> -->
-
-              <div class="flex flex-row items-center space-x-5">
-                <h1
-                  class="text-[10vw] xs:text-[32px] md:text-[30px] xl:text-[32px] line-through"
-                >
-                  LET'S GET IN CONTACT
-                </h1>
-                <img
-                  src="../../assets/img/logo.png"
-                  alt=""
-                  class="h-[30px] w-[30px] -mt-1"
-                />
-                <img
-                  src="../../assets/img/linkedin.png"
-                  alt=""
-                  class="h-[30px] w-[30px] -mt-1"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Right side scroll down -->
+    <div
+      class="absolute bottom-12 right-0 flex flex-col items-center justify-center space-y-8"
+      style="opacity: 1"
+    >
+      <span class="rotate-90 text-body-3">scroll</span>
+      <div
+        class="relative h-1 w-10 rotate-90 overflow-hidden animation bg-[#C7C8BF]"
+      >
+        <span
+          class="absolute h-[0.08em] w-10 translate-x-10 bg-accent-300"
+        ></span>
       </div>
     </div>
+    <!-- <div class="py-[10vh] justify-center flex relative">
+      <div class="relative">
+        <img
+          src="../../assets/img/SquareArtMichaelAngelo.png"
+          class="h-[100vh]"
+        />
+        <svg
+          viewBox="0 0 100 100"
+          width="100"
+          height="100"
+          class="absolute -right-[5%] top-[20px] bg-[#F5EEE6] rounded-full text-[#131313]"
+        >
+          <defs>
+            <path
+              id="circle"
+              d="
+        M 50, 50
+        m -37, 0
+        a 37,37 0 1,1 74,0
+        a 37,37 0 1,1 -74,0"
+            />
+          </defs>
+          <text font-size="17">
+            <textPath xlink:href="#circle" class="uppercase font-medium">
+              scroll down for more
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </div> -->
   </section>
 </template>
 
 <script>
 export default {
-  mounted() {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("showBannerTitle");
-
-          if (entry.target.clientHeight > 0) {
-            // Flag to track whether showBannerTitle animation has completed
-            let titleAnimationComplete = false;
-
-            // Flag to track whether showNavBar animation has completed
-            let navBarAnimationComplete = false;
-
-            let subtitleAnimationComplete = false;
-
-            // Function to handle completion of showBannerTitle animation
-            const onTitleAnimationEnd = () => {
-              titleAnimationComplete = true;
-
-              // Check if both animations have completed
-              if (titleAnimationComplete && navBarAnimationComplete) {
-                entry.target.classList.add("showBannerSubtitle");
-              }
-            };
-
-            // Function to handle completion of showNavBar animation
-            const onNavBarAnimationEnd = () => {
-              navBarAnimationComplete = true;
-
-              // Check if both animations have completed
-              if (titleAnimationComplete && navBarAnimationComplete) {
-                entry.target.classList.add("showBannerSubtitle");
-              }
-            };
-
-            const onSubtitleAnimationEnd = () => {
-              subtitleAnimationComplete = true;
-
-              // Check if both animations have completed
-              if (
-                titleAnimationComplete &&
-                navBarAnimationComplete &&
-                subtitleAnimationComplete
-              ) {
-                entry.target.classList.add("showBannerImage");
-              }
-            };
-
-            // Add event listener for the 'transitionend' event of showBannerTitle
-            entry.target.addEventListener(
-              "transitionend",
-              onTitleAnimationEnd,
-              { once: true }
-            );
-
-            // Add event listener for the 'transitionend' event of showNavBar
-            entry.target.addEventListener(
-              "transitionend",
-              onNavBarAnimationEnd,
-              { once: true }
-            );
-
-            entry.target.addEventListener(
-              "transitionend",
-              onSubtitleAnimationEnd,
-              { once: true }
-            );
-          }
-        }
-      });
-    });
-
-    const hiddenElements = document.querySelectorAll(".hideBannerTitle");
-    hiddenElements.forEach((el) => observer.observe(el));
-
-    const hiddenElementsX = document.querySelectorAll(".hideNavBar");
-    hiddenElementsX.forEach((el) => observer.observe(el));
-
-    const hiddenElementsY = document.querySelectorAll(".hideBannerSubtitle");
-    hiddenElementsY.forEach((el) => observer.observe(el));
-
-    const hiddenElementsZ = document.querySelectorAll(".hideBannerImage");
-    hiddenElementsZ.forEach((el) => observer.observe(el));
-  },
+  mounted() {},
 };
 </script>
 
 <style scoped>
-.MichaelAngeloBackground {
-  background-image: url("../../assets/img/WrapperImageOpacity.png");
-  background-size: cover;
+svg {
+  fill: currentColor;
+  height: auto;
+  max-width: 10vmin;
+  transform-origin: center;
+  width: 66%;
+  padding: 5px;
+
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: identifier;
+}
+
+@keyframes identifier {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 </style>
